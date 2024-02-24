@@ -1,0 +1,16 @@
+#pragma once
+#define PLAN_HORIZON 20
+#define NUM_LEG 4
+#define NUM_DOF 12
+#define NUM_GAIT 3
+#define MPC_CONSTRAINT_DIM 20
+#define MPC_ITERATION 10
+
+#define FOOT_DELTA_X_LIMIT 0.1
+#define FOOT_DELTA_Y_LIMIT 0.1
+
+#define FOOT_SWING_CLEARANCE1 0.0f
+#define FOOT_SWING_CLEARANCE2 0.4f
+
+#define FOOT_FORCE_LOW 30
+#define FOOT_FORCE_HIGH 80

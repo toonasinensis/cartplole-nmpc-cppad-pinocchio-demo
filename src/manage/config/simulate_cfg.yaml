@@ -1,0 +1,11 @@
+# 全局参数
+/**:
+  ros__parameters:
+    model_name: "inverted_pendulum"
+# 初始姿态
+    qpos0: 0
+
+    is_gpu_accelerated: false
+    is_use_cheat_mode: true
+ 
+        
