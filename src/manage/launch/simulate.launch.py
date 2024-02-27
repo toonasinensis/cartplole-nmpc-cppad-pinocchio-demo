@@ -22,5 +22,15 @@ def generate_launch_description():
                 config
             ]
         ),
+
+        #     Node(
+        #     package="control",
+        #     executable="control_node",
+        #     name="sim",
+        #     namespace="",
+        #     parameters=[
+        #         config
+        #     ]
+        # ),
     
     ])

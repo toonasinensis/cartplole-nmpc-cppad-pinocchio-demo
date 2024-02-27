@@ -409,14 +409,14 @@ int main(int argc, char** argv) {
   mjv_defaultPerturb(&pert);
 
   // simulate object encapsulates the UI
-  sim_node_ptr->declare_parameter("is_gpu_accelerated", rclcpp::PARAMETER_BOOL);
+  // sim_node_ptr->declare_parameter("is_gpu_accelerated", rclcpp::PARAMETER_BOOL);
 
 
   auto sim = std::make_unique<mj::Simulate>(
       std::make_unique<mj::GlfwAdapter>(), &cam, &opt, &pert,
       /* is_passive = */ false,
       /* is_gpu_accelerated = */
-      sim_node_ptr->get_parameter("is_gpu_accelerated").as_bool());
+      false);
   
 
 
