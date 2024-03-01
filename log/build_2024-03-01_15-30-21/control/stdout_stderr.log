@@ -1,0 +1,37 @@
+[35m[1mConsolidate compiler generated dependencies of target control_node[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/cppadpino.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/main.cpp.o[0m
+In file included from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:9:14:[m[K [01;31m[Kerror: [m[Kdeduced class type ‘[01m[KADFun[m[K’ in function return type
+    9 | CppAD::ADFun [01;31m[Ksetdyn[m[K();
+      |              [01;31m[K^~~~~~[m[K
+In file included from [01m[K/usr/local/include/cppad/base_require.hpp:149[m[K,
+                 from [01m[K/usr/local/include/cppad/cppad.hpp:15[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:1[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+[01m[K/usr/local/include/cppad/local/declare_ad.hpp:45:52:[m[K [01;36m[Knote: [m[K‘[01m[Ktemplate<class Base, class RecBase> class CppAD::ADFun[m[K’ declared here
+   45 |    template <class Base, class RecBase=Base> class [01;36m[KADFun[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/control_node.dir/build.make:90: CMakeFiles/control_node.dir/src/cppadpino.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/main.cpp:2[m[K:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:9:14:[m[K [01;31m[Kerror: [m[Kdeduced class type ‘[01m[KADFun[m[K’ in function return type
+    9 | CppAD::ADFun [01;31m[Ksetdyn[m[K();
+      |              [01;31m[K^~~~~~[m[K
+In file included from [01m[K/usr/local/include/cppad/base_require.hpp:149[m[K,
+                 from [01m[K/usr/local/include/cppad/cppad.hpp:15[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:1[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/main.cpp:2[m[K:
+[01m[K/usr/local/include/cppad/local/declare_ad.hpp:45:52:[m[K [01;36m[Knote: [m[K‘[01m[Ktemplate<class Base, class RecBase> class CppAD::ADFun[m[K’ declared here
+   45 |    template <class Base, class RecBase=Base> class [01;36m[KADFun[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/main.cpp:10:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   10 | int main([01;35m[Kint argc[m[K, char** argv) {
+      |          [01;35m[K~~~~^~~~[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/main.cpp:10:27:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   10 | int main(int argc, [01;35m[Kchar** argv[m[K) {
+      |                    [01;35m[K~~~~~~~^~~~[m[K
+gmake[2]: *** [CMakeFiles/control_node.dir/build.make:118: CMakeFiles/control_node.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/control_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

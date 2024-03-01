@@ -1,0 +1,60 @@
+[0.059s] Invoking command in '/home/xie/Desktop/learn/carpole/cartplole/build/control': CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/home/xie/Desktop/learn/carpole/cartplole/install/control:/usr/local:/usr/local:/opt/ros/humble /usr/bin/cmake --build /home/xie/Desktop/learn/carpole/cartplole/build/control -- -j20 -l20
+[0.088s] [35m[1mConsolidate compiler generated dependencies of target control_node[0m
+[0.118s] [ 20%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/cppadpino.cpp.o[0m
+[2.946s] In file included from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:10[m[K:
+[2.946s] [01m[K/usr/local/include/cppad/example/cppad_eigen.hpp:81:33:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Eigen::NumTraits<CppAD::AD<Base> >[m[K’
+[2.946s]    81 |    template <class Base> struct [01;31m[KNumTraits< CppAD::AD<Base> >[m[K
+[2.946s]       |                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.947s] In file included from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:6[m[K,
+[2.947s]                  from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+[2.947s] [01m[K/usr/local/include/pinocchio/autodiff/cppad.hpp:81:32:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Eigen::NumTraits<CppAD::AD<Base> >[m[K’
+[2.947s]    81 |   template <class Base> struct [01;36m[KNumTraits< CppAD::AD<Base> >[m[K
+[2.947s]       |                                [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.947s] In file included from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:10[m[K:
+[2.947s] [01m[K/usr/local/include/cppad/example/cppad_eigen.hpp:174:45:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Ktemplate<class Base> const CppAD::AD<Base>& CppAD::conj(const CppAD::AD<Base>&)[m[K’
+[2.947s]   174 |       template <class Base> const AD<Base>& [01;31m[Kconj[m[K(const AD<Base>& x)
+[2.947s]       |                                             [01;31m[K^~~~[m[K
+[2.947s] In file included from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:6[m[K,
+[2.947s]                  from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+[2.947s] [01m[K/usr/local/include/pinocchio/autodiff/cppad.hpp:139:41:[m[K [01;36m[Knote: [m[K‘[01m[Ktemplate<class Base> const CppAD::AD<Base>& CppAD::conj(const CppAD::AD<Base>&)[m[K’ previously declared here
+[2.947s]   139 |   template <class Base> const AD<Base>& [01;36m[Kconj[m[K(const AD<Base>& x)
+[2.947s]       |                                         [01;36m[K^~~~[m[K
+[2.947s] In file included from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:10[m[K:
+[2.947s] [01m[K/usr/local/include/cppad/example/cppad_eigen.hpp:176:45:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Ktemplate<class Base> const CppAD::AD<Base>& CppAD::real(const CppAD::AD<Base>&)[m[K’
+[2.947s]   176 |       template <class Base> const AD<Base>& [01;31m[Kreal[m[K(const AD<Base>& x)
+[2.947s]       |                                             [01;31m[K^~~~[m[K
+[2.948s] In file included from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:6[m[K,
+[2.948s]                  from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+[2.948s] [01m[K/usr/local/include/pinocchio/autodiff/cppad.hpp:141:41:[m[K [01;36m[Knote: [m[K‘[01m[Ktemplate<class Base> const CppAD::AD<Base>& CppAD::real(const CppAD::AD<Base>&)[m[K’ previously declared here
+[2.948s]   141 |   template <class Base> const AD<Base>& [01;36m[Kreal[m[K(const AD<Base>& x)
+[2.948s]       |                                         [01;36m[K^~~~[m[K
+[2.948s] In file included from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:10[m[K:
+[2.948s] [01m[K/usr/local/include/cppad/example/cppad_eigen.hpp:180:38:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Ktemplate<class Base> CppAD::AD<Base> CppAD::imag(const CppAD::AD<Base>&)[m[K’
+[2.948s]   180 |       template <class Base> AD<Base> [01;31m[Kimag[m[K(const AD<Base>& x)
+[2.948s]       |                                      [01;31m[K^~~~[m[K
+[2.948s] In file included from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:6[m[K,
+[2.948s]                  from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+[2.948s] [01m[K/usr/local/include/pinocchio/autodiff/cppad.hpp:145:34:[m[K [01;36m[Knote: [m[K‘[01m[Ktemplate<class Base> CppAD::AD<Base> CppAD::imag(const CppAD::AD<Base>&)[m[K’ previously declared here
+[2.948s]   145 |   template <class Base> AD<Base> [01;36m[Kimag[m[K(const AD<Base>& /*x*/)
+[2.948s]       |                                  [01;36m[K^~~~[m[K
+[2.948s] In file included from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:10[m[K:
+[2.948s] [01m[K/usr/local/include/cppad/example/cppad_eigen.hpp:182:38:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Ktemplate<class Base> CppAD::AD<Base> CppAD::abs2(const CppAD::AD<Base>&)[m[K’
+[2.948s]   182 |       template <class Base> AD<Base> [01;31m[Kabs2[m[K(const AD<Base>& x)
+[2.949s]       |                                      [01;31m[K^~~~[m[K
+[2.949s] In file included from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:6[m[K,
+[2.949s]                  from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+[2.949s] [01m[K/usr/local/include/pinocchio/autodiff/cppad.hpp:147:34:[m[K [01;36m[Knote: [m[K‘[01m[Ktemplate<class Base> CppAD::AD<Base> CppAD::abs2(const CppAD::AD<Base>&)[m[K’ previously declared here
+[2.949s]   147 |   template <class Base> AD<Base> [01;36m[Kabs2[m[K(const AD<Base>& x)
+[2.949s]       |                                  [01;36m[K^~~~[m[K
+[2.956s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:[m[K In constructor ‘[01m[Kmpc::mpc()[m[K’:
+[2.956s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:40:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.956s]    40 |     for (size_t i = 0; [01;35m[Ki < admodel.njoints[m[K; i++) {
+[2.956s]       |                        [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[2.986s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:[m[K In member function ‘[01m[KCppAD::ADFun<double, double> mpc::setdyn()[m[K’:
+[2.986s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:138:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[2.986s]   138 | [01;35m[K}[m[K
+[2.987s]       | [01;35m[K^[m[K
+[15.420s] gmake[2]: *** [CMakeFiles/control_node.dir/build.make:90: CMakeFiles/control_node.dir/src/cppadpino.cpp.o] Error 1
+[15.421s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/control_node.dir/all] Error 2
+[15.421s] gmake: *** [Makefile:146: all] Error 2
+[15.422s] Invoked command in '/home/xie/Desktop/learn/carpole/cartplole/build/control' returned '2': CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/home/xie/Desktop/learn/carpole/cartplole/install/control:/usr/local:/usr/local:/opt/ros/humble /usr/bin/cmake --build /home/xie/Desktop/learn/carpole/cartplole/build/control -- -j20 -l20

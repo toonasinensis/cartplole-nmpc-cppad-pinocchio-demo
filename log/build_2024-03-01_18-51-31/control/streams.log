@@ -1,0 +1,24 @@
+[0.055s] Invoking command in '/home/xie/Desktop/learn/carpole/cartplole/build/control': CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/home/xie/Desktop/learn/carpole/cartplole/install/control:/usr/local:/usr/local:/opt/ros/humble /usr/bin/cmake --build /home/xie/Desktop/learn/carpole/cartplole/build/control -- -j20 -l20
+[0.087s] [35m[1mConsolidate compiler generated dependencies of target control_node[0m
+[0.117s] [ 20%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/cppadpino.cpp.o[0m
+[3.058s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:[m[K In constructor ‘[01m[Kmpc::mpc()[m[K’:
+[3.058s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:35:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.058s]    35 |     for (size_t i = 0; [01;35m[Ki < admodel.njoints[m[K; i++) {
+[3.058s]       |                        [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[3.610s] In file included from [01m[K/usr/local/include/cppad/core/fun_eval.hpp:9[m[K,
+[3.610s]                  from [01m[K/usr/local/include/cppad/core/ad_fun.hpp:874[m[K,
+[3.610s]                  from [01m[K/usr/local/include/cppad/cppad.hpp:53[m[K,
+[3.610s]                  from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:4[m[K,
+[3.610s]                  from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+[3.610s] /usr/local/include/cppad/core/forward/forward.hpp: In instantiation of ‘[01m[KBaseVector CppAD::ADFun<Base, RecBase>::Forward(size_t, const BaseVector&, std::ostream&) [with BaseVector = Eigen::Matrix<CppAD::AD<double>, -1, 1, 0, -1, 1>; Base = double; RecBase = double; size_t = long unsigned int; std::ostream = std::basic_ostream<char>][m[K’:
+[3.610s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:68:31:[m[K   required from here
+[3.610s] [01m[K/usr/local/include/cppad/core/forward/forward.hpp:178:42:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst CppAD::AD<double>[m[K’ to ‘[01m[Kdouble[m[K’ in assignment
+[3.610s]   178 |          [01;31m[Ktaylor_[ C * ind_taddr_[j] + q] = xq[[m[Kj];
+[3.610s]       |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[3.610s] [01m[K/usr/local/include/cppad/core/forward/forward.hpp:181:45:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst CppAD::AD<double>[m[K’ to ‘[01m[Kdouble[m[K’ in assignment
+[3.610s]   181 |             [01;31m[Ktaylor_[ C * ind_taddr_[j] + k] = xq[[m[K (q+1)*j + k];
+[3.610s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[15.453s] gmake[2]: *** [CMakeFiles/control_node.dir/build.make:90: CMakeFiles/control_node.dir/src/cppadpino.cpp.o] Error 1
+[15.453s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/control_node.dir/all] Error 2
+[15.453s] gmake: *** [Makefile:146: all] Error 2
+[15.455s] Invoked command in '/home/xie/Desktop/learn/carpole/cartplole/build/control' returned '2': CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/home/xie/Desktop/learn/carpole/cartplole/install/control:/usr/local:/usr/local:/opt/ros/humble /usr/bin/cmake --build /home/xie/Desktop/learn/carpole/cartplole/build/control -- -j20 -l20

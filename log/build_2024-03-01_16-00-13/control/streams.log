@@ -1,0 +1,44 @@
+[0.041s] Invoking command in '/home/xie/Desktop/learn/carpole/cartplole/build/control': AMENT_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/usr/local:/usr/local:/opt/ros/humble LD_LIBRARY_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/xie/Desktop/learn/carpole/cartplole/build/control -- -j20 -l20
+[0.065s] [35m[1mConsolidate compiler generated dependencies of target control_node[0m
+[0.081s] [ 20%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/cppadpino.cpp.o[0m
+[0.082s] [ 40%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/main.cpp.o[0m
+[2.584s] In file included from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+[2.584s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:[m[K In member function ‘[01m[KCppAD::ADFun<double, double> mpc::setdyn()[m[K’:
+[2.584s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:37:31:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[2.584s]    37 | CppAD::ADFun<double> setdyn(){[01;35m[K}[m[K;
+[2.584s]       |                               [01;35m[K^[m[K
+[3.681s] In file included from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/main.cpp:2[m[K:
+[3.681s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:[m[K In member function ‘[01m[KCppAD::ADFun<double, double> mpc::setdyn()[m[K’:
+[3.681s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:37:31:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[3.681s]    37 | CppAD::ADFun<double> setdyn(){[01;35m[K}[m[K;
+[3.681s]       |                               [01;35m[K^[m[K
+[3.688s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[3.689s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/main.cpp:10:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.689s]    10 | int main([01;35m[Kint argc[m[K, char** argv) {
+[3.689s]       |          [01;35m[K~~~~^~~~[m[K
+[3.689s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/main.cpp:10:27:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.689s]    10 | int main(int argc, [01;35m[Kchar** argv[m[K) {
+[3.689s]       |                    [01;35m[K~~~~~~~^~~~[m[K
+[11.836s] [ 60%] [32m[1mLinking CXX executable control_node[0m
+[11.931s] [100%] Built target control_node
+[11.937s] Invoked command in '/home/xie/Desktop/learn/carpole/cartplole/build/control' returned '0': AMENT_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/usr/local:/usr/local:/opt/ros/humble LD_LIBRARY_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/xie/Desktop/learn/carpole/cartplole/build/control -- -j20 -l20
+[11.955s] Invoking command in '/home/xie/Desktop/learn/carpole/cartplole/build/control': AMENT_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/usr/local:/usr/local:/opt/ros/humble LD_LIBRARY_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/xie/Desktop/learn/carpole/cartplole/build/control
+[11.959s] -- Install configuration: "Release"
+[11.959s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/control/lib/control/control_node
+[11.959s] -- Set runtime path of "/home/xie/Desktop/learn/carpole/cartplole/install/control/lib/control/control_node" to "/home/xie/Desktop/learn/carpole/cartplole/src/control/lib"
+[11.959s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/ament_index/resource_index/package_run_dependencies/control
+[11.959s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/ament_index/resource_index/parent_prefix_path/control
+[11.959s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/environment/ament_prefix_path.sh
+[11.959s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/environment/ament_prefix_path.dsv
+[11.959s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/environment/path.sh
+[11.959s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/environment/path.dsv
+[11.960s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/local_setup.bash
+[11.960s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/local_setup.sh
+[11.960s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/local_setup.zsh
+[11.960s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/local_setup.dsv
+[11.960s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/package.dsv
+[11.960s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/ament_index/resource_index/packages/control
+[11.961s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/cmake/controlConfig.cmake
+[11.961s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/cmake/controlConfig-version.cmake
+[11.961s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/package.xml
+[11.961s] Invoked command in '/home/xie/Desktop/learn/carpole/cartplole/build/control' returned '0': AMENT_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/usr/local:/usr/local:/opt/ros/humble LD_LIBRARY_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/xie/Desktop/learn/carpole/cartplole/build/control

@@ -1,0 +1,22 @@
+[0.027s] Invoking command in '/home/xie/Desktop/learn/carpole/cartplole/build/simulate': AMENT_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/usr/local:/usr/local:/opt/ros/humble LD_LIBRARY_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/xie/Desktop/learn/carpole/cartplole/build/simulate -- -j20 -l20
+[0.056s] [100%] Built target simulate_node
+[0.063s] Invoked command in '/home/xie/Desktop/learn/carpole/cartplole/build/simulate' returned '0': AMENT_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/usr/local:/usr/local:/opt/ros/humble LD_LIBRARY_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/xie/Desktop/learn/carpole/cartplole/build/simulate -- -j20 -l20
+[0.081s] Invoking command in '/home/xie/Desktop/learn/carpole/cartplole/build/simulate': AMENT_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/usr/local:/usr/local:/opt/ros/humble LD_LIBRARY_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/xie/Desktop/learn/carpole/cartplole/build/simulate
+[0.084s] -- Install configuration: "Release"
+[0.084s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/lib/simulate/simulate_node
+[0.085s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/ament_index/resource_index/package_run_dependencies/simulate
+[0.085s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/ament_index/resource_index/parent_prefix_path/simulate
+[0.085s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/environment/ament_prefix_path.sh
+[0.085s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/environment/ament_prefix_path.dsv
+[0.085s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/environment/path.sh
+[0.085s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/environment/path.dsv
+[0.085s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/local_setup.bash
+[0.085s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/local_setup.sh
+[0.085s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/local_setup.zsh
+[0.085s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/local_setup.dsv
+[0.085s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/package.dsv
+[0.086s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/ament_index/resource_index/packages/simulate
+[0.086s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/cmake/simulateConfig.cmake
+[0.086s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/cmake/simulateConfig-version.cmake
+[0.086s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/package.xml
+[0.087s] Invoked command in '/home/xie/Desktop/learn/carpole/cartplole/build/simulate' returned '0': AMENT_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/usr/local:/usr/local:/opt/ros/humble LD_LIBRARY_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/xie/Desktop/learn/carpole/cartplole/build/simulate

@@ -6,11 +6,26 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
+
+
+
+find_library(CPPAD_LIB cppad_lib)
+
+find_library(ipopt Require)
+
+#关键！！！！！！在add_executable之前link
+link_directories(/usr/local/lib)
+
+
+
+
+
+
 # find dependencies
 find_package(ament_cmake REQUIRED)
 # find_package(glfw3 REQUIRED)
 find_package(rclcpp REQUIRED)
-# find_package(sensor_msgs REQUIRED)
+find_package(pinocchio REQUIRED)
 
 find_package(casadi REQUIRED)
 find_package(interface REQUIRED)
@@ -63,10 +78,16 @@ add_executable(control_node
   # ../utils/orientation_tools.cpp
 )
 # set(CMAKE_EXPORT_COMPILE_COMMANDS, 1)
+find_package(yaml-cpp REQUIRED)
 
 target_link_libraries(
   control_node
   casadi
+${CPPAD_LIB}
+pinocchio
+ipopt
+yaml-cpp
+dw
 )
 
 ament_target_dependencies(control_node

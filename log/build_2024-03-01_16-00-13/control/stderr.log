@@ -1,0 +1,17 @@
+In file included from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:[m[K In member function ‘[01m[KCppAD::ADFun<double, double> mpc::setdyn()[m[K’:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:37:31:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+   37 | CppAD::ADFun<double> setdyn(){[01;35m[K}[m[K;
+      |                               [01;35m[K^[m[K
+In file included from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/main.cpp:2[m[K:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:[m[K In member function ‘[01m[KCppAD::ADFun<double, double> mpc::setdyn()[m[K’:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:37:31:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+   37 | CppAD::ADFun<double> setdyn(){[01;35m[K}[m[K;
+      |                               [01;35m[K^[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/main.cpp:10:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   10 | int main([01;35m[Kint argc[m[K, char** argv) {
+      |          [01;35m[K~~~~^~~~[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/main.cpp:10:27:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   10 | int main(int argc, [01;35m[Kchar** argv[m[K) {
+      |                    [01;35m[K~~~~~~~^~~~[m[K

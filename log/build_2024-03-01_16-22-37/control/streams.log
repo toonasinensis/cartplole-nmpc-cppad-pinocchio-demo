@@ -1,0 +1,132 @@
+[0.051s] Invoking command in '/home/xie/Desktop/learn/carpole/cartplole/build/control': CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/home/xie/Desktop/learn/carpole/cartplole/install/control:/usr/local:/usr/local:/opt/ros/humble /usr/bin/cmake --build /home/xie/Desktop/learn/carpole/cartplole/build/control -- -j20 -l20
+[0.071s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.113s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.150s] -- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)
+[0.162s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.163s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.167s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.172s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.180s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.210s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.210s] -- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.252s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.333s] -- pinocchio FOUND. pinocchio at /usr/local/lib/libpinocchio.so
+[0.333s] -- boost_filesystem FOUND. boost_filesystem at /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+[0.333s] -- boost_serialization FOUND. boost_serialization at /usr/lib/x86_64-linux-gnu/libboost_serialization.so
+[0.333s] -- boost_system FOUND. boost_system at /usr/lib/x86_64-linux-gnu/libboost_system.so
+[0.338s] -- Found Boost: /usr/include (found version "1.74.0") found components: filesystem serialization system 
+[0.338s] -- eigenpy FOUND. eigenpy at /opt/ros/humble/lib/x86_64-linux-gnu/libeigenpy.so
+[0.488s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter Development.Module NumPy 
+[0.488s] -- PythonLibraryDirs: 
+[0.488s] -- PythonLibVersionString: 3.10.12
+[0.502s] -- Python site lib: lib/python3.10/dist-packages
+[0.502s] -- Python include dirs: /usr/include/python3.10
+[0.523s] -- Checking for NumPy
+[0.577s] --   NUMPY_INCLUDE_DIRS=/usr/lib/python3/dist-packages/numpy/core/include
+[0.630s] --   NUMPY_VERSION=1.21.5
+[0.630s] -- NumPy include dir: /usr/lib/python3/dist-packages/numpy/core/include
+[0.633s] [33mCMake Warning at /usr/share/cmake-3.22/Modules/FindBoost.cmake:2201 (message):
+[0.633s]   No header defined for python310; skipping header check (note: header-only
+[0.633s]   libraries have no designated component)
+[0.633s] Call Stack (most recent call first):
+[0.633s]   /opt/ros/humble/lib/x86_64-linux-gnu/cmake/eigenpy/boost.cmake:144 (find_package)
+[0.633s]   /opt/ros/humble/lib/x86_64-linux-gnu/cmake/eigenpy/eigenpyConfig.cmake:149 (SEARCH_FOR_BOOST_PYTHON)
+[0.633s]   /usr/share/cmake-3.22/Modules/CMakeFindDependencyMacro.cmake:47 (find_package)
+[0.634s]   /usr/local/lib/cmake/pinocchio/pinocchioConfig.cmake:159 (find_dependency)
+[0.634s]   CMakeLists.txt:28 (find_package)
+[0.634s] 
+[0.634s] [0m
+[0.634s] -- Found Boost: /usr/include (found version "1.74.0") found components: python310 
+[0.634s] -- Boost_PYTHON_LIBRARY: /usr/lib/x86_64-linux-gnu/libboost_python310.so
+[0.810s] -- Default C++ standard: 201703
+[0.810s] -- C++ standard sufficient: Minimal required 11, currently defined: 17
+[0.810s] -- CMAKE_CXX_STANDARD was not set: automatically set to currently defined standard 17
+[0.811s] -- C++ standard sufficient: Minimal required 11, currently defined: 17
+[0.812s] -- Found interface: 0.0.0 (/home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/cmake)
+[0.821s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.861s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.861s] -- Configured cppcheck include dirs: /home/xie/Desktop/learn/carpole/cartplole/src/control/include/control;/home/xie/Desktop/learn/carpole/cartplole/src/control/include;/home/xie/Desktop/learn/carpole/cartplole/src/control/../utils
+[0.861s] -- Configured cppcheck exclude dirs and/or files: 
+[0.861s] -- Added test 'lint_cmake' to check CMake code style
+[0.862s] -- Added test 'uncrustify' to check C / C++ code style
+[0.862s] -- Configured uncrustify additional arguments: 
+[0.862s] -- Added test 'xmllint' to check XML markup files
+[0.863s] -- Configuring done
+[0.865s] [33mCMake Warning (dev) at CMakeLists.txt:83 (target_link_libraries):
+[0.865s]   The library that is being linked to, yaml-cpp, is marked as being
+[0.865s]   deprecated by the owner.  The message provided by the developer is:
+[0.865s] 
+[0.865s]   The target yaml-cpp is deprecated and will be removed in version 0.10.0.
+[0.865s]   Use the yaml-cpp::yaml-cpp target instead.
+[0.865s] 
+[0.865s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.865s] [0m
+[0.865s] [33mCMake Warning (dev) at CMakeLists.txt:83 (target_link_libraries):
+[0.865s]   The library that is being linked to, yaml-cpp, is marked as being
+[0.865s]   deprecated by the owner.  The message provided by the developer is:
+[0.865s] 
+[0.865s]   The target yaml-cpp is deprecated and will be removed in version 0.10.0.
+[0.865s]   Use the yaml-cpp::yaml-cpp target instead.
+[0.865s] 
+[0.865s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.865s] [0m
+[0.865s] [33mCMake Warning (dev) at CMakeLists.txt:83 (target_link_libraries):
+[0.865s]   The library that is being linked to, yaml-cpp, is marked as being
+[0.866s]   deprecated by the owner.  The message provided by the developer is:
+[0.866s] 
+[0.866s]   The target yaml-cpp is deprecated and will be removed in version 0.10.0.
+[0.866s]   Use the yaml-cpp::yaml-cpp target instead.
+[0.866s] 
+[0.866s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.866s] [0m
+[0.869s] -- Generating done
+[0.870s] -- Build files have been written to: /home/xie/Desktop/learn/carpole/cartplole/build/control
+[0.890s] [35m[1mConsolidate compiler generated dependencies of target control_node[0m
+[0.916s] [ 20%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/control_node.cpp.o[0m
+[0.918s] [ 40%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/doubleintger.cpp.o[0m
+[0.918s] [ 60%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/cppadpino.cpp.o[0m
+[0.919s] [ 80%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/main.cpp.o[0m
+[3.696s] In file included from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+[3.696s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:[m[K In member function ‘[01m[KCppAD::ADFun<double, double> mpc::setdyn()[m[K’:
+[3.696s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:40:31:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[3.696s]    40 | CppAD::ADFun<double> setdyn(){[01;35m[K}[m[K;
+[3.696s]       |                               [01;35m[K^[m[K
+[3.705s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:[m[K In constructor ‘[01m[Kmpc::mpc()[m[K’:
+[3.706s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:35:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.706s]    35 |     for (size_t i = 0; [01;35m[Ki < admodel.njoints[m[K; i++) {
+[3.706s]       |                        [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[4.809s] In file included from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/main.cpp:2[m[K:
+[4.809s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:[m[K In member function ‘[01m[KCppAD::ADFun<double, double> mpc::setdyn()[m[K’:
+[4.810s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:40:31:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[4.810s]    40 | CppAD::ADFun<double> setdyn(){[01;35m[K}[m[K;
+[4.810s]       |                               [01;35m[K^[m[K
+[4.816s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[4.816s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/main.cpp:10:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.817s]    10 | int main([01;35m[Kint argc[m[K, char** argv) {
+[4.817s]       |          [01;35m[K~~~~^~~~[m[K
+[4.817s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/main.cpp:10:27:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.817s]    10 | int main(int argc, [01;35m[Kchar** argv[m[K) {
+[4.817s]       |                    [01;35m[K~~~~~~~^~~~[m[K
+[26.803s] [100%] [32m[1mLinking CXX executable control_node[0m
+[26.970s] [100%] Built target control_node
+[26.976s] Invoked command in '/home/xie/Desktop/learn/carpole/cartplole/build/control' returned '0': CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/home/xie/Desktop/learn/carpole/cartplole/install/control:/usr/local:/usr/local:/opt/ros/humble /usr/bin/cmake --build /home/xie/Desktop/learn/carpole/cartplole/build/control -- -j20 -l20
+[26.995s] Invoking command in '/home/xie/Desktop/learn/carpole/cartplole/build/control': CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/home/xie/Desktop/learn/carpole/cartplole/install/control:/usr/local:/usr/local:/opt/ros/humble /usr/bin/cmake --install /home/xie/Desktop/learn/carpole/cartplole/build/control
+[26.998s] -- Install configuration: "Release"
+[26.998s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/control/lib/control/control_node
+[26.999s] -- Set runtime path of "/home/xie/Desktop/learn/carpole/cartplole/install/control/lib/control/control_node" to "/home/xie/Desktop/learn/carpole/cartplole/src/control/lib"
+[27.000s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/ament_index/resource_index/package_run_dependencies/control
+[27.000s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/ament_index/resource_index/parent_prefix_path/control
+[27.000s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/environment/ament_prefix_path.sh
+[27.000s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/environment/ament_prefix_path.dsv
+[27.000s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/environment/path.sh
+[27.000s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/environment/path.dsv
+[27.000s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/local_setup.bash
+[27.000s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/local_setup.sh
+[27.000s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/local_setup.zsh
+[27.000s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/local_setup.dsv
+[27.000s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/package.dsv
+[27.000s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/ament_index/resource_index/packages/control
+[27.000s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/cmake/controlConfig.cmake
+[27.000s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/cmake/controlConfig-version.cmake
+[27.000s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/package.xml
+[27.001s] Invoked command in '/home/xie/Desktop/learn/carpole/cartplole/build/control' returned '0': CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/home/xie/Desktop/learn/carpole/cartplole/install/control:/usr/local:/usr/local:/opt/ros/humble /usr/bin/cmake --install /home/xie/Desktop/learn/carpole/cartplole/build/control

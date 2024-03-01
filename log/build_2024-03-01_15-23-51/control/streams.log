@@ -1,0 +1,105 @@
+[0.036s] Invoking command in '/home/xie/Desktop/learn/carpole/cartplole/build/control': AMENT_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/usr/local:/opt/ros/humble LD_LIBRARY_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/xie/Desktop/learn/carpole/cartplole/src/control -DCMAKE_INSTALL_PREFIX=/home/xie/Desktop/learn/carpole/cartplole/install/control
+[0.063s] -- The C compiler identification is GNU 11.4.0
+[0.092s] -- The CXX compiler identification is GNU 11.4.0
+[0.096s] -- Detecting C compiler ABI info
+[0.131s] -- Detecting C compiler ABI info - done
+[0.135s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.135s] -- Detecting C compile features
+[0.135s] -- Detecting C compile features - done
+[0.137s] -- Detecting CXX compiler ABI info
+[0.177s] -- Detecting CXX compiler ABI info - done
+[0.181s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.181s] -- Detecting CXX compile features
+[0.181s] -- Detecting CXX compile features - done
+[0.188s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.279s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.328s] -- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)
+[0.347s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.350s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.354s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.361s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.371s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.408s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.410s] -- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.455s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.463s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.477s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.482s] -- Looking for pthread.h
+[0.519s] -- Looking for pthread.h - found
+[0.520s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.558s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.558s] -- Found Threads: TRUE  
+[0.638s] -- pinocchio FOUND. pinocchio at /usr/local/lib/libpinocchio.so
+[0.638s] -- boost_filesystem FOUND. boost_filesystem at /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+[0.639s] -- boost_serialization FOUND. boost_serialization at /usr/lib/x86_64-linux-gnu/libboost_serialization.so
+[0.639s] -- boost_system FOUND. boost_system at /usr/lib/x86_64-linux-gnu/libboost_system.so
+[0.659s] -- Found Boost: /usr/include (found version "1.74.0") found components: filesystem serialization system 
+[0.660s] -- eigenpy FOUND. eigenpy at /opt/ros/humble/lib/x86_64-linux-gnu/libeigenpy.so
+[0.815s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter Development.Module NumPy 
+[0.816s] -- PythonLibraryDirs: 
+[0.816s] -- PythonLibVersionString: 3.10.12
+[0.831s] -- Python site lib: lib/python3.10/dist-packages
+[0.831s] -- Python include dirs: /usr/include/python3.10
+[0.855s] -- Checking for NumPy
+[0.951s] --   NUMPY_INCLUDE_DIRS=/usr/lib/python3/dist-packages/numpy/core/include
+[1.016s] --   NUMPY_VERSION=1.21.5
+[1.016s] -- NumPy include dir: /usr/lib/python3/dist-packages/numpy/core/include
+[1.020s] [33mCMake Warning at /usr/share/cmake-3.22/Modules/FindBoost.cmake:2201 (message):
+[1.020s]   No header defined for python310; skipping header check (note: header-only
+[1.020s]   libraries have no designated component)
+[1.020s] Call Stack (most recent call first):
+[1.020s]   /opt/ros/humble/lib/x86_64-linux-gnu/cmake/eigenpy/boost.cmake:144 (find_package)
+[1.020s]   /opt/ros/humble/lib/x86_64-linux-gnu/cmake/eigenpy/eigenpyConfig.cmake:149 (SEARCH_FOR_BOOST_PYTHON)
+[1.020s]   /usr/share/cmake-3.22/Modules/CMakeFindDependencyMacro.cmake:47 (find_package)
+[1.020s]   /usr/local/lib/cmake/pinocchio/pinocchioConfig.cmake:159 (find_dependency)
+[1.020s]   CMakeLists.txt:28 (find_package)
+[1.020s] 
+[1.020s] [0m
+[1.024s] -- Found Boost: /usr/include (found version "1.74.0") found components: python310 
+[1.024s] -- Boost_PYTHON_LIBRARY: /usr/lib/x86_64-linux-gnu/libboost_python310.so
+[1.187s] -- Default C++ standard: 201703
+[1.187s] -- Minimal C++ standard upgraded to 11
+[1.187s] -- C++ standard sufficient: Minimal required 11, currently defined: 17
+[1.187s] -- CMAKE_CXX_STANDARD was not set: automatically set to currently defined standard 17
+[1.187s] -- C++ standard sufficient: Minimal required 11, currently defined: 17
+[1.188s] -- Found interface: 0.0.0 (/home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/cmake)
+[1.196s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.239s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.239s] -- Configured cppcheck include dirs: /home/xie/Desktop/learn/carpole/cartplole/src/control/include/control;/home/xie/Desktop/learn/carpole/cartplole/src/control/include;/home/xie/Desktop/learn/carpole/cartplole/src/control/../utils
+[1.239s] -- Configured cppcheck exclude dirs and/or files: 
+[1.239s] -- Added test 'lint_cmake' to check CMake code style
+[1.240s] -- Added test 'uncrustify' to check C / C++ code style
+[1.240s] -- Configured uncrustify additional arguments: 
+[1.240s] -- Added test 'xmllint' to check XML markup files
+[1.240s] -- Configuring done
+[1.245s] -- Generating done
+[1.246s] -- Build files have been written to: /home/xie/Desktop/learn/carpole/cartplole/build/control
+[1.254s] Invoked command in '/home/xie/Desktop/learn/carpole/cartplole/build/control' returned '0': AMENT_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/usr/local:/opt/ros/humble LD_LIBRARY_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/xie/Desktop/learn/carpole/cartplole/src/control -DCMAKE_INSTALL_PREFIX=/home/xie/Desktop/learn/carpole/cartplole/install/control
+[1.257s] Invoking command in '/home/xie/Desktop/learn/carpole/cartplole/build/control': AMENT_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/usr/local:/opt/ros/humble LD_LIBRARY_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/xie/Desktop/learn/carpole/cartplole/build/control -- -j20 -l20
+[1.281s] [ 40%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/cppadpino.cpp.o[0m
+[1.282s] [ 40%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/control_node.cpp.o[0m
+[1.284s] [ 80%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/main.cpp.o[0m
+[1.284s] [ 80%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/doubleintger.cpp.o[0m
+[7.424s] [100%] [32m[1mLinking CXX executable control_node[0m
+[7.520s] [100%] Built target control_node
+[7.526s] Invoked command in '/home/xie/Desktop/learn/carpole/cartplole/build/control' returned '0': AMENT_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/usr/local:/opt/ros/humble LD_LIBRARY_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/xie/Desktop/learn/carpole/cartplole/build/control -- -j20 -l20
+[7.542s] Invoking command in '/home/xie/Desktop/learn/carpole/cartplole/build/control': AMENT_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/usr/local:/opt/ros/humble LD_LIBRARY_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/xie/Desktop/learn/carpole/cartplole/build/control
+[7.545s] -- Install configuration: "Release"
+[7.545s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/control/lib/control/control_node
+[7.546s] -- Set runtime path of "/home/xie/Desktop/learn/carpole/cartplole/install/control/lib/control/control_node" to "/home/xie/Desktop/learn/carpole/cartplole/src/control/lib"
+[7.546s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/ament_index/resource_index/package_run_dependencies/control
+[7.546s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/ament_index/resource_index/parent_prefix_path/control
+[7.546s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/environment/ament_prefix_path.sh
+[7.546s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/environment/ament_prefix_path.dsv
+[7.546s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/environment/path.sh
+[7.546s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/environment/path.dsv
+[7.546s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/local_setup.bash
+[7.547s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/local_setup.sh
+[7.547s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/local_setup.zsh
+[7.547s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/local_setup.dsv
+[7.547s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/package.dsv
+[7.547s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/ament_index/resource_index/packages/control
+[7.547s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/cmake/controlConfig.cmake
+[7.547s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/cmake/controlConfig-version.cmake
+[7.547s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/package.xml
+[7.548s] Invoked command in '/home/xie/Desktop/learn/carpole/cartplole/build/control' returned '0': AMENT_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/usr/local:/opt/ros/humble LD_LIBRARY_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/xie/Desktop/learn/carpole/cartplole/build/control

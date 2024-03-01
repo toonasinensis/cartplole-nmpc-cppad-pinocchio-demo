@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target control_node[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/cppadpino.cpp.o[0m
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:[m[K In constructor ‘[01m[Kmpc::mpc()[m[K’:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:35:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   35 |     for (size_t i = 0; [01;35m[Ki < admodel.njoints[m[K; i++) {
+      |                        [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/cppad/core/fun_eval.hpp:9[m[K,
+                 from [01m[K/usr/local/include/cppad/core/ad_fun.hpp:874[m[K,
+                 from [01m[K/usr/local/include/cppad/cppad.hpp:53[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:4[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+/usr/local/include/cppad/core/forward/forward.hpp: In instantiation of ‘[01m[KBaseVector CppAD::ADFun<Base, RecBase>::Forward(size_t, const BaseVector&, std::ostream&) [with BaseVector = Eigen::Matrix<CppAD::AD<double>, -1, 1, 0, -1, 1>; Base = double; RecBase = double; size_t = long unsigned int; std::ostream = std::basic_ostream<char>][m[K’:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:68:31:[m[K   required from here
+[01m[K/usr/local/include/cppad/core/forward/forward.hpp:178:42:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst CppAD::AD<double>[m[K’ to ‘[01m[Kdouble[m[K’ in assignment
+  178 |          [01;31m[Ktaylor_[ C * ind_taddr_[j] + q] = xq[[m[Kj];
+      |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/usr/local/include/cppad/core/forward/forward.hpp:181:45:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst CppAD::AD<double>[m[K’ to ‘[01m[Kdouble[m[K’ in assignment
+  181 |             [01;31m[Ktaylor_[ C * ind_taddr_[j] + k] = xq[[m[K (q+1)*j + k];
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+gmake[2]: *** [CMakeFiles/control_node.dir/build.make:90: CMakeFiles/control_node.dir/src/cppadpino.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/control_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

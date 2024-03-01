@@ -1,0 +1,10 @@
+/home/xie/Desktop/learn/carpole/cartplole/build/control/CMakeFiles/uninstall.dir
+/home/xie/Desktop/learn/carpole/cartplole/build/control/CMakeFiles/control_uninstall.dir
+/home/xie/Desktop/learn/carpole/cartplole/build/control/CMakeFiles/control_node.dir
+/home/xie/Desktop/learn/carpole/cartplole/build/control/CMakeFiles/test.dir
+/home/xie/Desktop/learn/carpole/cartplole/build/control/CMakeFiles/edit_cache.dir
+/home/xie/Desktop/learn/carpole/cartplole/build/control/CMakeFiles/rebuild_cache.dir
+/home/xie/Desktop/learn/carpole/cartplole/build/control/CMakeFiles/list_install_components.dir
+/home/xie/Desktop/learn/carpole/cartplole/build/control/CMakeFiles/install.dir
+/home/xie/Desktop/learn/carpole/cartplole/build/control/CMakeFiles/install/local.dir
+/home/xie/Desktop/learn/carpole/cartplole/build/control/CMakeFiles/install/strip.dir

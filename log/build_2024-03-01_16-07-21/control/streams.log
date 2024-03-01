@@ -1,0 +1,25 @@
+[0.054s] Invoking command in '/home/xie/Desktop/learn/carpole/cartplole/build/control': CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/home/xie/Desktop/learn/carpole/cartplole/install/control:/usr/local:/usr/local:/opt/ros/humble /usr/bin/cmake --build /home/xie/Desktop/learn/carpole/cartplole/build/control -- -j20 -l20
+[0.081s] [35m[1mConsolidate compiler generated dependencies of target control_node[0m
+[0.108s] [ 20%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/cppadpino.cpp.o[0m
+[2.611s] In file included from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+[2.611s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:[m[K In member function ‘[01m[KCppAD::ADFun<double, double> mpc::setdyn()[m[K’:
+[2.611s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:37:31:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[2.612s]    37 | CppAD::ADFun<double> setdyn(){[01;35m[K}[m[K;
+[2.612s]       |                               [01;35m[K^[m[K
+[2.628s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:[m[K In constructor ‘[01m[Kmpc::mpc()[m[K’:
+[2.628s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:29:28:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_model[m[K’ was not declared in this scope
+[2.628s]    29 |     for (size_t i = 0; i < [01;31m[Krobot_model[m[K.njoints; i++) {
+[2.628s]       |                            [01;31m[K^~~~~~~~~~~[m[K
+[2.632s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:31:20:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_data[m[K’ was not declared in this scope
+[2.633s]    31 |       std::cout << [01;31m[Krobot_data[m[K.oMi.at(i).translation().transpose() << std::endl;
+[2.633s]       |                    [01;31m[K^~~~~~~~~~[m[K
+[2.639s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:37:19:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_model[m[K’ was not declared in this scope
+[2.639s]    37 |         frames2 = [01;31m[Krobot_model[m[K.frames;
+[2.639s]       |                   [01;31m[K^~~~~~~~~~~[m[K
+[2.644s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:40:20:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_data[m[K’ was not declared in this scope
+[2.644s]    40 |       std::cout << [01;31m[Krobot_data[m[K.oMf.at(i).translation().transpose() << std::endl;
+[2.644s]       |                    [01;31m[K^~~~~~~~~~[m[K
+[6.521s] gmake[2]: *** [CMakeFiles/control_node.dir/build.make:90: CMakeFiles/control_node.dir/src/cppadpino.cpp.o] Error 1
+[6.522s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/control_node.dir/all] Error 2
+[6.522s] gmake: *** [Makefile:146: all] Error 2
+[6.524s] Invoked command in '/home/xie/Desktop/learn/carpole/cartplole/build/control' returned '2': CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/home/xie/Desktop/learn/carpole/cartplole/install/control:/usr/local:/usr/local:/opt/ros/humble /usr/bin/cmake --build /home/xie/Desktop/learn/carpole/cartplole/build/control -- -j20 -l20

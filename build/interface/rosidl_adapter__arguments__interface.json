@@ -1,0 +1,7 @@
+{
+  "package_name": "interface",
+  "non_idl_tuples": [
+    "/home/xie/Desktop/learn/carpole/cartplole/src/interface:msg/State.msg",
+    "/home/xie/Desktop/learn/carpole/cartplole/src/interface:msg/Torque.msg"
+  ]
+}

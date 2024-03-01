@@ -1,0 +1,38 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/usr/local/lib/python2.7/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/usr/local/lib/python2.7/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+
+      // 开启粘贴保存自动格式化
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "C_Cpp.errorSquiggles": "Disabled",
+  "C_Cpp.intelliSenseEngineFallback": "Disabled",
+  "C_Cpp.intelliSenseEngine": "Disabled",
+  "clangd.path": "/usr/bin/clangd",
+  // Clangd 运行参数(在终端/命令行输入 clangd --help-list-hidden 可查看更多)
+  "clangd.arguments": [
+    "--log=verbose",
+    "--pretty",
+    "--all-scopes-completion",
+    "--completion-style=bundled",
+    "--cross-file-rename",
+    "--header-insertion=never",
+    "--header-insertion-decorators",
+    "--background-index",
+    "--clang-tidy",
+    "--clang-tidy-checks=cppcoreguidelines-*,performance-*,bugprone-*,portability-*,modernize-*,google-*",
+    "-j=2",
+    "--pch-storage=disk",
+    "--function-arg-placeholders=false",
+    "--compile-commands-dir=build"
+  ],
+
+}
