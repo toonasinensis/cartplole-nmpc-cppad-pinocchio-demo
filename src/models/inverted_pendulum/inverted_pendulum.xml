@@ -1,25 +1,27 @@
 <mujoco model="inverted pendulum">
 	<compiler inertiafromgeom="true"/>
 	<default>
-		<joint armature="0" damping="1" limited="true"/>
-		<geom contype="0" friction="1 0.1 0.1" rgba="0.7 0.7 0 1"/>
+		<joint armature="0" damping="0.000001" limited="true"/>
+		<geom contype="0" friction="0 0 0" rgba="0.7 0.7 0 1"/>
 		<tendon/>
-		<motor ctrlrange="-10 10"/>
+		<motor ctrlrange="-100 100"/>
 	</default>
-	<option gravity="0 0 -9.81" integrator="RK4" timestep="0.02"/>
+	<option gravity="0 0 -9.81" integrator="RK4" timestep="0.001"/>
 	<size nstack="3000"/>
 	<worldbody>
 		<!--geom name="ground" type="plane" pos="0 0 0" /-->
 		<geom name="rail" pos="0 0 3" quat="0.707 0 0.707 0" rgba="0.3 0.3 0.7 1" size="0.02 10" type="capsule" mass = "2"/>
 		<body name="cart" pos="0 0 3">
 			<joint axis="1 0 0" limited="true" name="slider" pos="0 0 0" range="-10 10" type="slide"/>
-			<geom name="cart" pos="0 0 0" quat="0.707 0 0.707 0" size="0.1 0.1" type="capsule" mass = "1"/>
+			<geom name="cart" pos="0 0 0" quat="0.707 0 0.707 0" size="0.1 0.1 0.1 " type="box" mass = "2" />
 			<body name="pole" pos="0 0 0">
 				<joint axis="0 1 0" name="hinge" pos="0 0 0" range="-1800 1800" type="hinge"/>
-				<geom fromto="0 0 0 0.001  0  0.5" name="cpole" rgba="0 0.7 0.7 1" size="0.049 0.5" type="cylinder" mass = "0.001"/>
+				<!-- if use frometo , the second paramter of size(half-length of the cylinder) will not be used  -->
+				<!--see mujoco  doc-->
+				<geom fromto="0 0 0 0.001  0  1" name="cpole" rgba="0 0.7 0.7 1" size="0.05 0.5" type="cylinder" mass = "0.2" />
 				<!-- <geom pos="0.001 0 0.5" name="tips" rgba="0 1 1 1" size="0.1 0.1" type="sphere" mass = "0.2"/> -->
 
-				<site name="tip" pos="0.001 0 0.5" rgba="1 0 0 1" size="0.1 0.1" type = "sphere"/>
+				<site name="tip" pos="0.001 0 1" rgba="1 0 0 1" size="0.1 0.1" type = "sphere"/>
 			</body>
 		</body>
 	</worldbody>

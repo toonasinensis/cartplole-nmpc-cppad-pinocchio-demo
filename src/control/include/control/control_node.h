@@ -11,7 +11,7 @@
 
 #include "interface/msg/state.hpp"
 #include "interface/msg/torque.hpp"
-
+#include "control/cppadpino.h"
 using namespace std::chrono_literals;
 
 using namespace std::chrono_literals;
@@ -27,9 +27,10 @@ class ControlNode : public rclcpp::Node {
 
 
            update_timer_ = this->create_wall_timer(
-        2ms, std::bind(&ControlNode::update_data, this));
+        10ms, std::bind(&ControlNode::update_data, this));
  
   }
+MPC mpc;
 
 
   rclcpp::TimerBase::SharedPtr update_timer_;

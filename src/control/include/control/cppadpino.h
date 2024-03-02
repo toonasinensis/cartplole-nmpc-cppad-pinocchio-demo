@@ -40,7 +40,10 @@ public:
 dyn();
 ~dyn() = default;
 CppAD::ADFun<double> setdyn();
+void test_dynamics();
 
+std::vector<ADScalar>
+cartpole_dynamics_discrete(const std::vector<CppAD::AD<double>> &x,CppAD::AD<double> u,CppAD::AD<double> dt) ;
 // void solve();
 pinocchio::ModelTpl< Scalar> model;
 pinocchio::DataTpl< Scalar> data;
@@ -59,7 +62,7 @@ public:
 };
 
 // We want T to be 1 seconds, so we could use DT = 0.1 seconds and N = 10;
-const double DT = 0.02; // DT >= LAG
+const double DT = 0.01; // DT >= LAG
 const size_t N = 10;
 
 // The solver takes all the state variables and actuator variables in a
@@ -184,15 +187,12 @@ std::cout << "used" << std::endl;
              x_input.push_back(q0);
              x_input.push_back(dx0);
              x_input.push_back(dq0);
-             std::vector<ADScalar> u;
-            //  u.push_back(u0);
-               std::vector<ADScalar> dx_output;
-      dx_output =  cartpole_dyn.RHS(x_input,u0);
 
-            fg[1 + START_X + t] = x1 - dx_output.at((0)) * DT + x0;
-            fg[1 + START_Q + t] = q1 - dx_output.at((1)) * DT + q0;
-            fg[1 + START_DX + t] = dx1 - dx_output.at((2)) * DT + dx0;
-            fg[1 + START_DQ + t] = dq1 - dx_output.at((3)) * DT + dq0;
+            cartpole_dyn.cartpole_dynamics_discrete(x_input,u0,DT);
+            fg[1 + START_X + t] = x1 -cartpole_dyn.cartpole_dynamics_discrete(x_input,u0,DT).at(0);
+            fg[1 + START_Q + t] = q1 -cartpole_dyn.cartpole_dynamics_discrete(x_input,u0,DT).at(1);
+            fg[1 + START_DX + t] = dx1 - cartpole_dyn.cartpole_dynamics_discrete(x_input,u0,DT).at(2);
+            fg[1 + START_DQ + t] = dq1 - cartpole_dyn.cartpole_dynamics_discrete(x_input,u0,DT).at(3);
             // fg[1 + START_CTE + t] = cte1 - (f0 - y0 + v0 * CppAD::sin(epsi0) * DT);
 
             // A sign has ben changed in this list one ( + v0/LF_) to work properly

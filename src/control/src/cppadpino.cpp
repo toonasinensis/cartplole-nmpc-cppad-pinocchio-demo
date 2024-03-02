@@ -1,4 +1,6 @@
 #include "control/cppadpino.h"
+#include <fstream>
+
 
 YAML::Node config = YAML::LoadFile("/home/xie/Desktop/learn/carpole/cartplole/src/manage/config/config.yaml");
 
@@ -92,16 +94,6 @@ CppAD::ADFun<double> dyn::setdyn()
     ad_v.resize(admodel.nv);
     ad_tau.resize(admodel.nv);
     ad_ddq.resize(admodel.nv);
-    
-    // ad_q(0,0)= config["p1"].as<double>();
-    // ad_q(1,0)= config["p2"].as<double>();
-
-    // ad_v(0,0)= config["p3"].as<double>();
-    // ad_v(1,0)= config["p4"].as<double>();
-
-    // ad_tau(0,0)= config["p5"].as<double>();
-    // ad_tau(1,0)= config["p6"].as<double>();
-
 CppAD::Independent(x_input);
 
     
@@ -120,6 +112,81 @@ CppAD::Independent(x_input);
 return   CppAD::ADFun<double>(x_input,ad_ddq);
 }
 
+void dyn::test_dynamics() {
+  std::cout<<"test dyn"<<std::endl;
+  double time_all = 30;
+  double time_interval = 0.001;
+
+  std::vector<ADScalar> X0_test(4);
+  std::vector<ADScalar> X_test(4);
+
+
+  X0_test.at((0)) = 0;
+  X0_test.at((1)) = 0.1;
+  X0_test.at((2)) = 0;
+  X0_test.at((3)) = 0;
+  std::ofstream dataFile;
+  	dataFile.open("test.csv", std::ios::out | std::ios::trunc);
+
+  double timer = 0;
+  dataFile << "x"<< ","<< "q"<< ","<< "dx" <<","<< "dq"<<","<< "t"<< std::endl;
+  std::vector<ADScalar> dX0_test(4);
+
+  for (int i = 0; i < time_all / time_interval; i++) {
+    timer+=0.001;
+    // dX0_test = RHS(X0_test, 0);
+    // for (int j = 0; j < 4; j++) {
+    //       X_test.at((j)) = X0_test.at((j)) + dX0_test.at((j))*time_interval;
+    // }
+    X_test = cartpole_dynamics_discrete(X0_test,0,time_interval);
+    X0_test = X_test;
+  dataFile <<X0_test.at((0))<< ","<< X0_test.at((1))<< ","<< X0_test.at((2)) <<","<<X0_test.at((3))<<","<<timer<< std::endl;
+  }
+  	dataFile.close();                            // 关闭文档
+  std::cout<<"test end"<<std::endl;
+
+}
+
+std::vector<ADScalar>
+dyn::cartpole_dynamics_discrete(const std::vector<CppAD::AD<double>> &x ,CppAD::AD<double> u,CppAD::AD<double> dt) {
+  int nx = 4,nu=1;
+std::vector<CppAD::AD<double>> k1(nx), k2(nx), k3(nx), k4(nx);
+  std::vector<CppAD::AD<double>> x_next(nx);
+
+  std::vector<CppAD::AD<double>> x_temp(nx + nu);
+  for (int i = 0; i < nu; ++i) {
+    x_temp[nx + i] = x[nx + i];
+  }
+  // 计算k1
+  k1 = RHS(x,u);
+  // 计算k2
+  for (int i = 0; i < nx; ++i) {
+    x_temp[i] = x[i] + 0.5 * k1[i] * dt;
+  }
+  k2 = RHS(x_temp,u);
+  // 计算k3
+  for (int i = 0; i < nx; ++i) {
+    x_temp[i] = x[i] + 0.5 * k2[i] * dt;
+  }
+  k3 = RHS(x_temp,u);
+  // 计算k4
+  for (int i = 0; i < nx; ++i) {
+    x_temp[i] = x[i] + k3[i] * dt;
+  }
+  k4 = RHS(x_temp,u);
+
+  // 更新状态
+  for (int i = 0; i < nx; ++i) {
+    x_next[i] =
+        x[i] + (1.0 / 6.0) * (k1[i] + 2.0 * k2[i] + 2.0 * k3[i] + k4[i]) * dt;
+  }
+
+  return x_next;
+  
+    }
+
+
+    
 std::vector<ADScalar> dyn::RHS(std::vector<ADScalar> x_input,
                                ADScalar u) {
 
@@ -151,10 +218,42 @@ std::vector<ADScalar> dyn::RHS(std::vector<ADScalar> x_input,
     dstate.at(i + admodel.nv) =  addata.ddq(i);
     }
 
-  return  dstate;
+
+
+//      std::vector<CppAD::AD<double>> dx(4); // 状态变量的变化率
+//   // x_cart的动力学方程
+//   dx[0] =  x_input[2];
+//   // theta的动力学方程
+//   dx[1] = x_input[3];
+
+//  CppAD:: AD<double> s1, c1;
+//   s1 = sin(x_input[1]);
+//   c1 = cos(x_input[1]);
+//   double m_pole = 0.2;
+//   double m_cart = 2;
+//   double l = 1.0/2;
+//   double g= 9.8;
+//   // x_cart_dot的动力学方程
+//   dx[2] =
+//       (u+ m_pole * l * s1 * x_input[3] * x_input[3] - 3 * m_pole * g * s1 * c1 / 4) /
+//       (m_cart + m_pole - 3 * m_pole * c1 * c1 / 4);
+//   // theta_dot的动力学方程
+//   dx[3] = 3 * (g * s1 - dx[2] * c1) / 4 / l;
+
+//   return dx;
+
+    return dstate;
+
+
+
+    
 }
 
-
+// // continuous dynamics
+// vector<AD<double>>
+// Cartpole_Dynamics::cartpole_dynamics_continuous(const vector<AD<double>> &x) {
+ 
+// }
 
 MPC::~MPC() {}
 MPC::MPC(){};

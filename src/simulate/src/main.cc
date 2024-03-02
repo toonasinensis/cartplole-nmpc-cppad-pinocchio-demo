@@ -356,7 +356,7 @@ void PhysicsThread(mj::Simulate* sim, const char* filename) {
 
       mj_forward(m, d);
       for (int i = 0; i < 12; ++i) {
-        d->qpos[7 + i] = default_qpos[i];
+        d->qpos[1] = 0.2;
       }
 
       // allocate ctrlnoise
