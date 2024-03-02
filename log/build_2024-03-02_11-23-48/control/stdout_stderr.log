@@ -1,0 +1,345 @@
+[35m[1mConsolidate compiler generated dependencies of target control_node[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/cppadpino.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/main.cpp.o[0m
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/main.cpp:12:[m[K [01;35m[Kwarning: [m[K"BACKWARD_HAS_DW" redefined
+   12 | #define BACKWARD_HAS_DW 1
+      | 
+In file included from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/main.cpp:3[m[K:
+[01m[K/usr/include/backward.hpp:193:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+  193 | #define BACKWARD_HAS_DW 0
+      | 
+In file included from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:27:1:[m[K [01;31m[Kerror: [m[Kconflicting specifiers in declaration of ‘[01m[KScalar[m[K’
+   27 | [01;31m[Kextern[m[K
+      | [01;31m[K^~~~~~[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:29:21:[m[K [01;31m[Kerror: [m[K‘[01m[KScalar[m[K’ was not declared in this scope
+   29 |   typedef CppAD::AD<[01;31m[KScalar[m[K> ADScalar;
+      |                     [01;31m[K^~~~~~[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:29:27:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   29 |   typedef CppAD::AD<Scalar[01;31m[K>[m[K ADScalar;
+      |                           [01;31m[K^[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:31:31:[m[K [01;31m[Kerror: [m[K‘[01m[KScalar[m[K’ was not declared in this scope; did you mean ‘[01m[KADScalar[m[K’?
+   31 |   typedef pinocchio::ModelTpl<[01;31m[KScalar[m[K> Model;
+      |                               [01;31m[K^~~~~~[m[K
+      |                               [32m[KADScalar[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:31:37:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   31 |   typedef pinocchio::ModelTpl<Scalar[01;31m[K>[m[K Model;
+      |                                     [01;31m[K^[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:32:23:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[KData[m[K’
+   32 |   typedef Model::Data [01;31m[KData[m[K;
+      |                       [01;31m[K^~~~[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:44:22:[m[K [01;31m[Kerror: [m[K‘[01m[KScalar[m[K’ was not declared in this scope; did you mean ‘[01m[KADScalar[m[K’?
+   44 | pinocchio::ModelTpl< [01;31m[KScalar[m[K> model;
+      |                      [01;31m[K^~~~~~[m[K
+      |                      [32m[KADScalar[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:44:28:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   44 | pinocchio::ModelTpl< Scalar[01;31m[K>[m[K model;
+      |                            [01;31m[K^[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:45:21:[m[K [01;31m[Kerror: [m[K‘[01m[KScalar[m[K’ was not declared in this scope; did you mean ‘[01m[KADScalar[m[K’?
+   45 | pinocchio::DataTpl< [01;31m[KScalar[m[K> data;
+      |                     [01;31m[K^~~~~~[m[K
+      |                     [32m[KADScalar[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:45:27:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   45 | pinocchio::DataTpl< Scalar[01;31m[K>[m[K data;
+      |                           [01;31m[K^[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:[m[K In constructor ‘[01m[KFG_eval::FG_eval()[m[K’:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:90:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kconfig[m[K’ was not declared in this scope
+   90 | weight.at((0)) = [01;31m[Kconfig[m[K["w0"].as<double>();
+      |                  [01;31m[K^~~~~~[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:90:34:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kdouble[m[K’
+   90 | weight.at((0)) = config["w0"].as<[01;31m[Kdouble[m[K>();
+      |                                  [01;31m[K^~~~~~[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:91:34:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kdouble[m[K’
+   91 | weight.at((1)) = config["w1"].as<[01;31m[Kdouble[m[K>();
+      |                                  [01;31m[K^~~~~~[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:92:34:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kdouble[m[K’
+   92 | weight.at((2)) = config["w2"].as<[01;31m[Kdouble[m[K>();
+      |                                  [01;31m[K^~~~~~[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:93:34:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kdouble[m[K’
+   93 | weight.at((3)) = config["w3"].as<[01;31m[Kdouble[m[K>();
+      |                                  [01;31m[K^~~~~~[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:94:34:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kdouble[m[K’
+   94 | weight.at((4)) = config["w4"].as<[01;31m[Kdouble[m[K>();
+      |                                  [01;31m[K^~~~~~[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:95:34:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kdouble[m[K’
+   95 | weight.at((5)) = config["w5"].as<[01;31m[Kdouble[m[K>();
+      |                                  [01;31m[K^~~~~~[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:[m[K In member function ‘[01m[Kvoid FG_eval::operator()(FG_eval::ADvector&, const ADvector&)[m[K’:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:179:30:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::vector<int>::push_back(CppAD::AD<double>&)[m[K’
+  179 |             [01;31m[Kx_input.push_back(x0)[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~^~~~[m[K
+In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+                 from [01m[K/usr/include/c++/11/functional:62[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Core:85[m[K,
+                 from [01m[K/usr/local/include/pinocchio/utils/cast.hpp:8[m[K,
+                 from [01m[K/usr/local/include/pinocchio/fwd.hpp:23[m[K,
+                 from [01m[K/usr/local/include/pinocchio/math/fwd.hpp:8[m[K,
+                 from [01m[K/usr/local/include/pinocchio/autodiff/cppad.hpp:8[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:3[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1187:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::value_type = int][m[K’
+ 1187 |       [01;36m[Kpush_back[m[K(const value_type& __x)
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1187:35:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KCppAD::AD<double>[m[K’ to ‘[01m[Kconst value_type&[m[K’ {aka ‘[01m[Kconst int&[m[K’}
+ 1187 |       push_back([01;36m[Kconst value_type& __x[m[K)
+      |                 [01;36m[K~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1203:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::value_type = int][m[K’
+ 1203 |       [01;36m[Kpush_back[m[K(value_type&& __x)
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1203:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KCppAD::AD<double>[m[K’ to ‘[01m[Kstd::vector<int>::value_type&&[m[K’ {aka ‘[01m[Kint&&[m[K’}
+ 1203 |       push_back([01;36m[Kvalue_type&& __x[m[K)
+      |                 [01;36m[K~~~~~~~~~~~~~^~~[m[K
+In file included from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:180:31:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::vector<int>::push_back(CppAD::AD<double>&)[m[K’
+  180 |              [01;31m[Kx_input.push_back(q0)[m[K;
+      |              [01;31m[K~~~~~~~~~~~~~~~~~^~~~[m[K
+In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+                 from [01m[K/usr/include/c++/11/functional:62[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Core:85[m[K,
+                 from [01m[K/usr/local/include/pinocchio/utils/cast.hpp:8[m[K,
+                 from [01m[K/usr/local/include/pinocchio/fwd.hpp:23[m[K,
+                 from [01m[K/usr/local/include/pinocchio/math/fwd.hpp:8[m[K,
+                 from [01m[K/usr/local/include/pinocchio/autodiff/cppad.hpp:8[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:3[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1187:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::value_type = int][m[K’
+ 1187 |       [01;36m[Kpush_back[m[K(const value_type& __x)
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1187:35:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KCppAD::AD<double>[m[K’ to ‘[01m[Kconst value_type&[m[K’ {aka ‘[01m[Kconst int&[m[K’}
+ 1187 |       push_back([01;36m[Kconst value_type& __x[m[K)
+      |                 [01;36m[K~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1203:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::value_type = int][m[K’
+ 1203 |       [01;36m[Kpush_back[m[K(value_type&& __x)
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1203:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KCppAD::AD<double>[m[K’ to ‘[01m[Kstd::vector<int>::value_type&&[m[K’ {aka ‘[01m[Kint&&[m[K’}
+ 1203 |       push_back([01;36m[Kvalue_type&& __x[m[K)
+      |                 [01;36m[K~~~~~~~~~~~~~^~~[m[K
+In file included from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:181:31:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::vector<int>::push_back(CppAD::AD<double>&)[m[K’
+  181 |              [01;31m[Kx_input.push_back(dx0)[m[K;
+      |              [01;31m[K~~~~~~~~~~~~~~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+                 from [01m[K/usr/include/c++/11/functional:62[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Core:85[m[K,
+                 from [01m[K/usr/local/include/pinocchio/utils/cast.hpp:8[m[K,
+                 from [01m[K/usr/local/include/pinocchio/fwd.hpp:23[m[K,
+                 from [01m[K/usr/local/include/pinocchio/math/fwd.hpp:8[m[K,
+                 from [01m[K/usr/local/include/pinocchio/autodiff/cppad.hpp:8[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:3[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1187:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::value_type = int][m[K’
+ 1187 |       [01;36m[Kpush_back[m[K(const value_type& __x)
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1187:35:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KCppAD::AD<double>[m[K’ to ‘[01m[Kconst value_type&[m[K’ {aka ‘[01m[Kconst int&[m[K’}
+ 1187 |       push_back([01;36m[Kconst value_type& __x[m[K)
+      |                 [01;36m[K~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1203:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::value_type = int][m[K’
+ 1203 |       [01;36m[Kpush_back[m[K(value_type&& __x)
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1203:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KCppAD::AD<double>[m[K’ to ‘[01m[Kstd::vector<int>::value_type&&[m[K’ {aka ‘[01m[Kint&&[m[K’}
+ 1203 |       push_back([01;36m[Kvalue_type&& __x[m[K)
+      |                 [01;36m[K~~~~~~~~~~~~~^~~[m[K
+In file included from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:182:31:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::vector<int>::push_back(CppAD::AD<double>&)[m[K’
+  182 |              [01;31m[Kx_input.push_back(dq0)[m[K;
+      |              [01;31m[K~~~~~~~~~~~~~~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+                 from [01m[K/usr/include/c++/11/functional:62[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Core:85[m[K,
+                 from [01m[K/usr/local/include/pinocchio/utils/cast.hpp:8[m[K,
+                 from [01m[K/usr/local/include/pinocchio/fwd.hpp:23[m[K,
+                 from [01m[K/usr/local/include/pinocchio/math/fwd.hpp:8[m[K,
+                 from [01m[K/usr/local/include/pinocchio/autodiff/cppad.hpp:8[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:3[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1187:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::value_type = int][m[K’
+ 1187 |       [01;36m[Kpush_back[m[K(const value_type& __x)
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1187:35:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KCppAD::AD<double>[m[K’ to ‘[01m[Kconst value_type&[m[K’ {aka ‘[01m[Kconst int&[m[K’}
+ 1187 |       push_back([01;36m[Kconst value_type& __x[m[K)
+      |                 [01;36m[K~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1203:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::value_type = int][m[K’
+ 1203 |       [01;36m[Kpush_back[m[K(value_type&& __x)
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1203:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KCppAD::AD<double>[m[K’ to ‘[01m[Kstd::vector<int>::value_type&&[m[K’ {aka ‘[01m[Kint&&[m[K’}
+ 1203 |       push_back([01;36m[Kvalue_type&& __x[m[K)
+      |                 [01;36m[K~~~~~~~~~~~~~^~~[m[K
+In file included from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:184:25:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::vector<int>::push_back(CppAD::AD<double>&)[m[K’
+  184 |              [01;31m[Ku.push_back(u0)[m[K;
+      |              [01;31m[K~~~~~~~~~~~^~~~[m[K
+In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+                 from [01m[K/usr/include/c++/11/functional:62[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Core:85[m[K,
+                 from [01m[K/usr/local/include/pinocchio/utils/cast.hpp:8[m[K,
+                 from [01m[K/usr/local/include/pinocchio/fwd.hpp:23[m[K,
+                 from [01m[K/usr/local/include/pinocchio/math/fwd.hpp:8[m[K,
+                 from [01m[K/usr/local/include/pinocchio/autodiff/cppad.hpp:8[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:3[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1187:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::value_type = int][m[K’
+ 1187 |       [01;36m[Kpush_back[m[K(const value_type& __x)
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1187:35:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KCppAD::AD<double>[m[K’ to ‘[01m[Kconst value_type&[m[K’ {aka ‘[01m[Kconst int&[m[K’}
+ 1187 |       push_back([01;36m[Kconst value_type& __x[m[K)
+      |                 [01;36m[K~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1203:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::value_type = int][m[K’
+ 1203 |       [01;36m[Kpush_back[m[K(value_type&& __x)
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1203:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KCppAD::AD<double>[m[K’ to ‘[01m[Kstd::vector<int>::value_type&&[m[K’ {aka ‘[01m[Kint&&[m[K’}
+ 1203 |       push_back([01;36m[Kvalue_type&& __x[m[K)
+      |                 [01;36m[K~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:[m[K In constructor ‘[01m[Kdyn::dyn()[m[K’:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:8:28:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KbuildModel(const char [85], int&)[m[K’
+    8 | [01;31m[Kpinocchio::urdf::buildModel("/home/xie/Desktop/learn/carpole/cartplole/src/models/inverted_pendulum/cartpole.urdf",model)[m[K;
+      | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/pinocchio/parsers/urdf.hpp:285[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:4[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+[01m[K/usr/local/include/pinocchio/parsers/urdf/model.hxx:375:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Scalar, int Options, template<class, int <anonymous> > class JointCollectionTpl> pinocchio::ModelTpl<Scalar, Options, JointCollectionTpl>& pinocchio::urdf::buildModel(const string&, const typename pinocchio::ModelTpl<Scalar, Options, JointCollectionTpl>::JointModel&, pinocchio::ModelTpl<Scalar, Options, JointCollectionTpl>&, bool)[m[K’
+  375 |     [01;36m[KbuildModel[m[K(const std::string & filename,
+      |     [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/local/include/pinocchio/parsers/urdf/model.hxx:375:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:8:28:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 2 provided
+    8 | [01;36m[Kpinocchio::urdf::buildModel("/home/xie/Desktop/learn/carpole/cartplole/src/models/inverted_pendulum/cartpole.urdf",model)[m[K;
+      | [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/pinocchio/parsers/urdf.hpp:285[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:4[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+[01m[K/usr/local/include/pinocchio/parsers/urdf/model.hxx:388:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Scalar, int Options, template<class, int <anonymous> > class JointCollectionTpl> pinocchio::ModelTpl<Scalar, Options, JointCollectionTpl>& pinocchio::urdf::buildModel(const string&, pinocchio::ModelTpl<Scalar, Options, JointCollectionTpl>&, bool)[m[K’
+  388 |     [01;36m[KbuildModel[m[K(const std::string & filename,
+      |     [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/local/include/pinocchio/parsers/urdf/model.hxx:388:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:8:28:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kpinocchio::ModelTpl<Scalar, Options, JointCollectionTpl>[m[K’ and ‘[01m[Kint[m[K’
+    8 | [01;36m[Kpinocchio::urdf::buildModel("/home/xie/Desktop/learn/carpole/cartplole/src/models/inverted_pendulum/cartpole.urdf",model)[m[K;
+      | [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/pinocchio/parsers/urdf.hpp:285[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:4[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+[01m[K/usr/local/include/pinocchio/parsers/urdf/model.hxx:425:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Scalar, int Options, template<class, int <anonymous> > class JointCollectionTpl> pinocchio::ModelTpl<Scalar, Options, JointCollectionTpl>& pinocchio::urdf::buildModel(boost::shared_ptr<urdf::ModelInterface>, const typename pinocchio::ModelTpl<Scalar, Options, JointCollectionTpl>::JointModel&, pinocchio::ModelTpl<Scalar, Options, JointCollectionTpl>&, bool)[m[K’
+  425 |     [01;36m[KbuildModel[m[K(const boost::shared_ptr< ::urdf::ModelInterface> urdfTree,
+      |     [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/local/include/pinocchio/parsers/urdf/model.hxx:425:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:8:28:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 2 provided
+    8 | [01;36m[Kpinocchio::urdf::buildModel("/home/xie/Desktop/learn/carpole/cartplole/src/models/inverted_pendulum/cartpole.urdf",model)[m[K;
+      | [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/pinocchio/parsers/urdf.hpp:285[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:4[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+[01m[K/usr/local/include/pinocchio/parsers/urdf/model.hxx:439:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Scalar, int Options, template<class, int <anonymous> > class JointCollectionTpl> pinocchio::ModelTpl<Scalar, Options, JointCollectionTpl>& pinocchio::urdf::buildModel(boost::shared_ptr<urdf::ModelInterface>, pinocchio::ModelTpl<Scalar, Options, JointCollectionTpl>&, bool)[m[K’
+  439 |     [01;36m[KbuildModel[m[K(const boost::shared_ptr< ::urdf::ModelInterface> urdfTree,
+      |     [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/local/include/pinocchio/parsers/urdf/model.hxx:439:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:8:28:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kpinocchio::ModelTpl<Scalar, Options, JointCollectionTpl>[m[K’ and ‘[01m[Kint[m[K’
+    8 | [01;36m[Kpinocchio::urdf::buildModel("/home/xie/Desktop/learn/carpole/cartplole/src/models/inverted_pendulum/cartpole.urdf",model)[m[K;
+      | [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/pinocchio/parsers/urdf.hpp:285[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:4[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+[01m[K/usr/local/include/pinocchio/parsers/urdf/model.hxx:453:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Scalar, int Options, template<class, int <anonymous> > class JointCollectionTpl> pinocchio::ModelTpl<Scalar, Options, JointCollectionTpl>& pinocchio::urdf::buildModel(std::shared_ptr<urdf::ModelInterface>, const typename pinocchio::ModelTpl<Scalar, Options, JointCollectionTpl>::JointModel&, pinocchio::ModelTpl<Scalar, Options, JointCollectionTpl>&, bool)[m[K’
+  453 |     [01;36m[KbuildModel[m[K(const std::shared_ptr< ::urdf::ModelInterface> urdfTree,
+      |     [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/local/include/pinocchio/parsers/urdf/model.hxx:453:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:8:28:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 2 provided
+    8 | [01;36m[Kpinocchio::urdf::buildModel("/home/xie/Desktop/learn/carpole/cartplole/src/models/inverted_pendulum/cartpole.urdf",model)[m[K;
+      | [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/pinocchio/parsers/urdf.hpp:285[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:4[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+[01m[K/usr/local/include/pinocchio/parsers/urdf/model.hxx:467:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Scalar, int Options, template<class, int <anonymous> > class JointCollectionTpl> pinocchio::ModelTpl<Scalar, Options, JointCollectionTpl>& pinocchio::urdf::buildModel(std::shared_ptr<urdf::ModelInterface>, pinocchio::ModelTpl<Scalar, Options, JointCollectionTpl>&, bool)[m[K’
+  467 |     [01;36m[KbuildModel[m[K(const std::shared_ptr< ::urdf::ModelInterface> urdfTree,
+      |     [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/local/include/pinocchio/parsers/urdf/model.hxx:467:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:8:28:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kpinocchio::ModelTpl<Scalar, Options, JointCollectionTpl>[m[K’ and ‘[01m[Kint[m[K’
+    8 | [01;36m[Kpinocchio::urdf::buildModel("/home/xie/Desktop/learn/carpole/cartplole/src/models/inverted_pendulum/cartpole.urdf",model)[m[K;
+      | [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:10:29:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kpinocchio::DataTpl<double>::DataTpl(int&)[m[K’
+   10 | data = pinocchio::Data(model[01;31m[K)[m[K;
+      |                             [01;31m[K^[m[K
+In file included from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:6[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+[01m[K/usr/local/include/pinocchio/multibody/data.hpp:408:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kpinocchio::DataTpl<Scalar, Options, JointCollectionTpl>::DataTpl() [with _Scalar = double; int _Options = 0; JointCollectionTpl = pinocchio::JointCollectionDefaultTpl][m[K’
+  408 |     [01;36m[KDataTpl[m[K() {}
+      |     [01;36m[K^~~~~~~[m[K
+[01m[K/usr/local/include/pinocchio/multibody/data.hpp:408:5:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+In file included from [01m[K/usr/local/include/pinocchio/multibody/data.hpp:422[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:6[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+[01m[K/usr/local/include/pinocchio/multibody/data.hxx:20:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kpinocchio::DataTpl<Scalar, Options, JointCollectionTpl>::DataTpl(const Model&) [with _Scalar = double; int _Options = 0; JointCollectionTpl = pinocchio::JointCollectionDefaultTpl; pinocchio::DataTpl<Scalar, Options, JointCollectionTpl>::Model = pinocchio::ModelTpl<double>][m[K’
+   20 |   inline [01;36m[KDataTpl<Scalar,Options,JointCollectionTpl>[m[K::
+      |          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pinocchio/multibody/data.hxx:21:25:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kconst Model&[m[K’ {aka ‘[01m[Kconst pinocchio::ModelTpl<double>&[m[K’}
+   21 |   DataTpl([01;36m[Kconst Model & model[m[K)
+      |           [01;36m[K~~~~~~~~~~~~~~^~~~~[m[K
+In file included from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:6[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+[01m[K/usr/local/include/pinocchio/multibody/data.hpp:29:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kpinocchio::DataTpl<double>::DataTpl(const pinocchio::DataTpl<double>&)[m[K’
+   29 |   struct [01;36m[KDataTpl[m[K
+      |          [01;36m[K^~~~~~~[m[K
+[01m[K/usr/local/include/pinocchio/multibody/data.hpp:29:10:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kconst pinocchio::DataTpl<double>&[m[K’
+[01m[K/usr/local/include/pinocchio/multibody/data.hpp:29:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kpinocchio::DataTpl<double>::DataTpl(pinocchio::DataTpl<double>&&)[m[K’
+[01m[K/usr/local/include/pinocchio/multibody/data.hpp:29:10:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kpinocchio::DataTpl<double>&&[m[K’
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:11:17:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kcast[m[K’ in ‘[01m[K((dyn*)this)->dyn::model[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   11 | admodel = model.[01;31m[Kcast[m[K<ADScalar>();
+      |                 [01;31m[K^~~~[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:11:30:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   11 | admodel = model.cast<ADScalar[01;31m[K>[m[K();
+      |                              [01;31m[K^[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:11:32:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+   11 | admodel = model.cast<ADScalar>([01;31m[K)[m[K;
+      |                                [01;31m[K^[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:29:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   29 |     for (size_t i = 0; [01;35m[Ki < admodel.njoints[m[K; i++) {
+      |                        [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:71:38:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KValue(Eigen::DenseCoeffsBase<Eigen::Matrix<int, -1, 1>, 1>::Scalar&)[m[K’
+   71 |      x_input_vec.at(i)=  [01;31m[KCppAD::Value(x_input(i,0))[m[K ;
+      |                          [01;31m[K~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/cppad/core/convert.hpp:34[m[K,
+                 from [01m[K/usr/local/include/cppad/core/user_ad.hpp:55[m[K,
+                 from [01m[K/usr/local/include/cppad/cppad.hpp:49[m[K,
+                 from [01m[K/usr/local/include/pinocchio/autodiff/cppad.hpp:18[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:3[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+[01m[K/usr/local/include/cppad/core/value.hpp:73:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Base> Base CppAD::Value(const CppAD::AD<Base>&)[m[K’
+   73 | Base [01;36m[KValue[m[K(const AD<Base> &x)
+      |      [01;36m[K^~~~~[m[K
+[01m[K/usr/local/include/cppad/core/value.hpp:73:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:71:38:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst CppAD::AD<Base>[m[K’ and ‘[01m[KEigen::DenseCoeffsBase<Eigen::Matrix<int, -1, 1>, 1>::Scalar[m[K’ {aka ‘[01m[Kint[m[K’}
+   71 |      x_input_vec.at(i)=  [01;36m[KCppAD::Value(x_input(i,0))[m[K ;
+      |                          [01;36m[K~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:[m[K In member function ‘[01m[Kstd::pair<std::vector<double>, Eigen::Matrix<double, -1, -1> > MPC::solve(Eigen::VectorXd)[m[K’:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:289:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktotal_u[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  289 |     double [01;35m[Ktotal_u[m[K = 0;
+      |            [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/usr/local/include/cppad/core/ad_fun.hpp:871[m[K,
+                 from [01m[K/usr/local/include/cppad/cppad.hpp:53[m[K,
+                 from [01m[K/usr/local/include/pinocchio/autodiff/cppad.hpp:18[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:3[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+/usr/local/include/cppad/core/fun_construct.hpp: In instantiation of ‘[01m[KCppAD::ADFun<Base, RecBase>::ADFun(const ADVector&, const ADVector&) [with ADvector = Eigen::Matrix<int, -1, 1>; Base = double; RecBase = double][m[K’:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:120:45:[m[K   required from here
+[01m[K/usr/local/include/cppad/core/fun_construct.hpp:431:56:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ktape_id_[m[K’ in ‘[01m[K((const Eigen::DenseCoeffsBase<Eigen::Matrix<int, -1, 1>, 0>*)(& x))->Eigen::DenseCoeffsBase<Eigen::Matrix<int, -1, 1>, 0>::operator[](0)[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+  431 |    local::ADTape<Base>* tape = AD<Base>::tape_ptr([01;31m[Kx[0].tape_id_[m[K);
+      |                                                   [01;31m[K~~~~~^~~~~~~~[m[K
+[01m[K/usr/local/include/cppad/core/fun_construct.hpp:481:40:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kvalue_[m[K’ in ‘[01m[K((const Eigen::DenseCoeffsBase<Eigen::Matrix<int, -1, 1>, 0>*)(& x))->Eigen::DenseCoeffsBase<Eigen::Matrix<int, -1, 1>, 0>::operator[](((Eigen::Index)j))[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+  481 |       taylor_[ ind_taddr_[j] ]  = [01;31m[Kx[j].value_[m[K;
+      |                                   [01;31m[K~~~~~^~~~~~[m[K
+In file included from [01m[K/usr/local/include/cppad/core/ad_fun.hpp:869[m[K,
+                 from [01m[K/usr/local/include/cppad/cppad.hpp:53[m[K,
+                 from [01m[K/usr/local/include/pinocchio/autodiff/cppad.hpp:18[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/include/control/cppadpino.h:3[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:1[m[K:
+/usr/local/include/cppad/core/independent/independent.hpp: In instantiation of ‘[01m[Kvoid CppAD::Independent(ADVector&, size_t, bool, ADVector&) [with ADVector = Eigen::Matrix<int, -1, 1>; Base = double; size_t = long unsigned int][m[K’:
+[01m[K/usr/local/include/cppad/core/independent/independent.hpp:278:15:[m[K   required from ‘[01m[Kvoid CppAD::Independent(ADVector&) [with ADVector = Eigen::Matrix<int, -1, 1>][m[K’
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:105:19:[m[K   required from here
+[01m[K/usr/local/include/cppad/core/independent/independent.hpp:72:42:[m[K [01;31m[Kerror: [m[K‘[01m[KADBase[m[K’ {aka ‘[01m[Kint[m[K’} is not a class, struct, or union type
+   72 |    typedef typename ADBase::value_type   [01;31m[KBase[m[K;
+      |                                          [01;31m[K^~~~[m[K
+[01m[K/usr/local/include/cppad/core/independent/independent.hpp:79:25:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen::DenseBase<Eigen::Matrix<int, -1, 1> >::value_type[m[K’ {aka ‘[01m[Kint[m[K’} is not a class, struct, or union type
+   79 |    local::ADTape<Base>* [01;31m[Ktape[m[K = ADBase::tape_manage(new_tape_manage);
+      |                         [01;31m[K^~~~[m[K
+[01m[K/usr/local/include/cppad/core/independent/independent.hpp:79:25:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen::DenseBase<Eigen::Matrix<int, -1, 1> >::value_type[m[K’ {aka ‘[01m[Kint[m[K’} is not a class, struct, or union type
+gmake[2]: *** [CMakeFiles/control_node.dir/build.make:90: CMakeFiles/control_node.dir/src/cppadpino.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/control_node.dir/build.make:118: CMakeFiles/control_node.dir/src/main.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/control_node.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

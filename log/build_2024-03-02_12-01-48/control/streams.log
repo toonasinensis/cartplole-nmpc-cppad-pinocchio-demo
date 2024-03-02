@@ -1,0 +1,9 @@
+[0.055s] Invoking command in '/home/xie/Desktop/learn/carpole/cartplole/build/control': CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/home/xie/Desktop/learn/carpole/cartplole/install/control:/usr/local:/usr/local:/opt/ros/humble /usr/bin/cmake --build /home/xie/Desktop/learn/carpole/cartplole/build/control -- -j20 -l20
+[0.083s] [35m[1mConsolidate compiler generated dependencies of target control_node[0m
+[0.115s] [ 20%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/cppadpino.cpp.o[0m
+[0.117s] [ 40%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/main.cpp.o[0m
+[0.899s] gmake[2]: *** [CMakeFiles/control_node.dir/build.make:90: CMakeFiles/control_node.dir/src/cppadpino.cpp.o] Interrupt
+[0.899s] gmake[2]: *** [CMakeFiles/control_node.dir/build.make:118: CMakeFiles/control_node.dir/src/main.cpp.o] Interrupt
+[0.899s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/control_node.dir/all] Interrupt
+[0.899s] gmake: *** [Makefile:146: all] Interrupt
+[0.910s] Invoked command in '/home/xie/Desktop/learn/carpole/cartplole/build/control' returned '-2': CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/home/xie/Desktop/learn/carpole/cartplole/install/control:/usr/local:/usr/local:/opt/ros/humble /usr/bin/cmake --build /home/xie/Desktop/learn/carpole/cartplole/build/control -- -j20 -l20

@@ -1,0 +1,40 @@
+[0.055s] Invoking command in '/home/xie/Desktop/learn/carpole/cartplole/build/control': CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/home/xie/Desktop/learn/carpole/cartplole/install/control:/usr/local:/usr/local:/opt/ros/humble /usr/bin/cmake --build /home/xie/Desktop/learn/carpole/cartplole/build/control -- -j20 -l20
+[0.084s] [35m[1mConsolidate compiler generated dependencies of target control_node[0m
+[0.114s] [ 20%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/main.cpp.o[0m
+[1.438s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/main.cpp:11:[m[K [01;35m[Kwarning: [m[K"BACKWARD_HAS_DW" redefined
+[1.438s]    11 | #define BACKWARD_HAS_DW 1
+[1.438s]       | 
+[1.438s] In file included from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/main.cpp:3[m[K:
+[1.438s] [01m[K/usr/include/backward.hpp:193:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[1.438s]   193 | #define BACKWARD_HAS_DW 0
+[1.438s]       | 
+[4.191s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[4.191s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/main.cpp:15:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.191s]    15 | int main([01;35m[Kint argc[m[K, char** argv) {
+[4.191s]       |          [01;35m[K~~~~^~~~[m[K
+[4.191s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/main.cpp:15:27:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.191s]    15 | int main(int argc, [01;35m[Kchar** argv[m[K) {
+[4.191s]       |                    [01;35m[K~~~~~~~^~~~[m[K
+[7.717s] [ 40%] [32m[1mLinking CXX executable control_node[0m
+[7.899s] [100%] Built target control_node
+[7.905s] Invoked command in '/home/xie/Desktop/learn/carpole/cartplole/build/control' returned '0': CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/home/xie/Desktop/learn/carpole/cartplole/install/control:/usr/local:/usr/local:/opt/ros/humble /usr/bin/cmake --build /home/xie/Desktop/learn/carpole/cartplole/build/control -- -j20 -l20
+[7.924s] Invoking command in '/home/xie/Desktop/learn/carpole/cartplole/build/control': CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/home/xie/Desktop/learn/carpole/cartplole/install/control:/usr/local:/usr/local:/opt/ros/humble /usr/bin/cmake --install /home/xie/Desktop/learn/carpole/cartplole/build/control
+[7.929s] -- Install configuration: "Release"
+[7.929s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/control/lib/control/control_node
+[7.931s] -- Set runtime path of "/home/xie/Desktop/learn/carpole/cartplole/install/control/lib/control/control_node" to "/home/xie/Desktop/learn/carpole/cartplole/src/control/lib"
+[7.931s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/ament_index/resource_index/package_run_dependencies/control
+[7.931s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/ament_index/resource_index/parent_prefix_path/control
+[7.931s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/environment/ament_prefix_path.sh
+[7.931s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/environment/ament_prefix_path.dsv
+[7.931s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/environment/path.sh
+[7.931s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/environment/path.dsv
+[7.931s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/local_setup.bash
+[7.931s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/local_setup.sh
+[7.931s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/local_setup.zsh
+[7.931s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/local_setup.dsv
+[7.932s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/package.dsv
+[7.932s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/ament_index/resource_index/packages/control
+[7.932s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/cmake/controlConfig.cmake
+[7.932s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/cmake/controlConfig-version.cmake
+[7.932s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/package.xml
+[7.933s] Invoked command in '/home/xie/Desktop/learn/carpole/cartplole/build/control' returned '0': CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/home/xie/Desktop/learn/carpole/cartplole/install/control:/usr/local:/usr/local:/opt/ros/humble /usr/bin/cmake --install /home/xie/Desktop/learn/carpole/cartplole/build/control
