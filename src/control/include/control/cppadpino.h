@@ -21,6 +21,8 @@
 
 #include <iostream>
 
+#define  USE_COUT 0
+
 #define CP_STATE_NUM 4
 #define CP_CTRL_NUM 1
 
@@ -57,7 +59,7 @@ public:
 };
 
 // We want T to be 1 seconds, so we could use DT = 0.1 seconds and N = 10;
-const double DT = 0.1; // DT >= LAG
+const double DT = 0.02; // DT >= LAG
 const size_t N = 10;
 
 // The solver takes all the state variables and actuator variables in a
@@ -92,7 +94,10 @@ weight.at((2)) = config["w2"].as<double>();
 weight.at((3)) = config["w3"].as<double>();
 weight.at((4)) = config["w4"].as<double>();
 
-  std::cout<<"used"<<std::endl;
+#if  USE_COUT
+std::cout << "used" << std::endl;
+#endif
+
 };
     typedef CPPAD_TESTVECTOR(CppAD::AD<double>) ADvector;
 
@@ -184,10 +189,10 @@ weight.at((4)) = config["w4"].as<double>();
                std::vector<ADScalar> dx_output;
       dx_output =  cartpole_dyn.RHS(x_input,u0);
 
-            fg[1 + START_X + t] = x1 - dx_output.at((0)) * DT;
-            fg[1 + START_Q + t] = q1 - dx_output.at((1)) * DT;
-            fg[1 + START_DX + t] = dx1 - dx_output.at((2)) * DT;
-            fg[1 + START_DQ + t] = dq1 - dx_output.at((3)) * DT;
+            fg[1 + START_X + t] = x1 - dx_output.at((0)) * DT + x0;
+            fg[1 + START_Q + t] = q1 - dx_output.at((1)) * DT + q0;
+            fg[1 + START_DX + t] = dx1 - dx_output.at((2)) * DT + dx0;
+            fg[1 + START_DQ + t] = dq1 - dx_output.at((3)) * DT + dq0;
             // fg[1 + START_CTE + t] = cte1 - (f0 - y0 + v0 * CppAD::sin(epsi0) * DT);
 
             // A sign has ben changed in this list one ( + v0/LF_) to work properly
@@ -203,13 +208,17 @@ private:
 public:
 
   MPC();
+  double u_max;
+   // Object that computes objective and constraints:
+    FG_eval fg_eval;
 
   virtual ~MPC();
 
   // Solve the model given an initial state and polynomial coefficients.
   // Return the average of the first N actuations.
- std::pair<std::vector<double>, Eigen::Matrix<double,Eigen::Dynamic,Eigen::Dynamic>>
-solve(
+  // std::pair<std::vector<double>, Eigen::Matriclear
+  //  x<double,Eigen::Dynamic,Eigen::Dynamic>>
+double solve(
       const Eigen::VectorXd state  );
 
 };

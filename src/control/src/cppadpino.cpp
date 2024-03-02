@@ -158,17 +158,17 @@ std::vector<ADScalar> dyn::RHS(std::vector<ADScalar> x_input,
 
 MPC::~MPC() {}
 MPC::MPC(){};
-std::pair<std::vector<double>, Eigen::Matrix<double,Eigen::Dynamic,Eigen::Dynamic>>
- MPC::solve(const Eigen::VectorXd state)
+//std::pair<std::vector<double>, Eigen::Matrix<double,Eigen::Dynamic,Eigen::Dynamic>>
+ double MPC::solve(const Eigen::VectorXd state)
     {
     typedef CPPAD_TESTVECTOR(double) Dvector;
 
-    const double x = state[0];
-    const double q = state[1];
+    const double x  = state[0];
+    const double q  = state[1];
     const double dx = state[2];
     const double dq = state[3];
 
-
+    u_max = config["umax"].as<double>();
     // Number of independent variables (includes both states and inputs):
     // For example, if the state is a 4 element vector, the actuators is a 2 element vector
     // and there are 10 timesteps. The number of variables is: 4 * 10 + 2 * 9
@@ -178,7 +178,7 @@ std::pair<std::vector<double>, Eigen::Matrix<double,Eigen::Dynamic,Eigen::Dynami
 
     //TODO: 
     // Number of constraints:
-    size_t n_constraints = N * (CP_STATE_NUM + CP_CTRL_NUM);
+    size_t n_constraints = N * (CP_STATE_NUM );
 
     // Initial value of the independent variables.
     Dvector vars(n_vars);
@@ -210,8 +210,8 @@ std::pair<std::vector<double>, Eigen::Matrix<double,Eigen::Dynamic,Eigen::Dynami
     // The upper and lower limits of actuators are set to -25 and 25
     // NOTE: Feel free to change this to something else.
     for (size_t i = START_U; i < n_vars; ++i) {
-        vars_lowerbound[i] = -25;
-        vars_upperbound[i] = 25;
+        vars_lowerbound[i] = -u_max;
+        vars_upperbound[i] = u_max;
     }
 
 
@@ -240,9 +240,7 @@ std::pair<std::vector<double>, Eigen::Matrix<double,Eigen::Dynamic,Eigen::Dynami
 
 
 
-    // Object that computes objective and constraints:
-    FG_eval fg_eval;
-
+   
     // Options:
     // NOTE: You don't have to worry about these options.
 
@@ -266,7 +264,14 @@ std::pair<std::vector<double>, Eigen::Matrix<double,Eigen::Dynamic,Eigen::Dynami
     // Solve the problem:
 
     CppAD::ipopt::solve_result<Dvector> solution;
+#if  USE_COUT
 
+    std::cout << "vars" << vars.size() << "vars_lowerbound"
+              << vars_lowerbound.size() << "vars_upperbound"
+              << vars_upperbound.size() << "constraints_lowerbound"
+              << constraints_lowerbound.size() << "constraints_upperbound"
+              << constraints_upperbound.size() << std::endl;
+    #endif
     CppAD::ipopt::solve<Dvector, FG_eval>(
         options,
         vars,
@@ -277,7 +282,10 @@ std::pair<std::vector<double>, Eigen::Matrix<double,Eigen::Dynamic,Eigen::Dynami
         fg_eval,
         solution
     );
-
+   
+        
+        
+        
     // Check some of the solution values:
 
     const bool ok = solution.status == CppAD::ipopt::solve_result<Dvector>::success;
@@ -287,15 +295,6 @@ std::pair<std::vector<double>, Eigen::Matrix<double,Eigen::Dynamic,Eigen::Dynami
        std:: cout <<  std::endl << "There was an error calculating the solution." <<std:: endl <<std:: endl;
     }
 
-    double total_u = 0;
-    // double total_throttle = 0;
-
-    // for (size_t i = 0; i < AVG_N_; ++i) {
-    //     total_u += solution.x[START_U + i];
-    //     // total_throttle += solution.x[START_A + i];
-    // }
-
-    // {...} is shorthand for creating a vector:
 
     std::vector<double> resultvec = {
       cost,
@@ -311,6 +310,16 @@ std::pair<std::vector<double>, Eigen::Matrix<double,Eigen::Dynamic,Eigen::Dynami
       resultmat(3, START_X + i) = solution.x[START_DQ + i];
       resultmat(4, START_X + i) = solution.x[START_U + i];
     }
+    #if  USE_COUT
+ std::cout<<"cost : "<<resultvec.at((0))<<std::endl;
+ std::cout<<"u : "<<resultvec.at((1))<<std::endl;
+ std::cout<<"resultmat.row((0)) x"<<resultmat.row((0))<<std::endl;
+ std::cout<<"resultmat.row((1)) q"<<resultmat.row((1))<<std::endl;
+ std::cout<<"resultmat.row((2)) dx"<<resultmat.row((2))<<std::endl;
+ std::cout<<"resultmat.row((3)) dq"<<resultmat.row((3))<<std::endl;
+std::cout<<"resultmat.row((4)) u"<<resultmat.row((4))<<std::endl;
 
-    return std::pair<std::vector<double>, Eigen::Matrix<double,Eigen::Dynamic,Eigen::Dynamic>>(resultvec,resultmat) ;
+#endif
+return  resultvec.at((1));
+    // return std::pair<std::vector<double>, Eigen::Matrix<double,Eigen::Dynamic,Eigen::Dynamic>>(resultvec,resultmat) ;
 }

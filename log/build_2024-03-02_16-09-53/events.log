@@ -1,0 +1,648 @@
+[0.000000] (-) TimerEvent: {}
+[0.000163] (interface) JobQueued: {'identifier': 'interface', 'dependencies': OrderedDict()}
+[0.000189] (manage) JobQueued: {'identifier': 'manage', 'dependencies': OrderedDict()}
+[0.000198] (control) JobQueued: {'identifier': 'control', 'dependencies': OrderedDict([('interface', '/home/xie/Desktop/learn/carpole/cartplole/install/interface')])}
+[0.000239] (simulate) JobQueued: {'identifier': 'simulate', 'dependencies': OrderedDict([('interface', '/home/xie/Desktop/learn/carpole/cartplole/install/interface')])}
+[0.000247] (interface) JobStarted: {'identifier': 'interface'}
+[0.027923] (manage) JobStarted: {'identifier': 'manage'}
+[0.056860] (interface) JobProgress: {'identifier': 'interface', 'progress': 'cmake'}
+[0.057190] (interface) JobProgress: {'identifier': 'interface', 'progress': 'build'}
+[0.057562] (interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/xie/Desktop/learn/carpole/cartplole/build/interface', '--', '-j20', '-l20'], 'cwd': '/home/xie/Desktop/learn/carpole/cartplole/build/interface', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'en_CA:en'), ('USER', 'xie'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks5://127.0.0.1:7890'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/xie/Desktop/learn/carpole/cartplole/install/interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib'), ('HOME', '/home/xie'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.85.2'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '95651'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '95880'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c3eb59bb95d6f721037b929465d2c85f'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '596254'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/xie/Desktop/learn/carpole/cartplole/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'xie'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890'), ('JOURNAL_STREAM', '8:6520367'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'xie'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/bin:/usr/local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/xie:@/tmp/.ICE-unix/95880,unix/xie:/tmp/.ICE-unix/95880'), ('INVOCATION_ID', '5dd38ab0bee4410583006deeecf52663'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('ftp_proxy', 'http://127.0.0.1:7890/'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/04e13bf8_de63_4624_8056_55f110f1bb8d'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QCGOJ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ea42c79ca6.sock'), ('GNOME_TERMINAL_SERVICE', ':1.8252'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/home/xie/Desktop/learn/carpole/cartplole/install/control:/home/xie/Desktop/learn/carpole/cartplole/install/interface:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xie/Desktop/learn/carpole/cartplole/build/interface'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('FTP_PROXY', 'http://127.0.0.1:7890/'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c3eb59bb95d6f721037b929465d2c85f'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages:/usr/local/lib/python2.7/site-packages:/usr/local/lib/python2.7/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/home/xie/Desktop/learn/carpole/cartplole/install/control:/home/xie/Desktop/learn/carpole/cartplole/install/interface:/usr/local:/usr/local::/opt/ros/humble')]), 'shell': False}
+[0.059681] (manage) JobProgress: {'identifier': 'manage', 'progress': 'cmake'}
+[0.059913] (manage) JobProgress: {'identifier': 'manage', 'progress': 'build'}
+[0.060083] (manage) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/xie/Desktop/learn/carpole/cartplole/build/manage', '--', '-j20', '-l20'], 'cwd': '/home/xie/Desktop/learn/carpole/cartplole/build/manage', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'en_CA:en'), ('USER', 'xie'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks5://127.0.0.1:7890'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/xie/Desktop/learn/carpole/cartplole/install/interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib'), ('HOME', '/home/xie'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.85.2'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '95651'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '95880'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c3eb59bb95d6f721037b929465d2c85f'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '596254'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/xie/Desktop/learn/carpole/cartplole/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'xie'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890'), ('JOURNAL_STREAM', '8:6520367'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'xie'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/bin:/usr/local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/xie:@/tmp/.ICE-unix/95880,unix/xie:/tmp/.ICE-unix/95880'), ('INVOCATION_ID', '5dd38ab0bee4410583006deeecf52663'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('ftp_proxy', 'http://127.0.0.1:7890/'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/04e13bf8_de63_4624_8056_55f110f1bb8d'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QCGOJ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ea42c79ca6.sock'), ('GNOME_TERMINAL_SERVICE', ':1.8252'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/home/xie/Desktop/learn/carpole/cartplole/install/control:/home/xie/Desktop/learn/carpole/cartplole/install/interface:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xie/Desktop/learn/carpole/cartplole/build/manage'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('FTP_PROXY', 'http://127.0.0.1:7890/'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c3eb59bb95d6f721037b929465d2c85f'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages:/usr/local/lib/python2.7/site-packages:/usr/local/lib/python2.7/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/home/xie/Desktop/learn/carpole/cartplole/install/control:/home/xie/Desktop/learn/carpole/cartplole/install/interface:/usr/local:/usr/local::/opt/ros/humble')]), 'shell': False}
+[0.078779] (manage) CommandEnded: {'returncode': 0}
+[0.082836] (interface) StdoutLine: {'line': b'[  2%] Built target interface__cpp\n'}
+[0.083347] (interface) StdoutLine: {'line': b'[ 12%] Built target interface__rosidl_generator_c\n'}
+[0.089175] (interface) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_interface\n'}
+[0.092644] (manage) JobProgress: {'identifier': 'manage', 'progress': 'install'}
+[0.095845] (interface) StdoutLine: {'line': b'[ 41%] Built target interface__rosidl_typesupport_introspection_c\n'}
+[0.096029] (interface) StdoutLine: {'line': b'[ 41%] Built target interface__rosidl_typesupport_fastrtps_c\n'}
+[0.096119] (interface) StdoutLine: {'line': b'[ 43%] Built target interface__rosidl_typesupport_introspection_cpp\n'}
+[0.096201] (interface) StdoutLine: {'line': b'[ 53%] Built target interface__rosidl_typesupport_fastrtps_cpp\n'}
+[0.096265] (interface) StdoutLine: {'line': b'[ 64%] Built target interface__rosidl_typesupport_cpp\n'}
+[0.099375] (interface) StdoutLine: {'line': b'[ 74%] Built target interface__rosidl_typesupport_c\n'}
+[0.100097] (-) TimerEvent: {}
+[0.100395] (manage) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/xie/Desktop/learn/carpole/cartplole/build/manage'], 'cwd': '/home/xie/Desktop/learn/carpole/cartplole/build/manage', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'en_CA:en'), ('USER', 'xie'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks5://127.0.0.1:7890'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/xie/Desktop/learn/carpole/cartplole/install/interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib'), ('HOME', '/home/xie'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.85.2'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '95651'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '95880'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c3eb59bb95d6f721037b929465d2c85f'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '596254'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/xie/Desktop/learn/carpole/cartplole/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'xie'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890'), ('JOURNAL_STREAM', '8:6520367'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'xie'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/bin:/usr/local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/xie:@/tmp/.ICE-unix/95880,unix/xie:/tmp/.ICE-unix/95880'), ('INVOCATION_ID', '5dd38ab0bee4410583006deeecf52663'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('ftp_proxy', 'http://127.0.0.1:7890/'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/04e13bf8_de63_4624_8056_55f110f1bb8d'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QCGOJ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ea42c79ca6.sock'), ('GNOME_TERMINAL_SERVICE', ':1.8252'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/home/xie/Desktop/learn/carpole/cartplole/install/control:/home/xie/Desktop/learn/carpole/cartplole/install/interface:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xie/Desktop/learn/carpole/cartplole/build/manage'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('FTP_PROXY', 'http://127.0.0.1:7890/'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c3eb59bb95d6f721037b929465d2c85f'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages:/usr/local/lib/python2.7/site-packages:/usr/local/lib/python2.7/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/home/xie/Desktop/learn/carpole/cartplole/install/control:/home/xie/Desktop/learn/carpole/cartplole/install/interface:/usr/local:/usr/local::/opt/ros/humble')]), 'shell': False}
+[0.105361] (manage) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.105453] (manage) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/launch\n'}
+[0.105487] (manage) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/launch/simulate.launch.py\n'}
+[0.105514] (manage) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/config\n'}
+[0.105571] (manage) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/config/simulate_cfg.yaml\n'}
+[0.105609] (manage) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/config/config.yaml\n'}
+[0.105643] (manage) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/ament_index/resource_index/package_run_dependencies/manage\n'}
+[0.105667] (manage) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/ament_index/resource_index/parent_prefix_path/manage\n'}
+[0.105702] (manage) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/environment/ament_prefix_path.sh\n'}
+[0.105726] (manage) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/environment/ament_prefix_path.dsv\n'}
+[0.105753] (manage) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/environment/path.sh\n'}
+[0.105776] (manage) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/environment/path.dsv\n'}
+[0.105835] (manage) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/local_setup.bash\n'}
+[0.105862] (manage) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/local_setup.sh\n'}
+[0.105897] (manage) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/local_setup.zsh\n'}
+[0.105923] (manage) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/local_setup.dsv\n'}
+[0.105945] (manage) StdoutLine: {'line': b'-- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/package.dsv\n'}
+[0.105967] (manage) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/ament_index/resource_index/packages/manage\n'}
+[0.105990] (manage) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/cmake/manageConfig.cmake\n'}
+[0.106013] (manage) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/cmake/manageConfig-version.cmake\n'}
+[0.106078] (manage) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/package.xml\n'}
+[0.106622] (manage) CommandEnded: {'returncode': 0}
+[0.110182] (interface) StdoutLine: {'line': b'[ 74%] Built target interface\n'}
+[0.122782] (interface) StdoutLine: {'line': b'[ 76%] Built target interface__py\n'}
+[0.136303] (interface) StdoutLine: {'line': b'[ 84%] Built target interface__rosidl_generator_py\n'}
+[0.152017] (interface) StdoutLine: {'line': b'[100%] Built target interface__rosidl_typesupport_introspection_c__pyext\n'}
+[0.152290] (interface) StdoutLine: {'line': b'[100%] Built target interface__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.152438] (interface) StdoutLine: {'line': b'[100%] Built target interface__rosidl_typesupport_c__pyext\n'}
+[0.178493] (manage) JobEnded: {'identifier': 'manage', 'rc': 0}
+[0.200221] (-) TimerEvent: {}
+[0.208623] (interface) StdoutLine: {'line': b'running egg_info\n'}
+[0.208876] (interface) StdoutLine: {'line': b'writing interface.egg-info/PKG-INFO\n'}
+[0.208974] (interface) StdoutLine: {'line': b'writing dependency_links to interface.egg-info/dependency_links.txt\n'}
+[0.209112] (interface) StdoutLine: {'line': b'writing top-level names to interface.egg-info/top_level.txt\n'}
+[0.210125] (interface) StdoutLine: {'line': b"reading manifest file 'interface.egg-info/SOURCES.txt'\n"}
+[0.210315] (interface) StdoutLine: {'line': b"writing manifest file 'interface.egg-info/SOURCES.txt'\n"}
+[0.224470] (interface) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_interface_egg\n'}
+[0.231530] (interface) CommandEnded: {'returncode': 0}
+[0.271410] (interface) JobProgress: {'identifier': 'interface', 'progress': 'install'}
+[0.271559] (interface) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/xie/Desktop/learn/carpole/cartplole/build/interface'], 'cwd': '/home/xie/Desktop/learn/carpole/cartplole/build/interface', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'en_CA:en'), ('USER', 'xie'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks5://127.0.0.1:7890'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/xie/Desktop/learn/carpole/cartplole/install/interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib'), ('HOME', '/home/xie'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.85.2'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '95651'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '95880'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c3eb59bb95d6f721037b929465d2c85f'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '596254'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/xie/Desktop/learn/carpole/cartplole/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'xie'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890'), ('JOURNAL_STREAM', '8:6520367'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'xie'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/bin:/usr/local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/xie:@/tmp/.ICE-unix/95880,unix/xie:/tmp/.ICE-unix/95880'), ('INVOCATION_ID', '5dd38ab0bee4410583006deeecf52663'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('ftp_proxy', 'http://127.0.0.1:7890/'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/04e13bf8_de63_4624_8056_55f110f1bb8d'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QCGOJ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ea42c79ca6.sock'), ('GNOME_TERMINAL_SERVICE', ':1.8252'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/home/xie/Desktop/learn/carpole/cartplole/install/control:/home/xie/Desktop/learn/carpole/cartplole/install/interface:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xie/Desktop/learn/carpole/cartplole/build/interface'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('FTP_PROXY', 'http://127.0.0.1:7890/'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c3eb59bb95d6f721037b929465d2c85f'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages:/usr/local/lib/python2.7/site-packages:/usr/local/lib/python2.7/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/home/xie/Desktop/learn/carpole/cartplole/install/control:/home/xie/Desktop/learn/carpole/cartplole/install/interface:/usr/local:/usr/local::/opt/ros/humble')]), 'shell': False}
+[0.276316] (interface) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.276459] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/ament_index/resource_index/rosidl_interfaces/interface\n'}
+[0.276566] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface\n'}
+[0.276656] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg\n'}
+[0.276982] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/state.h\n'}
+[0.277027] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/torque.h\n'}
+[0.277055] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail\n'}
+[0.277082] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail/state__functions.h\n'}
+[0.277110] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail/state__struct.h\n'}
+[0.277136] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail/torque__struct.h\n'}
+[0.277164] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail/torque__functions.c\n'}
+[0.277189] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail/state__functions.c\n'}
+[0.277213] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail/torque__type_support.h\n'}
+[0.277369] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail/torque__functions.h\n'}
+[0.277628] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail/state__type_support.h\n'}
+[0.277677] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.277718] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/environment/library_path.sh\n'}
+[0.277768] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/environment/library_path.dsv\n'}
+[0.277796] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/lib/libinterface__rosidl_generator_c.so\n'}
+[0.277829] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface\n'}
+[0.277855] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg\n'}
+[0.277878] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail\n'}
+[0.277915] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail/state__rosidl_typesupport_fastrtps_c.h\n'}
+[0.277939] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail/torque__rosidl_typesupport_fastrtps_c.h\n'}
+[0.277964] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.278010] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/lib/libinterface__rosidl_typesupport_fastrtps_c.so\n'}
+[0.278037] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface\n'}
+[0.278061] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg\n'}
+[0.278086] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.278112] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail\n'}
+[0.278138] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail/torque__type_support.c\n'}
+[0.278163] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail/state__rosidl_typesupport_introspection_c.h\n'}
+[0.278190] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail/state__type_support.c\n'}
+[0.278215] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail/torque__rosidl_typesupport_introspection_c.h\n'}
+[0.278240] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/lib/libinterface__rosidl_typesupport_introspection_c.so\n'}
+[0.278265] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/lib/libinterface__rosidl_typesupport_c.so\n'}
+[0.278290] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface\n'}
+[0.278316] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg\n'}
+[0.278342] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/state.hpp\n'}
+[0.278370] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail\n'}
+[0.278584] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail/torque__builder.hpp\n'}
+[0.278607] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail/state__struct.hpp\n'}
+[0.278631] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail/torque__struct.hpp\n'}
+[0.278654] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail/state__traits.hpp\n'}
+[0.278677] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail/torque__traits.hpp\n'}
+[0.278699] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail/state__builder.hpp\n'}
+[0.278723] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/torque.hpp\n'}
+[0.278746] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface\n'}
+[0.278769] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg\n'}
+[0.278791] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail\n'}
+[0.278813] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail/state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.278836] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail/dds_fastrtps\n'}
+[0.278858] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail/torque__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.278879] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.278901] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/lib/libinterface__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.278923] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface\n'}
+[0.278947] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg\n'}
+[0.278969] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail\n'}
+[0.278991] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail/torque__type_support.cpp\n'}
+[0.279013] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail/state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.279038] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail/torque__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.279060] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/include/interface/interface/msg/detail/state__type_support.cpp\n'}
+[0.279082] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/lib/libinterface__rosidl_typesupport_introspection_cpp.so\n'}
+[0.279104] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/lib/libinterface__rosidl_typesupport_cpp.so\n'}
+[0.279128] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/environment/pythonpath.sh\n'}
+[0.279151] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/environment/pythonpath.dsv\n'}
+[0.279172] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages/interface-0.0.0-py3.10.egg-info\n'}
+[0.279195] (interface) StdoutLine: {'line': b'-- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages/interface-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.279216] (interface) StdoutLine: {'line': b'-- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages/interface-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.279238] (interface) StdoutLine: {'line': b'-- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages/interface-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.279261] (interface) StdoutLine: {'line': b'-- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages/interface-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.279283] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages/interface\n'}
+[0.279304] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages/interface/msg\n'}
+[0.279326] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages/interface/msg/_state_s.c\n'}
+[0.279348] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages/interface/msg/__init__.py\n'}
+[0.279371] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages/interface/msg/_torque.py\n'}
+[0.279393] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages/interface/msg/_torque_s.c\n'}
+[0.279419] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages/interface/msg/_state.py\n'}
+[0.279441] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages/interface/_interface_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.279463] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages/interface/__init__.py\n'}
+[0.279484] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages/interface/_interface_s.ep.rosidl_typesupport_c.c\n'}
+[0.279506] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.279528] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages/interface/libinterface__rosidl_generator_py.so\n'}
+[0.279551] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.279574] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.279598] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages/interface/_interface_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.295262] (interface) StdoutLine: {'line': b"Listing '/home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages/interface'...\n"}
+[0.295372] (interface) StdoutLine: {'line': b"Listing '/home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages/interface/msg'...\n"}
+[0.298025] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.298131] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.298249] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.298354] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/lib/libinterface__rosidl_generator_py.so\n'}
+[0.298421] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/msg/State.idl\n'}
+[0.298457] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/msg/Torque.idl\n'}
+[0.298502] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/msg/State.msg\n'}
+[0.298544] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/msg/Torque.msg\n'}
+[0.298586] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/ament_index/resource_index/package_run_dependencies/interface\n'}
+[0.298640] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/ament_index/resource_index/parent_prefix_path/interface\n'}
+[0.298672] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/environment/ament_prefix_path.sh\n'}
+[0.298720] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/environment/ament_prefix_path.dsv\n'}
+[0.298754] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/environment/path.sh\n'}
+[0.298794] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/environment/path.dsv\n'}
+[0.298818] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/local_setup.bash\n'}
+[0.298841] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/local_setup.sh\n'}
+[0.298864] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/local_setup.zsh\n'}
+[0.298895] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/local_setup.dsv\n'}
+[0.298917] (interface) StdoutLine: {'line': b'-- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/package.dsv\n'}
+[0.298942] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/ament_index/resource_index/packages/interface\n'}
+[0.298979] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/cmake/export_interface__rosidl_generator_cExport.cmake\n'}
+[0.299016] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/cmake/export_interface__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.299053] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/cmake/export_interface__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.299092] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/cmake/export_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.299119] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/cmake/interface__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.299155] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/cmake/interface__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.299195] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/cmake/interface__rosidl_typesupport_cExport.cmake\n'}
+[0.299245] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/cmake/interface__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.299286] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/cmake/export_interface__rosidl_generator_cppExport.cmake\n'}
+[0.299320] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/cmake/export_interface__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.299350] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/cmake/export_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.299378] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/cmake/interface__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.299424] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/cmake/interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.299477] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/cmake/interface__rosidl_typesupport_cppExport.cmake\n'}
+[0.299516] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/cmake/interface__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.299558] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/cmake/export_interface__rosidl_generator_pyExport.cmake\n'}
+[0.299588] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/cmake/export_interface__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.299633] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/cmake/rosidl_cmake-extras.cmake\n'}
+[0.299667] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.299701] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.299725] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.299761] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.299785] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.299808] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.299833] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/cmake/interfaceConfig.cmake\n'}
+[0.299858] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/cmake/interfaceConfig-version.cmake\n'}
+[0.299881] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/package.xml\n'}
+[0.300308] (-) TimerEvent: {}
+[0.301180] (interface) CommandEnded: {'returncode': 0}
+[0.400394] (-) TimerEvent: {}
+[0.401726] (interface) JobEnded: {'identifier': 'interface', 'rc': 0}
+[0.402240] (control) JobStarted: {'identifier': 'control'}
+[0.427022] (simulate) JobStarted: {'identifier': 'simulate'}
+[0.454376] (control) JobProgress: {'identifier': 'control', 'progress': 'cmake'}
+[0.454651] (control) JobProgress: {'identifier': 'control', 'progress': 'build'}
+[0.454774] (control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/xie/Desktop/learn/carpole/cartplole/build/control', '--', '-j20', '-l20'], 'cwd': '/home/xie/Desktop/learn/carpole/cartplole/build/control', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'en_CA:en'), ('USER', 'xie'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks5://127.0.0.1:7890'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/xie/Desktop/learn/carpole/cartplole/install/interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib'), ('HOME', '/home/xie'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.85.2'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '95651'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '95880'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c3eb59bb95d6f721037b929465d2c85f'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '596254'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/xie/Desktop/learn/carpole/cartplole/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'xie'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890'), ('JOURNAL_STREAM', '8:6520367'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'xie'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/bin:/usr/local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/xie:@/tmp/.ICE-unix/95880,unix/xie:/tmp/.ICE-unix/95880'), ('INVOCATION_ID', '5dd38ab0bee4410583006deeecf52663'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('ftp_proxy', 'http://127.0.0.1:7890/'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/04e13bf8_de63_4624_8056_55f110f1bb8d'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QCGOJ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ea42c79ca6.sock'), ('GNOME_TERMINAL_SERVICE', ':1.8252'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/home/xie/Desktop/learn/carpole/cartplole/install/control:/home/xie/Desktop/learn/carpole/cartplole/install/interface:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xie/Desktop/learn/carpole/cartplole/build/control'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('FTP_PROXY', 'http://127.0.0.1:7890/'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c3eb59bb95d6f721037b929465d2c85f'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages:/usr/local/lib/python2.7/site-packages:/usr/local/lib/python2.7/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/xie/Desktop/learn/carpole/cartplole/install/interface:/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/home/xie/Desktop/learn/carpole/cartplole/install/control:/usr/local:/usr/local:/opt/ros/humble')]), 'shell': False}
+[0.456260] (simulate) JobProgress: {'identifier': 'simulate', 'progress': 'cmake'}
+[0.456489] (simulate) JobProgress: {'identifier': 'simulate', 'progress': 'build'}
+[0.456668] (simulate) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/xie/Desktop/learn/carpole/cartplole/build/simulate', '--', '-j20', '-l20'], 'cwd': '/home/xie/Desktop/learn/carpole/cartplole/build/simulate', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'en_CA:en'), ('USER', 'xie'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks5://127.0.0.1:7890'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/xie/Desktop/learn/carpole/cartplole/install/interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib'), ('HOME', '/home/xie'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.85.2'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '95651'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '95880'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c3eb59bb95d6f721037b929465d2c85f'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '596254'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/xie/Desktop/learn/carpole/cartplole/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'xie'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890'), ('JOURNAL_STREAM', '8:6520367'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'xie'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/bin:/usr/local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/xie:@/tmp/.ICE-unix/95880,unix/xie:/tmp/.ICE-unix/95880'), ('INVOCATION_ID', '5dd38ab0bee4410583006deeecf52663'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('ftp_proxy', 'http://127.0.0.1:7890/'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/04e13bf8_de63_4624_8056_55f110f1bb8d'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QCGOJ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ea42c79ca6.sock'), ('GNOME_TERMINAL_SERVICE', ':1.8252'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/home/xie/Desktop/learn/carpole/cartplole/install/control:/home/xie/Desktop/learn/carpole/cartplole/install/interface:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xie/Desktop/learn/carpole/cartplole/build/simulate'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('FTP_PROXY', 'http://127.0.0.1:7890/'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c3eb59bb95d6f721037b929465d2c85f'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages:/usr/local/lib/python2.7/site-packages:/usr/local/lib/python2.7/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/xie/Desktop/learn/carpole/cartplole/install/interface:/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/home/xie/Desktop/learn/carpole/cartplole/install/control:/usr/local:/usr/local:/opt/ros/humble')]), 'shell': False}
+[0.486737] (control) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target control_node\x1b[0m\n'}
+[0.487558] (simulate) StdoutLine: {'line': b'[100%] Built target simulate_node\n'}
+[0.493673] (simulate) CommandEnded: {'returncode': 0}
+[0.500544] (-) TimerEvent: {}
+[0.511863] (simulate) JobProgress: {'identifier': 'simulate', 'progress': 'install'}
+[0.512156] (simulate) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/xie/Desktop/learn/carpole/cartplole/build/simulate'], 'cwd': '/home/xie/Desktop/learn/carpole/cartplole/build/simulate', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'en_CA:en'), ('USER', 'xie'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks5://127.0.0.1:7890'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/xie/Desktop/learn/carpole/cartplole/install/interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib'), ('HOME', '/home/xie'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.85.2'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '95651'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '95880'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c3eb59bb95d6f721037b929465d2c85f'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '596254'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/xie/Desktop/learn/carpole/cartplole/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'xie'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890'), ('JOURNAL_STREAM', '8:6520367'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'xie'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/bin:/usr/local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/xie:@/tmp/.ICE-unix/95880,unix/xie:/tmp/.ICE-unix/95880'), ('INVOCATION_ID', '5dd38ab0bee4410583006deeecf52663'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('ftp_proxy', 'http://127.0.0.1:7890/'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/04e13bf8_de63_4624_8056_55f110f1bb8d'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QCGOJ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ea42c79ca6.sock'), ('GNOME_TERMINAL_SERVICE', ':1.8252'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/home/xie/Desktop/learn/carpole/cartplole/install/control:/home/xie/Desktop/learn/carpole/cartplole/install/interface:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xie/Desktop/learn/carpole/cartplole/build/simulate'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('FTP_PROXY', 'http://127.0.0.1:7890/'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c3eb59bb95d6f721037b929465d2c85f'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages:/usr/local/lib/python2.7/site-packages:/usr/local/lib/python2.7/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/xie/Desktop/learn/carpole/cartplole/install/interface:/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/home/xie/Desktop/learn/carpole/cartplole/install/control:/usr/local:/usr/local:/opt/ros/humble')]), 'shell': False}
+[0.516669] (simulate) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[0.516836] (simulate) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/lib/simulate/simulate_node\n'}
+[0.516962] (simulate) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/ament_index/resource_index/package_run_dependencies/simulate\n'}
+[0.517033] (simulate) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/ament_index/resource_index/parent_prefix_path/simulate\n'}
+[0.517112] (simulate) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/environment/ament_prefix_path.sh\n'}
+[0.517193] (simulate) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/environment/ament_prefix_path.dsv\n'}
+[0.517253] (simulate) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/environment/path.sh\n'}
+[0.517310] (simulate) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/environment/path.dsv\n'}
+[0.517366] (simulate) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/local_setup.bash\n'}
+[0.517422] (simulate) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/local_setup.sh\n'}
+[0.517477] (simulate) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/local_setup.zsh\n'}
+[0.517539] (simulate) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/local_setup.dsv\n'}
+[0.517594] (simulate) StdoutLine: {'line': b'-- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/package.dsv\n'}
+[0.517649] (simulate) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/ament_index/resource_index/packages/simulate\n'}
+[0.517704] (simulate) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/cmake/simulateConfig.cmake\n'}
+[0.517774] (simulate) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/cmake/simulateConfig-version.cmake\n'}
+[0.517948] (simulate) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/package.xml\n'}
+[0.518429] (simulate) CommandEnded: {'returncode': 0}
+[0.520517] (control) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/control_node.dir/src/cppadpino.cpp.o\x1b[0m\n'}
+[0.521625] (control) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/control_node.dir/src/main.cpp.o\x1b[0m\n'}
+[0.593759] (simulate) JobEnded: {'identifier': 'simulate', 'rc': 0}
+[0.600618] (-) TimerEvent: {}
+[0.700977] (-) TimerEvent: {}
+[0.801413] (-) TimerEvent: {}
+[0.901692] (-) TimerEvent: {}
+[1.002024] (-) TimerEvent: {}
+[1.102308] (-) TimerEvent: {}
+[1.202613] (-) TimerEvent: {}
+[1.302894] (-) TimerEvent: {}
+[1.403168] (-) TimerEvent: {}
+[1.503455] (-) TimerEvent: {}
+[1.603723] (-) TimerEvent: {}
+[1.703995] (-) TimerEvent: {}
+[1.804239] (-) TimerEvent: {}
+[1.854741] (control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/main.cpp:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K"BACKWARD_HAS_DW" redefined\n'}
+[1.854950] (control) StderrLine: {'line': b'   11 | #define BACKWARD_HAS_DW 1\n'}
+[1.855018] (control) StderrLine: {'line': b'      | \n'}
+[1.855079] (control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/main.cpp:3\x1b[m\x1b[K:\n'}
+[1.855137] (control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/backward.hpp:193:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kthis is the location of the previous definition\n'}
+[1.855195] (control) StderrLine: {'line': b'  193 | #define BACKWARD_HAS_DW 0\n'}
+[1.855253] (control) StderrLine: {'line': b'      | \n'}
+[1.904387] (-) TimerEvent: {}
+[2.004764] (-) TimerEvent: {}
+[2.105085] (-) TimerEvent: {}
+[2.205355] (-) TimerEvent: {}
+[2.305594] (-) TimerEvent: {}
+[2.405879] (-) TimerEvent: {}
+[2.506100] (-) TimerEvent: {}
+[2.606358] (-) TimerEvent: {}
+[2.706623] (-) TimerEvent: {}
+[2.806859] (-) TimerEvent: {}
+[2.907096] (-) TimerEvent: {}
+[3.007357] (-) TimerEvent: {}
+[3.107686] (-) TimerEvent: {}
+[3.207900] (-) TimerEvent: {}
+[3.308147] (-) TimerEvent: {}
+[3.408400] (-) TimerEvent: {}
+[3.411128] (control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kdyn::dyn()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.411221] (control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/cppadpino.cpp:29:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.411257] (control) StderrLine: {'line': b'   29 |     for (size_t i = 0; \x1b[01;35m\x1b[Ki < admodel.njoints\x1b[m\x1b[K; i++) {\n'}
+[3.411285] (control) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.508492] (-) TimerEvent: {}
+[3.608776] (-) TimerEvent: {}
+[3.709041] (-) TimerEvent: {}
+[3.809306] (-) TimerEvent: {}
+[3.909534] (-) TimerEvent: {}
+[4.009867] (-) TimerEvent: {}
+[4.110196] (-) TimerEvent: {}
+[4.210427] (-) TimerEvent: {}
+[4.310676] (-) TimerEvent: {}
+[4.410999] (-) TimerEvent: {}
+[4.511231] (-) TimerEvent: {}
+[4.611581] (-) TimerEvent: {}
+[4.673126] (control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/main.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.673252] (control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/main.cpp:15:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kargc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.673286] (control) StderrLine: {'line': b'   15 | int main(\x1b[01;35m\x1b[Kint argc\x1b[m\x1b[K, char** argv) {\n'}
+[4.673312] (control) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K~~~~^~~~\x1b[m\x1b[K\n'}
+[4.673337] (control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/main.cpp:15:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kargv\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.673362] (control) StderrLine: {'line': b'   15 | int main(int argc, \x1b[01;35m\x1b[Kchar** argv\x1b[m\x1b[K) {\n'}
+[4.673385] (control) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[4.711700] (-) TimerEvent: {}
+[4.812016] (-) TimerEvent: {}
+[4.912262] (-) TimerEvent: {}
+[5.012603] (-) TimerEvent: {}
+[5.112834] (-) TimerEvent: {}
+[5.213059] (-) TimerEvent: {}
+[5.313354] (-) TimerEvent: {}
+[5.413661] (-) TimerEvent: {}
+[5.513880] (-) TimerEvent: {}
+[5.614194] (-) TimerEvent: {}
+[5.714452] (-) TimerEvent: {}
+[5.814666] (-) TimerEvent: {}
+[5.914973] (-) TimerEvent: {}
+[6.015186] (-) TimerEvent: {}
+[6.115516] (-) TimerEvent: {}
+[6.215766] (-) TimerEvent: {}
+[6.316087] (-) TimerEvent: {}
+[6.416318] (-) TimerEvent: {}
+[6.516585] (-) TimerEvent: {}
+[6.616841] (-) TimerEvent: {}
+[6.717057] (-) TimerEvent: {}
+[6.817390] (-) TimerEvent: {}
+[6.917602] (-) TimerEvent: {}
+[7.017848] (-) TimerEvent: {}
+[7.118101] (-) TimerEvent: {}
+[7.218345] (-) TimerEvent: {}
+[7.318586] (-) TimerEvent: {}
+[7.418833] (-) TimerEvent: {}
+[7.519112] (-) TimerEvent: {}
+[7.619370] (-) TimerEvent: {}
+[7.719604] (-) TimerEvent: {}
+[7.819847] (-) TimerEvent: {}
+[7.920110] (-) TimerEvent: {}
+[8.020317] (-) TimerEvent: {}
+[8.120588] (-) TimerEvent: {}
+[8.220812] (-) TimerEvent: {}
+[8.321030] (-) TimerEvent: {}
+[8.421267] (-) TimerEvent: {}
+[8.521530] (-) TimerEvent: {}
+[8.621779] (-) TimerEvent: {}
+[8.722110] (-) TimerEvent: {}
+[8.822418] (-) TimerEvent: {}
+[8.922658] (-) TimerEvent: {}
+[9.022888] (-) TimerEvent: {}
+[9.123234] (-) TimerEvent: {}
+[9.223462] (-) TimerEvent: {}
+[9.323770] (-) TimerEvent: {}
+[9.424098] (-) TimerEvent: {}
+[9.524413] (-) TimerEvent: {}
+[9.624636] (-) TimerEvent: {}
+[9.724851] (-) TimerEvent: {}
+[9.825126] (-) TimerEvent: {}
+[9.925368] (-) TimerEvent: {}
+[10.025674] (-) TimerEvent: {}
+[10.126064] (-) TimerEvent: {}
+[10.226340] (-) TimerEvent: {}
+[10.326718] (-) TimerEvent: {}
+[10.427121] (-) TimerEvent: {}
+[10.527478] (-) TimerEvent: {}
+[10.627795] (-) TimerEvent: {}
+[10.728192] (-) TimerEvent: {}
+[10.828474] (-) TimerEvent: {}
+[10.928756] (-) TimerEvent: {}
+[11.029057] (-) TimerEvent: {}
+[11.129362] (-) TimerEvent: {}
+[11.229701] (-) TimerEvent: {}
+[11.330053] (-) TimerEvent: {}
+[11.430439] (-) TimerEvent: {}
+[11.530836] (-) TimerEvent: {}
+[11.631223] (-) TimerEvent: {}
+[11.731525] (-) TimerEvent: {}
+[11.831810] (-) TimerEvent: {}
+[11.932184] (-) TimerEvent: {}
+[12.032564] (-) TimerEvent: {}
+[12.132833] (-) TimerEvent: {}
+[12.233123] (-) TimerEvent: {}
+[12.333429] (-) TimerEvent: {}
+[12.433757] (-) TimerEvent: {}
+[12.534015] (-) TimerEvent: {}
+[12.634370] (-) TimerEvent: {}
+[12.734727] (-) TimerEvent: {}
+[12.835124] (-) TimerEvent: {}
+[12.935500] (-) TimerEvent: {}
+[13.035826] (-) TimerEvent: {}
+[13.136090] (-) TimerEvent: {}
+[13.236401] (-) TimerEvent: {}
+[13.336700] (-) TimerEvent: {}
+[13.436985] (-) TimerEvent: {}
+[13.537326] (-) TimerEvent: {}
+[13.637629] (-) TimerEvent: {}
+[13.737926] (-) TimerEvent: {}
+[13.838256] (-) TimerEvent: {}
+[13.938571] (-) TimerEvent: {}
+[14.038885] (-) TimerEvent: {}
+[14.139169] (-) TimerEvent: {}
+[14.239490] (-) TimerEvent: {}
+[14.339806] (-) TimerEvent: {}
+[14.440102] (-) TimerEvent: {}
+[14.540427] (-) TimerEvent: {}
+[14.640724] (-) TimerEvent: {}
+[14.741007] (-) TimerEvent: {}
+[14.841318] (-) TimerEvent: {}
+[14.941637] (-) TimerEvent: {}
+[15.041942] (-) TimerEvent: {}
+[15.142228] (-) TimerEvent: {}
+[15.242609] (-) TimerEvent: {}
+[15.342993] (-) TimerEvent: {}
+[15.443361] (-) TimerEvent: {}
+[15.543702] (-) TimerEvent: {}
+[15.644003] (-) TimerEvent: {}
+[15.744358] (-) TimerEvent: {}
+[15.844742] (-) TimerEvent: {}
+[15.945041] (-) TimerEvent: {}
+[16.045315] (-) TimerEvent: {}
+[16.145612] (-) TimerEvent: {}
+[16.246006] (-) TimerEvent: {}
+[16.346300] (-) TimerEvent: {}
+[16.446604] (-) TimerEvent: {}
+[16.546915] (-) TimerEvent: {}
+[16.647185] (-) TimerEvent: {}
+[16.747554] (-) TimerEvent: {}
+[16.847930] (-) TimerEvent: {}
+[16.948296] (-) TimerEvent: {}
+[17.048604] (-) TimerEvent: {}
+[17.148902] (-) TimerEvent: {}
+[17.249215] (-) TimerEvent: {}
+[17.349529] (-) TimerEvent: {}
+[17.449789] (-) TimerEvent: {}
+[17.550097] (-) TimerEvent: {}
+[17.650367] (-) TimerEvent: {}
+[17.750637] (-) TimerEvent: {}
+[17.850917] (-) TimerEvent: {}
+[17.951242] (-) TimerEvent: {}
+[18.051650] (-) TimerEvent: {}
+[18.151943] (-) TimerEvent: {}
+[18.252218] (-) TimerEvent: {}
+[18.352612] (-) TimerEvent: {}
+[18.452929] (-) TimerEvent: {}
+[18.553191] (-) TimerEvent: {}
+[18.653447] (-) TimerEvent: {}
+[18.753765] (-) TimerEvent: {}
+[18.854027] (-) TimerEvent: {}
+[18.954415] (-) TimerEvent: {}
+[19.054712] (-) TimerEvent: {}
+[19.155022] (-) TimerEvent: {}
+[19.255281] (-) TimerEvent: {}
+[19.355588] (-) TimerEvent: {}
+[19.455929] (-) TimerEvent: {}
+[19.556234] (-) TimerEvent: {}
+[19.656541] (-) TimerEvent: {}
+[19.756859] (-) TimerEvent: {}
+[19.857137] (-) TimerEvent: {}
+[19.957417] (-) TimerEvent: {}
+[20.057788] (-) TimerEvent: {}
+[20.158143] (-) TimerEvent: {}
+[20.258452] (-) TimerEvent: {}
+[20.358758] (-) TimerEvent: {}
+[20.459070] (-) TimerEvent: {}
+[20.559351] (-) TimerEvent: {}
+[20.659627] (-) TimerEvent: {}
+[20.759907] (-) TimerEvent: {}
+[20.860189] (-) TimerEvent: {}
+[20.960491] (-) TimerEvent: {}
+[21.060800] (-) TimerEvent: {}
+[21.161126] (-) TimerEvent: {}
+[21.261433] (-) TimerEvent: {}
+[21.361738] (-) TimerEvent: {}
+[21.462047] (-) TimerEvent: {}
+[21.562371] (-) TimerEvent: {}
+[21.662680] (-) TimerEvent: {}
+[21.763017] (-) TimerEvent: {}
+[21.863344] (-) TimerEvent: {}
+[21.963618] (-) TimerEvent: {}
+[22.063895] (-) TimerEvent: {}
+[22.164217] (-) TimerEvent: {}
+[22.264503] (-) TimerEvent: {}
+[22.364792] (-) TimerEvent: {}
+[22.465045] (-) TimerEvent: {}
+[22.565290] (-) TimerEvent: {}
+[22.665548] (-) TimerEvent: {}
+[22.765748] (-) TimerEvent: {}
+[22.865985] (-) TimerEvent: {}
+[22.966226] (-) TimerEvent: {}
+[23.066552] (-) TimerEvent: {}
+[23.166794] (-) TimerEvent: {}
+[23.267067] (-) TimerEvent: {}
+[23.367325] (-) TimerEvent: {}
+[23.467650] (-) TimerEvent: {}
+[23.567862] (-) TimerEvent: {}
+[23.668109] (-) TimerEvent: {}
+[23.768328] (-) TimerEvent: {}
+[23.868564] (-) TimerEvent: {}
+[23.968787] (-) TimerEvent: {}
+[24.069048] (-) TimerEvent: {}
+[24.169310] (-) TimerEvent: {}
+[24.269589] (-) TimerEvent: {}
+[24.369903] (-) TimerEvent: {}
+[24.470125] (-) TimerEvent: {}
+[24.570378] (-) TimerEvent: {}
+[24.670706] (-) TimerEvent: {}
+[24.770930] (-) TimerEvent: {}
+[24.871178] (-) TimerEvent: {}
+[24.971567] (-) TimerEvent: {}
+[25.071867] (-) TimerEvent: {}
+[25.172262] (-) TimerEvent: {}
+[25.272570] (-) TimerEvent: {}
+[25.372886] (-) TimerEvent: {}
+[25.473147] (-) TimerEvent: {}
+[25.573425] (-) TimerEvent: {}
+[25.673725] (-) TimerEvent: {}
+[25.774027] (-) TimerEvent: {}
+[25.874303] (-) TimerEvent: {}
+[25.974648] (-) TimerEvent: {}
+[26.075002] (-) TimerEvent: {}
+[26.175296] (-) TimerEvent: {}
+[26.275578] (-) TimerEvent: {}
+[26.375865] (-) TimerEvent: {}
+[26.476141] (-) TimerEvent: {}
+[26.576484] (-) TimerEvent: {}
+[26.676702] (-) TimerEvent: {}
+[26.776956] (-) TimerEvent: {}
+[26.877253] (-) TimerEvent: {}
+[26.977494] (-) TimerEvent: {}
+[27.077750] (-) TimerEvent: {}
+[27.177988] (-) TimerEvent: {}
+[27.278241] (-) TimerEvent: {}
+[27.378471] (-) TimerEvent: {}
+[27.478723] (-) TimerEvent: {}
+[27.578956] (-) TimerEvent: {}
+[27.679238] (-) TimerEvent: {}
+[27.779471] (-) TimerEvent: {}
+[27.879686] (-) TimerEvent: {}
+[27.979921] (-) TimerEvent: {}
+[28.080141] (-) TimerEvent: {}
+[28.180361] (-) TimerEvent: {}
+[28.280682] (-) TimerEvent: {}
+[28.381000] (-) TimerEvent: {}
+[28.481337] (-) TimerEvent: {}
+[28.581667] (-) TimerEvent: {}
+[28.681971] (-) TimerEvent: {}
+[28.782230] (-) TimerEvent: {}
+[28.882459] (-) TimerEvent: {}
+[28.982692] (-) TimerEvent: {}
+[29.082995] (-) TimerEvent: {}
+[29.183283] (-) TimerEvent: {}
+[29.283589] (-) TimerEvent: {}
+[29.383884] (-) TimerEvent: {}
+[29.484177] (-) TimerEvent: {}
+[29.584437] (-) TimerEvent: {}
+[29.684699] (-) TimerEvent: {}
+[29.784918] (-) TimerEvent: {}
+[29.885189] (-) TimerEvent: {}
+[29.985507] (-) TimerEvent: {}
+[30.085847] (-) TimerEvent: {}
+[30.186070] (-) TimerEvent: {}
+[30.286319] (-) TimerEvent: {}
+[30.386564] (-) TimerEvent: {}
+[30.486825] (-) TimerEvent: {}
+[30.587084] (-) TimerEvent: {}
+[30.687294] (-) TimerEvent: {}
+[30.787502] (-) TimerEvent: {}
+[30.887748] (-) TimerEvent: {}
+[30.987958] (-) TimerEvent: {}
+[31.088181] (-) TimerEvent: {}
+[31.188398] (-) TimerEvent: {}
+[31.288586] (-) TimerEvent: {}
+[31.388799] (-) TimerEvent: {}
+[31.489036] (-) TimerEvent: {}
+[31.589319] (-) TimerEvent: {}
+[31.689617] (-) TimerEvent: {}
+[31.789917] (-) TimerEvent: {}
+[31.890235] (-) TimerEvent: {}
+[31.990568] (-) TimerEvent: {}
+[32.090904] (-) TimerEvent: {}
+[32.191209] (-) TimerEvent: {}
+[32.291471] (-) TimerEvent: {}
+[32.391741] (-) TimerEvent: {}
+[32.491944] (-) TimerEvent: {}
+[32.592293] (-) TimerEvent: {}
+[32.692585] (-) TimerEvent: {}
+[32.792852] (-) TimerEvent: {}
+[32.893114] (-) TimerEvent: {}
+[32.993352] (-) TimerEvent: {}
+[33.093634] (-) TimerEvent: {}
+[33.193869] (-) TimerEvent: {}
+[33.294136] (-) TimerEvent: {}
+[33.394487] (-) TimerEvent: {}
+[33.494805] (-) TimerEvent: {}
+[33.595057] (-) TimerEvent: {}
+[33.695326] (-) TimerEvent: {}
+[33.795553] (-) TimerEvent: {}
+[33.895873] (-) TimerEvent: {}
+[33.996098] (-) TimerEvent: {}
+[34.096305] (-) TimerEvent: {}
+[34.196551] (-) TimerEvent: {}
+[34.296752] (-) TimerEvent: {}
+[34.396997] (-) TimerEvent: {}
+[34.497249] (-) TimerEvent: {}
+[34.597494] (-) TimerEvent: {}
+[34.697707] (-) TimerEvent: {}
+[34.797954] (-) TimerEvent: {}
+[34.898160] (-) TimerEvent: {}
+[34.998483] (-) TimerEvent: {}
+[35.098814] (-) TimerEvent: {}
+[35.199161] (-) TimerEvent: {}
+[35.299505] (-) TimerEvent: {}
+[35.399860] (-) TimerEvent: {}
+[35.500180] (-) TimerEvent: {}
+[35.600529] (-) TimerEvent: {}
+[35.700941] (-) TimerEvent: {}
+[35.801200] (-) TimerEvent: {}
+[35.901437] (-) TimerEvent: {}
+[36.001653] (-) TimerEvent: {}
+[36.101983] (-) TimerEvent: {}
+[36.202317] (-) TimerEvent: {}
+[36.302622] (-) TimerEvent: {}
+[36.402854] (-) TimerEvent: {}
+[36.503182] (-) TimerEvent: {}
+[36.603426] (-) TimerEvent: {}
+[36.703695] (-) TimerEvent: {}
+[36.736048] (control) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX executable control_node\x1b[0m\n'}
+[36.803777] (-) TimerEvent: {}
+[36.903991] (-) TimerEvent: {}
+[36.923869] (control) StdoutLine: {'line': b'[100%] Built target control_node\n'}
+[36.931119] (control) CommandEnded: {'returncode': 0}
+[36.950321] (control) JobProgress: {'identifier': 'control', 'progress': 'install'}
+[36.950579] (control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/xie/Desktop/learn/carpole/cartplole/build/control'], 'cwd': '/home/xie/Desktop/learn/carpole/cartplole/build/control', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'en_CA:en'), ('USER', 'xie'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks5://127.0.0.1:7890'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/xie/Desktop/learn/carpole/cartplole/install/interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib'), ('HOME', '/home/xie'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.85.2'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '95651'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '95880'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c3eb59bb95d6f721037b929465d2c85f'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '596254'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/xie/Desktop/learn/carpole/cartplole/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'xie'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890'), ('JOURNAL_STREAM', '8:6520367'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'xie'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/bin:/usr/local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/xie:@/tmp/.ICE-unix/95880,unix/xie:/tmp/.ICE-unix/95880'), ('INVOCATION_ID', '5dd38ab0bee4410583006deeecf52663'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('ftp_proxy', 'http://127.0.0.1:7890/'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/04e13bf8_de63_4624_8056_55f110f1bb8d'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QCGOJ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ea42c79ca6.sock'), ('GNOME_TERMINAL_SERVICE', ':1.8252'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/home/xie/Desktop/learn/carpole/cartplole/install/control:/home/xie/Desktop/learn/carpole/cartplole/install/interface:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xie/Desktop/learn/carpole/cartplole/build/control'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('FTP_PROXY', 'http://127.0.0.1:7890/'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c3eb59bb95d6f721037b929465d2c85f'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/xie/Desktop/learn/carpole/cartplole/install/interface/local/lib/python3.10/dist-packages:/usr/local/lib/python2.7/site-packages:/usr/local/lib/python2.7/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/xie/Desktop/learn/carpole/cartplole/install/interface:/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/home/xie/Desktop/learn/carpole/cartplole/install/control:/usr/local:/usr/local:/opt/ros/humble')]), 'shell': False}
+[36.955484] (control) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[36.955578] (control) StdoutLine: {'line': b'-- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/control/lib/control/control_node\n'}
+[36.957497] (control) StdoutLine: {'line': b'-- Set runtime path of "/home/xie/Desktop/learn/carpole/cartplole/install/control/lib/control/control_node" to "/home/xie/Desktop/learn/carpole/cartplole/src/control/lib"\n'}
+[36.957573] (control) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/ament_index/resource_index/package_run_dependencies/control\n'}
+[36.957603] (control) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/ament_index/resource_index/parent_prefix_path/control\n'}
+[36.957630] (control) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/environment/ament_prefix_path.sh\n'}
+[36.957656] (control) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/environment/ament_prefix_path.dsv\n'}
+[36.957698] (control) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/environment/path.sh\n'}
+[36.957759] (control) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/environment/path.dsv\n'}
+[36.957786] (control) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/local_setup.bash\n'}
+[36.957827] (control) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/local_setup.sh\n'}
+[36.957852] (control) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/local_setup.zsh\n'}
+[36.957874] (control) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/local_setup.dsv\n'}
+[36.957895] (control) StdoutLine: {'line': b'-- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/package.dsv\n'}
+[36.957918] (control) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/ament_index/resource_index/packages/control\n'}
+[36.957940] (control) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/cmake/controlConfig.cmake\n'}
+[36.957964] (control) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/cmake/controlConfig-version.cmake\n'}
+[36.957986] (control) StdoutLine: {'line': b'-- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/control/share/control/package.xml\n'}
+[36.958814] (control) CommandEnded: {'returncode': 0}
+[37.004114] (-) TimerEvent: {}
+[37.028059] (control) JobEnded: {'identifier': 'control', 'rc': 0}
+[37.028504] (-) EventReactorShutdown: {}
