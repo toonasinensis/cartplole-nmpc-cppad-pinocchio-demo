@@ -37,16 +37,50 @@ void Torque_fini_function(void * message_memory)
   typed_message->~Torque();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Torque_message_member_array[1] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Torque_message_member_array[3] = {
   {
-    "u",  // name
+    "tau_x_w",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(interface::msg::Torque, u),  // bytes offset in struct
+    offsetof(interface::msg::Torque, tau_x_w),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "tau_y_w",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(interface::msg::Torque, tau_y_w),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "tau_z_w",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(interface::msg::Torque, tau_z_w),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -60,7 +94,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Torque_messag
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Torque_message_members = {
   "interface::msg",  // message namespace
   "Torque",  // message name
-  1,  // number of fields
+  3,  // number of fields
   sizeof(interface::msg::Torque),
   Torque_message_member_array,  // message members
   Torque_init_function,  // function to initialize message memory (memory has to be allocated)

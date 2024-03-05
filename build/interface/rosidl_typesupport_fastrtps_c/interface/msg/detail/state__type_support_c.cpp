@@ -34,8 +34,20 @@ extern "C"
 {
 #endif
 
+#include "interface/msg/detail/quat__functions.h"  // quat
 
 // forward declare type support functions
+size_t get_serialized_size_interface__msg__Quat(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+size_t max_serialized_size_interface__msg__Quat(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+
+const rosidl_message_type_support_t *
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, interface, msg, Quat)();
 
 
 using _State__ros_msg_type = interface__msg__State;
@@ -49,24 +61,48 @@ static bool _State__cdr_serialize(
     return false;
   }
   const _State__ros_msg_type * ros_message = static_cast<const _State__ros_msg_type *>(untyped_ros_message);
-  // Field name: x
+  // Field name: quat
   {
-    cdr << ros_message->x;
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, interface, msg, Quat
+      )()->data);
+    if (!callbacks->cdr_serialize(
+        &ros_message->quat, cdr))
+    {
+      return false;
+    }
   }
 
-  // Field name: q
+  // Field name: ang_x_w
   {
-    cdr << ros_message->q;
+    cdr << ros_message->ang_x_w;
   }
 
-  // Field name: dx
+  // Field name: ang_y_w
   {
-    cdr << ros_message->dx;
+    cdr << ros_message->ang_y_w;
   }
 
-  // Field name: dq
+  // Field name: ang_z_w
   {
-    cdr << ros_message->dq;
+    cdr << ros_message->ang_z_w;
+  }
+
+  // Field name: roll_w
+  {
+    cdr << ros_message->roll_w;
+  }
+
+  // Field name: pitch_w
+  {
+    cdr << ros_message->pitch_w;
+  }
+
+  // Field name: yaw_w
+  {
+    cdr << ros_message->yaw_w;
   }
 
   return true;
@@ -81,24 +117,48 @@ static bool _State__cdr_deserialize(
     return false;
   }
   _State__ros_msg_type * ros_message = static_cast<_State__ros_msg_type *>(untyped_ros_message);
-  // Field name: x
+  // Field name: quat
   {
-    cdr >> ros_message->x;
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, interface, msg, Quat
+      )()->data);
+    if (!callbacks->cdr_deserialize(
+        cdr, &ros_message->quat))
+    {
+      return false;
+    }
   }
 
-  // Field name: q
+  // Field name: ang_x_w
   {
-    cdr >> ros_message->q;
+    cdr >> ros_message->ang_x_w;
   }
 
-  // Field name: dx
+  // Field name: ang_y_w
   {
-    cdr >> ros_message->dx;
+    cdr >> ros_message->ang_y_w;
   }
 
-  // Field name: dq
+  // Field name: ang_z_w
   {
-    cdr >> ros_message->dq;
+    cdr >> ros_message->ang_z_w;
+  }
+
+  // Field name: roll_w
+  {
+    cdr >> ros_message->roll_w;
+  }
+
+  // Field name: pitch_w
+  {
+    cdr >> ros_message->pitch_w;
+  }
+
+  // Field name: yaw_w
+  {
+    cdr >> ros_message->yaw_w;
   }
 
   return true;
@@ -118,27 +178,43 @@ size_t get_serialized_size_interface__msg__State(
   (void)padding;
   (void)wchar_size;
 
-  // field.name x
+  // field.name quat
+
+  current_alignment += get_serialized_size_interface__msg__Quat(
+    &(ros_message->quat), current_alignment);
+  // field.name ang_x_w
   {
-    size_t item_size = sizeof(ros_message->x);
+    size_t item_size = sizeof(ros_message->ang_x_w);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name q
+  // field.name ang_y_w
   {
-    size_t item_size = sizeof(ros_message->q);
+    size_t item_size = sizeof(ros_message->ang_y_w);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name dx
+  // field.name ang_z_w
   {
-    size_t item_size = sizeof(ros_message->dx);
+    size_t item_size = sizeof(ros_message->ang_z_w);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name dq
+  // field.name roll_w
   {
-    size_t item_size = sizeof(ros_message->dq);
+    size_t item_size = sizeof(ros_message->roll_w);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name pitch_w
+  {
+    size_t item_size = sizeof(ros_message->pitch_w);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name yaw_w
+  {
+    size_t item_size = sizeof(ros_message->yaw_w);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -171,7 +247,26 @@ size_t max_serialized_size_interface__msg__State(
   full_bounded = true;
   is_plain = true;
 
-  // member: x
+  // member: quat
+  {
+    size_t array_size = 1;
+
+
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size;
+      inner_size =
+        max_serialized_size_interface__msg__Quat(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
+  // member: ang_x_w
   {
     size_t array_size = 1;
 
@@ -179,7 +274,7 @@ size_t max_serialized_size_interface__msg__State(
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
-  // member: q
+  // member: ang_y_w
   {
     size_t array_size = 1;
 
@@ -187,7 +282,7 @@ size_t max_serialized_size_interface__msg__State(
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
-  // member: dx
+  // member: ang_z_w
   {
     size_t array_size = 1;
 
@@ -195,7 +290,23 @@ size_t max_serialized_size_interface__msg__State(
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
-  // member: dq
+  // member: roll_w
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+  // member: pitch_w
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+  // member: yaw_w
   {
     size_t array_size = 1;
 
@@ -212,7 +323,7 @@ size_t max_serialized_size_interface__msg__State(
     using DataType = interface__msg__State;
     is_plain =
       (
-      offsetof(DataType, dq) +
+      offsetof(DataType, yaw_w) +
       last_member_size
       ) == ret_val;
   }

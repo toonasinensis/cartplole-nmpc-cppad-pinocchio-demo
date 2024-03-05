@@ -11,16 +11,27 @@
 #include "rcutils/allocator.h"
 
 
+// Include directives for member types
+// Member `quat`
+#include "interface/msg/detail/quat__functions.h"
+
 bool
 interface__msg__State__init(interface__msg__State * msg)
 {
   if (!msg) {
     return false;
   }
-  // x
-  // q
-  // dx
-  // dq
+  // quat
+  if (!interface__msg__Quat__init(&msg->quat)) {
+    interface__msg__State__fini(msg);
+    return false;
+  }
+  // ang_x_w
+  // ang_y_w
+  // ang_z_w
+  // roll_w
+  // pitch_w
+  // yaw_w
   return true;
 }
 
@@ -30,10 +41,14 @@ interface__msg__State__fini(interface__msg__State * msg)
   if (!msg) {
     return;
   }
-  // x
-  // q
-  // dx
-  // dq
+  // quat
+  interface__msg__Quat__fini(&msg->quat);
+  // ang_x_w
+  // ang_y_w
+  // ang_z_w
+  // roll_w
+  // pitch_w
+  // yaw_w
 }
 
 bool
@@ -42,20 +57,34 @@ interface__msg__State__are_equal(const interface__msg__State * lhs, const interf
   if (!lhs || !rhs) {
     return false;
   }
-  // x
-  if (lhs->x != rhs->x) {
+  // quat
+  if (!interface__msg__Quat__are_equal(
+      &(lhs->quat), &(rhs->quat)))
+  {
     return false;
   }
-  // q
-  if (lhs->q != rhs->q) {
+  // ang_x_w
+  if (lhs->ang_x_w != rhs->ang_x_w) {
     return false;
   }
-  // dx
-  if (lhs->dx != rhs->dx) {
+  // ang_y_w
+  if (lhs->ang_y_w != rhs->ang_y_w) {
     return false;
   }
-  // dq
-  if (lhs->dq != rhs->dq) {
+  // ang_z_w
+  if (lhs->ang_z_w != rhs->ang_z_w) {
+    return false;
+  }
+  // roll_w
+  if (lhs->roll_w != rhs->roll_w) {
+    return false;
+  }
+  // pitch_w
+  if (lhs->pitch_w != rhs->pitch_w) {
+    return false;
+  }
+  // yaw_w
+  if (lhs->yaw_w != rhs->yaw_w) {
     return false;
   }
   return true;
@@ -69,14 +98,24 @@ interface__msg__State__copy(
   if (!input || !output) {
     return false;
   }
-  // x
-  output->x = input->x;
-  // q
-  output->q = input->q;
-  // dx
-  output->dx = input->dx;
-  // dq
-  output->dq = input->dq;
+  // quat
+  if (!interface__msg__Quat__copy(
+      &(input->quat), &(output->quat)))
+  {
+    return false;
+  }
+  // ang_x_w
+  output->ang_x_w = input->ang_x_w;
+  // ang_y_w
+  output->ang_y_w = input->ang_y_w;
+  // ang_z_w
+  output->ang_z_w = input->ang_z_w;
+  // roll_w
+  output->roll_w = input->roll_w;
+  // pitch_w
+  output->pitch_w = input->pitch_w;
+  // yaw_w
+  output->yaw_w = input->yaw_w;
   return true;
 }
 

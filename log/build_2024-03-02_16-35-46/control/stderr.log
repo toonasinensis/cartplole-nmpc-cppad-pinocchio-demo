@@ -1,7 +1,0 @@
-[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/main.cpp:10:[m[K [01;35m[Kwarning: [m[K"BACKWARD_HAS_DW" redefined
-   10 | #define BACKWARD_HAS_DW 1
-      | 
-In file included from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/control/src/main.cpp:2[m[K:
-[01m[K/usr/include/backward.hpp:193:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
-  193 | #define BACKWARD_HAS_DW 0
-      | 

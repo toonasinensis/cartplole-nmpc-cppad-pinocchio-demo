@@ -356,7 +356,7 @@ void PhysicsThread(mj::Simulate* sim, const char* filename) {
 
       mj_forward(m, d);
       for (int i = 0; i < 12; ++i) {
-        d->qpos[1] = 0.2;
+        // d->qpos[1] = default_qpos[0];
       }
 
       // allocate ctrlnoise
@@ -375,12 +375,18 @@ void PhysicsThread(mj::Simulate* sim, const char* filename) {
   mj_deleteData(d);
   mj_deleteModel(m);
 }
-
+//TODO: change ctrl
 void MyController(const mjModel* m, mjData* d) {
   std::lock_guard<std::mutex> lk(sim_node_ptr->set_torque_mutex);
 
-   d->ctrl[0] = sim_node_ptr->torque_msg.u;
-
+  //  d->ctrl[0 + 0] = sim_node_ptr->torque_msg.tau_x_w;
+  //  d->ctrl[0 + 1] = sim_node_ptr->torque_msg.tau_y_w;
+  //  d->ctrl[0 + 2] = sim_node_ptr->torque_msg.tau_z_w;
+   
+   d->ctrl[3 + 0] = sim_node_ptr->torque_msg.tau_x_w;
+   d->ctrl[3 + 1] = sim_node_ptr->torque_msg.tau_y_w;
+   d->ctrl[3 + 2] = sim_node_ptr->torque_msg.tau_z_w;
+   
 }
 
 // run event loop
@@ -417,10 +423,13 @@ int main(int argc, char** argv) {
       /* is_passive = */ false,
       /* is_gpu_accelerated = */
       false);
-  
+
 
 
   sim_node_ptr->declare_parameter("model_name", rclcpp::PARAMETER_STRING);
+std::string model_name_test =  sim_node_ptr->get_parameter("model_name").as_string();
+  RCLCPP_INFO(sim_node_ptr->get_logger(),model_name_test.c_str());
+  // std::cout<<    sim_node_ptr->get_parameter("model_name").as_string()<<std::endl;
   // std::map<std::string, double> qpos_params = {
   //     {"qpos0", 0.0}, 
   // };

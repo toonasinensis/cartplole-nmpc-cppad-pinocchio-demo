@@ -15,6 +15,10 @@
 #include "rosidl_runtime_cpp/message_initialization.hpp"
 
 
+// Include directives for member types
+// Member 'quat'
+#include "interface/msg/detail/quat__struct.hpp"
+
 #ifndef _WIN32
 # define DEPRECATED__interface__msg__State __attribute__((deprecated))
 #else
@@ -34,67 +38,99 @@ struct State_
   using Type = State_<ContainerAllocator>;
 
   explicit State_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : quat(_init)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->x = 0.0;
-      this->q = 0.0;
-      this->dx = 0.0;
-      this->dq = 0.0;
+      this->ang_x_w = 0.0;
+      this->ang_y_w = 0.0;
+      this->ang_z_w = 0.0;
+      this->roll_w = 0.0;
+      this->pitch_w = 0.0;
+      this->yaw_w = 0.0;
     }
   }
 
   explicit State_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : quat(_alloc, _init)
   {
-    (void)_alloc;
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->x = 0.0;
-      this->q = 0.0;
-      this->dx = 0.0;
-      this->dq = 0.0;
+      this->ang_x_w = 0.0;
+      this->ang_y_w = 0.0;
+      this->ang_z_w = 0.0;
+      this->roll_w = 0.0;
+      this->pitch_w = 0.0;
+      this->yaw_w = 0.0;
     }
   }
 
   // field types and members
-  using _x_type =
+  using _quat_type =
+    interface::msg::Quat_<ContainerAllocator>;
+  _quat_type quat;
+  using _ang_x_w_type =
     double;
-  _x_type x;
-  using _q_type =
+  _ang_x_w_type ang_x_w;
+  using _ang_y_w_type =
     double;
-  _q_type q;
-  using _dx_type =
+  _ang_y_w_type ang_y_w;
+  using _ang_z_w_type =
     double;
-  _dx_type dx;
-  using _dq_type =
+  _ang_z_w_type ang_z_w;
+  using _roll_w_type =
     double;
-  _dq_type dq;
+  _roll_w_type roll_w;
+  using _pitch_w_type =
+    double;
+  _pitch_w_type pitch_w;
+  using _yaw_w_type =
+    double;
+  _yaw_w_type yaw_w;
 
   // setters for named parameter idiom
-  Type & set__x(
-    const double & _arg)
+  Type & set__quat(
+    const interface::msg::Quat_<ContainerAllocator> & _arg)
   {
-    this->x = _arg;
+    this->quat = _arg;
     return *this;
   }
-  Type & set__q(
+  Type & set__ang_x_w(
     const double & _arg)
   {
-    this->q = _arg;
+    this->ang_x_w = _arg;
     return *this;
   }
-  Type & set__dx(
+  Type & set__ang_y_w(
     const double & _arg)
   {
-    this->dx = _arg;
+    this->ang_y_w = _arg;
     return *this;
   }
-  Type & set__dq(
+  Type & set__ang_z_w(
     const double & _arg)
   {
-    this->dq = _arg;
+    this->ang_z_w = _arg;
+    return *this;
+  }
+  Type & set__roll_w(
+    const double & _arg)
+  {
+    this->roll_w = _arg;
+    return *this;
+  }
+  Type & set__pitch_w(
+    const double & _arg)
+  {
+    this->pitch_w = _arg;
+    return *this;
+  }
+  Type & set__yaw_w(
+    const double & _arg)
+  {
+    this->yaw_w = _arg;
     return *this;
   }
 
@@ -140,16 +176,25 @@ struct State_
   // comparison operators
   bool operator==(const State_ & other) const
   {
-    if (this->x != other.x) {
+    if (this->quat != other.quat) {
       return false;
     }
-    if (this->q != other.q) {
+    if (this->ang_x_w != other.ang_x_w) {
       return false;
     }
-    if (this->dx != other.dx) {
+    if (this->ang_y_w != other.ang_y_w) {
       return false;
     }
-    if (this->dq != other.dq) {
+    if (this->ang_z_w != other.ang_z_w) {
+      return false;
+    }
+    if (this->roll_w != other.roll_w) {
+      return false;
+    }
+    if (this->pitch_w != other.pitch_w) {
+      return false;
+    }
+    if (this->yaw_w != other.yaw_w) {
       return false;
     }
     return true;

@@ -17,13 +17,20 @@ extern "C"
 
 // Constants defined in the message
 
+// Include directives for member types
+// Member 'quat'
+#include "interface/msg/detail/quat__struct.h"
+
 /// Struct defined in msg/State in the package interface.
 typedef struct interface__msg__State
 {
-  double x;
-  double q;
-  double dx;
-  double dq;
+  interface__msg__Quat quat;
+  double ang_x_w;
+  double ang_y_w;
+  double ang_z_w;
+  double roll_w;
+  double pitch_w;
+  double yaw_w;
 } interface__msg__State;
 
 // Struct for a sequence of interface__msg__State.

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/interface__rosidl_generator_py.dir/rosidl_generator_py/interface/msg/_quat_s.c.o"
+  "CMakeFiles/interface__rosidl_generator_py.dir/rosidl_generator_py/interface/msg/_quat_s.c.o.d"
   "CMakeFiles/interface__rosidl_generator_py.dir/rosidl_generator_py/interface/msg/_state_s.c.o"
   "CMakeFiles/interface__rosidl_generator_py.dir/rosidl_generator_py/interface/msg/_state_s.c.o.d"
   "CMakeFiles/interface__rosidl_generator_py.dir/rosidl_generator_py/interface/msg/_torque_s.c.o"

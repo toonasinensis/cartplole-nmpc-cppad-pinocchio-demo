@@ -245,15 +245,24 @@ CMakeFiles/interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_gener
   rosidl_generator_c/interface/msg/detail/state__type_support.h \
   rosidl_generator_c/interface/msg/rosidl_generator_c__visibility_control.h \
   rosidl_generator_c/interface/msg/detail/state__struct.h \
+  rosidl_generator_c/interface/msg/detail/quat__struct.h \
   rosidl_generator_c/interface/msg/detail/state__functions.h \
   rosidl_generator_c/interface/msg/detail/torque__type_support.h \
   rosidl_generator_c/interface/msg/detail/torque__struct.h \
-  rosidl_generator_c/interface/msg/detail/torque__functions.h
+  rosidl_generator_c/interface/msg/detail/torque__functions.h \
+  rosidl_generator_c/interface/msg/detail/quat__type_support.h \
+  rosidl_generator_c/interface/msg/detail/quat__functions.h
 
+
+rosidl_generator_c/interface/msg/detail/quat__functions.h:
+
+rosidl_generator_c/interface/msg/detail/quat__type_support.h:
 
 rosidl_generator_c/interface/msg/detail/torque__functions.h:
 
 rosidl_generator_c/interface/msg/detail/torque__type_support.h:
+
+rosidl_generator_c/interface/msg/detail/quat__struct.h:
 
 rosidl_generator_c/interface/msg/rosidl_generator_c__visibility_control.h:
 

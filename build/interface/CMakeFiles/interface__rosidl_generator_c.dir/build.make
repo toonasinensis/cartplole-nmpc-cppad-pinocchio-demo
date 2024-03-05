@@ -84,6 +84,7 @@ rosidl_generator_c/interface/msg/state.h: /opt/ros/humble/share/rosidl_generator
 rosidl_generator_c/interface/msg/state.h: /opt/ros/humble/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/interface/msg/state.h: rosidl_adapter/interface/msg/State.idl
 rosidl_generator_c/interface/msg/state.h: rosidl_adapter/interface/msg/Torque.idl
+rosidl_generator_c/interface/msg/state.h: rosidl_adapter/interface/msg/Quat.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/xie/Desktop/learn/carpole/cartplole/build/interface/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
 	/usr/bin/python3.10 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/xie/Desktop/learn/carpole/cartplole/build/interface/rosidl_generator_c__arguments.json
 
@@ -108,11 +109,26 @@ rosidl_generator_c/interface/msg/detail/torque__struct.h: rosidl_generator_c/int
 rosidl_generator_c/interface/msg/detail/torque__type_support.h: rosidl_generator_c/interface/msg/state.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/interface/msg/detail/torque__type_support.h
 
+rosidl_generator_c/interface/msg/quat.h: rosidl_generator_c/interface/msg/state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/interface/msg/quat.h
+
+rosidl_generator_c/interface/msg/detail/quat__functions.h: rosidl_generator_c/interface/msg/state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/interface/msg/detail/quat__functions.h
+
+rosidl_generator_c/interface/msg/detail/quat__struct.h: rosidl_generator_c/interface/msg/state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/interface/msg/detail/quat__struct.h
+
+rosidl_generator_c/interface/msg/detail/quat__type_support.h: rosidl_generator_c/interface/msg/state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/interface/msg/detail/quat__type_support.h
+
 rosidl_generator_c/interface/msg/detail/state__functions.c: rosidl_generator_c/interface/msg/state.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/interface/msg/detail/state__functions.c
 
 rosidl_generator_c/interface/msg/detail/torque__functions.c: rosidl_generator_c/interface/msg/state.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/interface/msg/detail/torque__functions.c
+
+rosidl_generator_c/interface/msg/detail/quat__functions.c: rosidl_generator_c/interface/msg/state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/interface/msg/detail/quat__functions.c
 
 CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/msg/detail/state__functions.c.o: CMakeFiles/interface__rosidl_generator_c.dir/flags.make
 CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/msg/detail/state__functions.c.o: rosidl_generator_c/interface/msg/detail/state__functions.c
@@ -142,21 +158,37 @@ CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/msg/de
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/msg/detail/torque__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/xie/Desktop/learn/carpole/cartplole/build/interface/rosidl_generator_c/interface/msg/detail/torque__functions.c -o CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/msg/detail/torque__functions.c.s
 
+CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/msg/detail/quat__functions.c.o: CMakeFiles/interface__rosidl_generator_c.dir/flags.make
+CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/msg/detail/quat__functions.c.o: rosidl_generator_c/interface/msg/detail/quat__functions.c
+CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/msg/detail/quat__functions.c.o: CMakeFiles/interface__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xie/Desktop/learn/carpole/cartplole/build/interface/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/msg/detail/quat__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/msg/detail/quat__functions.c.o -MF CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/msg/detail/quat__functions.c.o.d -o CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/msg/detail/quat__functions.c.o -c /home/xie/Desktop/learn/carpole/cartplole/build/interface/rosidl_generator_c/interface/msg/detail/quat__functions.c
+
+CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/msg/detail/quat__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/msg/detail/quat__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/xie/Desktop/learn/carpole/cartplole/build/interface/rosidl_generator_c/interface/msg/detail/quat__functions.c > CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/msg/detail/quat__functions.c.i
+
+CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/msg/detail/quat__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/msg/detail/quat__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/xie/Desktop/learn/carpole/cartplole/build/interface/rosidl_generator_c/interface/msg/detail/quat__functions.c -o CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/msg/detail/quat__functions.c.s
+
 # Object files for target interface__rosidl_generator_c
 interface__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/msg/detail/state__functions.c.o" \
-"CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/msg/detail/torque__functions.c.o"
+"CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/msg/detail/torque__functions.c.o" \
+"CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/msg/detail/quat__functions.c.o"
 
 # External object files for target interface__rosidl_generator_c
 interface__rosidl_generator_c_EXTERNAL_OBJECTS =
 
 libinterface__rosidl_generator_c.so: CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/msg/detail/state__functions.c.o
 libinterface__rosidl_generator_c.so: CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/msg/detail/torque__functions.c.o
+libinterface__rosidl_generator_c.so: CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/msg/detail/quat__functions.c.o
 libinterface__rosidl_generator_c.so: CMakeFiles/interface__rosidl_generator_c.dir/build.make
 libinterface__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libinterface__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libinterface__rosidl_generator_c.so: CMakeFiles/interface__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xie/Desktop/learn/carpole/cartplole/build/interface/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libinterface__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xie/Desktop/learn/carpole/cartplole/build/interface/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libinterface__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/interface__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -167,6 +199,10 @@ CMakeFiles/interface__rosidl_generator_c.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/interface__rosidl_generator_c.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/interface__rosidl_generator_c.dir/clean
 
+CMakeFiles/interface__rosidl_generator_c.dir/depend: rosidl_generator_c/interface/msg/detail/quat__functions.c
+CMakeFiles/interface__rosidl_generator_c.dir/depend: rosidl_generator_c/interface/msg/detail/quat__functions.h
+CMakeFiles/interface__rosidl_generator_c.dir/depend: rosidl_generator_c/interface/msg/detail/quat__struct.h
+CMakeFiles/interface__rosidl_generator_c.dir/depend: rosidl_generator_c/interface/msg/detail/quat__type_support.h
 CMakeFiles/interface__rosidl_generator_c.dir/depend: rosidl_generator_c/interface/msg/detail/state__functions.c
 CMakeFiles/interface__rosidl_generator_c.dir/depend: rosidl_generator_c/interface/msg/detail/state__functions.h
 CMakeFiles/interface__rosidl_generator_c.dir/depend: rosidl_generator_c/interface/msg/detail/state__struct.h
@@ -175,6 +211,7 @@ CMakeFiles/interface__rosidl_generator_c.dir/depend: rosidl_generator_c/interfac
 CMakeFiles/interface__rosidl_generator_c.dir/depend: rosidl_generator_c/interface/msg/detail/torque__functions.h
 CMakeFiles/interface__rosidl_generator_c.dir/depend: rosidl_generator_c/interface/msg/detail/torque__struct.h
 CMakeFiles/interface__rosidl_generator_c.dir/depend: rosidl_generator_c/interface/msg/detail/torque__type_support.h
+CMakeFiles/interface__rosidl_generator_c.dir/depend: rosidl_generator_c/interface/msg/quat.h
 CMakeFiles/interface__rosidl_generator_c.dir/depend: rosidl_generator_c/interface/msg/state.h
 CMakeFiles/interface__rosidl_generator_c.dir/depend: rosidl_generator_c/interface/msg/torque.h
 	cd /home/xie/Desktop/learn/carpole/cartplole/build/interface && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xie/Desktop/learn/carpole/cartplole/src/interface /home/xie/Desktop/learn/carpole/cartplole/src/interface /home/xie/Desktop/learn/carpole/cartplole/build/interface /home/xie/Desktop/learn/carpole/cartplole/build/interface /home/xie/Desktop/learn/carpole/cartplole/build/interface/CMakeFiles/interface__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)

@@ -4,7 +4,8 @@
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource",
   "idl_tuples": [
     "/home/xie/Desktop/learn/carpole/cartplole/build/interface/rosidl_adapter/interface:msg/State.idl",
-    "/home/xie/Desktop/learn/carpole/cartplole/build/interface/rosidl_adapter/interface:msg/Torque.idl"
+    "/home/xie/Desktop/learn/carpole/cartplole/build/interface/rosidl_adapter/interface:msg/Torque.idl",
+    "/home/xie/Desktop/learn/carpole/cartplole/build/interface/rosidl_adapter/interface:msg/Quat.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c",
@@ -16,6 +17,7 @@
     "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em",
     "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em",
     "/home/xie/Desktop/learn/carpole/cartplole/build/interface/rosidl_adapter/interface/msg/State.idl",
-    "/home/xie/Desktop/learn/carpole/cartplole/build/interface/rosidl_adapter/interface/msg/Torque.idl"
+    "/home/xie/Desktop/learn/carpole/cartplole/build/interface/rosidl_adapter/interface/msg/Torque.idl",
+    "/home/xie/Desktop/learn/carpole/cartplole/build/interface/rosidl_adapter/interface/msg/Quat.idl"
   ]
 }

@@ -20,7 +20,9 @@ extern "C"
 /// Struct defined in msg/Torque in the package interface.
 typedef struct interface__msg__Torque
 {
-  double u;
+  double tau_x_w;
+  double tau_y_w;
+  double tau_z_w;
 } interface__msg__Torque;
 
 // Struct for a sequence of interface__msg__Torque.

@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/interface/_interface_s.ep.rosidl_typesupport_fastrtps_c.c"
   "../rosidl_generator_py/interface/_interface_s.ep.rosidl_typesupport_introspection_c.c"
   "../rosidl_generator_py/interface/msg/__init__.py"
+  "../rosidl_generator_py/interface/msg/_quat.py"
+  "../rosidl_generator_py/interface/msg/_quat_s.c"
   "../rosidl_generator_py/interface/msg/_state.py"
   "../rosidl_generator_py/interface/msg/_state_s.c"
   "../rosidl_generator_py/interface/msg/_torque.py"

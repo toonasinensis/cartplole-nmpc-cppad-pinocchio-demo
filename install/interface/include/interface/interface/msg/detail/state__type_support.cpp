@@ -37,16 +37,16 @@ void State_fini_function(void * message_memory)
   typed_message->~State();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember State_message_member_array[4] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember State_message_member_array[7] = {
   {
-    "x",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
+    "quat",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
-    nullptr,  // members of sub message
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<interface::msg::Quat>(),  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(interface::msg::State, x),  // bytes offset in struct
+    offsetof(interface::msg::State, quat),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -56,14 +56,14 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember State_message
     nullptr  // resize(index) function pointer
   },
   {
-    "q",  // name
+    "ang_x_w",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(interface::msg::State, q),  // bytes offset in struct
+    offsetof(interface::msg::State, ang_x_w),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -73,14 +73,14 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember State_message
     nullptr  // resize(index) function pointer
   },
   {
-    "dx",  // name
+    "ang_y_w",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(interface::msg::State, dx),  // bytes offset in struct
+    offsetof(interface::msg::State, ang_y_w),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -90,14 +90,65 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember State_message
     nullptr  // resize(index) function pointer
   },
   {
-    "dq",  // name
+    "ang_z_w",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(interface::msg::State, dq),  // bytes offset in struct
+    offsetof(interface::msg::State, ang_z_w),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "roll_w",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(interface::msg::State, roll_w),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "pitch_w",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(interface::msg::State, pitch_w),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "yaw_w",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(interface::msg::State, yaw_w),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -111,7 +162,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember State_message
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers State_message_members = {
   "interface::msg",  // message namespace
   "State",  // message name
-  4,  // number of fields
+  7,  // number of fields
   sizeof(interface::msg::State),
   State_message_member_array,  // message members
   State_init_function,  // function to initialize message memory (memory has to be allocated)

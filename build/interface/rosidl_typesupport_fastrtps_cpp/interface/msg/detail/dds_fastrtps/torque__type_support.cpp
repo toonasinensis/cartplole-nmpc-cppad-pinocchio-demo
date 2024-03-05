@@ -32,8 +32,12 @@ cdr_serialize(
   const interface::msg::Torque & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: u
-  cdr << ros_message.u;
+  // Member: tau_x_w
+  cdr << ros_message.tau_x_w;
+  // Member: tau_y_w
+  cdr << ros_message.tau_y_w;
+  // Member: tau_z_w
+  cdr << ros_message.tau_z_w;
   return true;
 }
 
@@ -43,8 +47,14 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   interface::msg::Torque & ros_message)
 {
-  // Member: u
-  cdr >> ros_message.u;
+  // Member: tau_x_w
+  cdr >> ros_message.tau_x_w;
+
+  // Member: tau_y_w
+  cdr >> ros_message.tau_y_w;
+
+  // Member: tau_z_w
+  cdr >> ros_message.tau_z_w;
 
   return true;
 }
@@ -62,9 +72,21 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: u
+  // Member: tau_x_w
   {
-    size_t item_size = sizeof(ros_message.u);
+    size_t item_size = sizeof(ros_message.tau_x_w);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: tau_y_w
+  {
+    size_t item_size = sizeof(ros_message.tau_y_w);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: tau_z_w
+  {
+    size_t item_size = sizeof(ros_message.tau_z_w);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -92,7 +114,25 @@ max_serialized_size_Torque(
   is_plain = true;
 
 
-  // Member: u
+  // Member: tau_x_w
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: tau_y_w
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: tau_z_w
   {
     size_t array_size = 1;
 
@@ -109,7 +149,7 @@ max_serialized_size_Torque(
     using DataType = interface::msg::Torque;
     is_plain =
       (
-      offsetof(DataType, u) +
+      offsetof(DataType, tau_z_w) +
       last_member_size
       ) == ret_val;
   }

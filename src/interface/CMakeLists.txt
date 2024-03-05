@@ -30,6 +30,8 @@ find_package(rosidl_default_generators REQUIRED)    #need to add
 rosidl_generate_interfaces(${PROJECT_NAME}        #need to add 
   "msg/State.msg"
   "msg/Torque.msg"
+    "msg/Quat.msg"
+
 )
 
 

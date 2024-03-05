@@ -25,6 +25,7 @@ CMakeFiles/interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface/ms
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /home/xie/Desktop/learn/carpole/cartplole/build/interface/rosidl_generator_c/interface/msg/detail/quat__struct.h \
  /home/xie/Desktop/learn/carpole/cartplole/build/interface/rosidl_generator_c/interface/msg/detail/state__type_support.h \
  /home/xie/Desktop/learn/carpole/cartplole/build/interface/rosidl_generator_c/interface/msg/rosidl_generator_c__visibility_control.h \
  /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/identifier.h \

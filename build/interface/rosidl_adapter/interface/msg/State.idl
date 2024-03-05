@@ -2,17 +2,24 @@
 // with input from interface/msg/State.msg
 // generated code does not contain a copyright notice
 
+#include "interface/msg/Quat.idl"
 
 module interface {
   module msg {
     struct State {
-      double x;
+      interface::msg::Quat quat;
 
-      double q;
+      double ang_x_w;
 
-      double dx;
+      double ang_y_w;
 
-      double dq;
+      double ang_z_w;
+
+      double roll_w;
+
+      double pitch_w;
+
+      double yaw_w;
     };
   };
 };

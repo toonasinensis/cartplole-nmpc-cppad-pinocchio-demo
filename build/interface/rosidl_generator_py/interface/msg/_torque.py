@@ -57,14 +57,20 @@ class Torque(metaclass=Metaclass_Torque):
     """Message class 'Torque'."""
 
     __slots__ = [
-        '_u',
+        '_tau_x_w',
+        '_tau_y_w',
+        '_tau_z_w',
     ]
 
     _fields_and_field_types = {
-        'u': 'double',
+        'tau_x_w': 'double',
+        'tau_y_w': 'double',
+        'tau_z_w': 'double',
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
     )
 
@@ -72,7 +78,9 @@ class Torque(metaclass=Metaclass_Torque):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.u = kwargs.get('u', float())
+        self.tau_x_w = kwargs.get('tau_x_w', float())
+        self.tau_y_w = kwargs.get('tau_y_w', float())
+        self.tau_z_w = kwargs.get('tau_z_w', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -103,7 +111,11 @@ class Torque(metaclass=Metaclass_Torque):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.u != other.u:
+        if self.tau_x_w != other.tau_x_w:
+            return False
+        if self.tau_y_w != other.tau_y_w:
+            return False
+        if self.tau_z_w != other.tau_z_w:
             return False
         return True
 
@@ -113,16 +125,46 @@ class Torque(metaclass=Metaclass_Torque):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def u(self):
-        """Message field 'u'."""
-        return self._u
+    def tau_x_w(self):
+        """Message field 'tau_x_w'."""
+        return self._tau_x_w
 
-    @u.setter
-    def u(self, value):
+    @tau_x_w.setter
+    def tau_x_w(self, value):
         if __debug__:
             assert \
                 isinstance(value, float), \
-                "The 'u' field must be of type 'float'"
+                "The 'tau_x_w' field must be of type 'float'"
             assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
-                "The 'u' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
-        self._u = value
+                "The 'tau_x_w' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
+        self._tau_x_w = value
+
+    @builtins.property
+    def tau_y_w(self):
+        """Message field 'tau_y_w'."""
+        return self._tau_y_w
+
+    @tau_y_w.setter
+    def tau_y_w(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'tau_y_w' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'tau_y_w' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
+        self._tau_y_w = value
+
+    @builtins.property
+    def tau_z_w(self):
+        """Message field 'tau_z_w'."""
+        return self._tau_z_w
+
+    @tau_z_w.setter
+    def tau_z_w(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'tau_z_w' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'tau_z_w' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
+        self._tau_z_w = value

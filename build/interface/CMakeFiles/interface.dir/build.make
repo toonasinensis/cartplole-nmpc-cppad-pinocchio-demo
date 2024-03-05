@@ -68,6 +68,7 @@ include CMakeFiles/interface.dir/progress.make
 
 CMakeFiles/interface: /home/xie/Desktop/learn/carpole/cartplole/src/interface/msg/State.msg
 CMakeFiles/interface: /home/xie/Desktop/learn/carpole/cartplole/src/interface/msg/Torque.msg
+CMakeFiles/interface: /home/xie/Desktop/learn/carpole/cartplole/src/interface/msg/Quat.msg
 
 interface: CMakeFiles/interface
 interface: CMakeFiles/interface.dir/build.make

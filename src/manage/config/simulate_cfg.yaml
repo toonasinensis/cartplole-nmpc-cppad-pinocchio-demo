@@ -1,7 +1,7 @@
 # 全局参数
 /**:
   ros__parameters:
-    model_name: "inverted_pendulum"
+    model_name: "satellite"
 # 初始姿态
     qpos0: 0
 

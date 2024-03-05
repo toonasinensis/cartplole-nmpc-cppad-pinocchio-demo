@@ -1,0 +1,29 @@
+<mujoco model="satellite">
+	<compiler inertiafromgeom="true"/>
+	<default>
+		<joint armature="0" damping="0.000001" limited="true"/>
+		<geom contype="0" friction="0.0000001 0 0" rgba="0.7 0.7 0 1"/>
+		<tendon/>
+		<motor ctrlrange="-100 100"/>
+	</default>
+	<option gravity="0 0 0" integrator="RK4" timestep="0.001"/>
+	<freejoint>
+	<joint name = "tau"/>
+	</freejoint>
+	<size nstack="3000"/>
+	<worldbody>
+		<geom name="satellite" pos="0 0 3" quat="0.707 0 0.707 0" rgba="0.3 0.3 0.7 1" size="0.2 0.2 0.2" type="box" mass = "5"/>
+		<site name="quat" pos="0 0 3" rgba="1 0 0 1" size="0.2 " type = "sphere"/>
+	</worldbody>
+	<actuator>
+		<motor gear="1 1 1 1 1 1" joint="free" name="tau"/>
+	</actuator>
+
+	<sensor>
+		<framequat name="quat" site = "quat" noise="0.001" />
+		<frameangvel name="angvel" site = "quat" noise="0.001" />
+
+
+	</sensor>
+
+</mujoco>

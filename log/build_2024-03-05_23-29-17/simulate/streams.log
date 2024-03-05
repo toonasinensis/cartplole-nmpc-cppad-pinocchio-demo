@@ -1,0 +1,82 @@
+[0.027s] Invoking command in '/home/xie/Desktop/learn/carpole/cartplole/build/simulate': CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/usr/local:/usr/local:/opt/ros/humble /usr/bin/cmake --build /home/xie/Desktop/learn/carpole/cartplole/build/simulate -- -j20 -l20
+[0.040s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.116s] -- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)
+[0.130s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.132s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.135s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.140s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.148s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.176s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.177s] -- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.220s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.302s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.368s] -- Found interface: 0.0.0 (/home/xie/Desktop/learn/carpole/cartplole/install/interface/share/interface/cmake)
+[0.408s] -- Configuring done
+[0.413s] -- Generating done
+[0.414s] -- Build files have been written to: /home/xie/Desktop/learn/carpole/cartplole/build/simulate
+[0.430s] [35m[1mConsolidate compiler generated dependencies of target simulate_node[0m
+[0.442s] [ 14%] [32mBuilding CXX object CMakeFiles/simulate_node.dir/src/main.cc.o[0m
+[0.443s] [ 28%] [32mBuilding CXX object CMakeFiles/simulate_node.dir/src/simulate_node.cpp.o[0m
+[1.739s] In file included from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/src/main.cc:18[m[K:
+[1.739s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:280:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::name[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[1.739s]   280 |       {mjITEM_END}[01;35m[K}[m[K;
+[1.739s]       |                   [01;35m[K^[m[K
+[1.739s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:280:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[1.739s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:280:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::pdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[1.739s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:280:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::other[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[1.739s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:297:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::pdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[1.739s]   297 |       {mjITEM_END}[01;35m[K}[m[K;
+[1.739s]       |                   [01;35m[K^[m[K
+[1.739s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:297:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::other[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[1.739s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:297:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::pdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[1.739s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:297:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::other[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[1.739s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:297:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::pdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[1.739s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:297:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::other[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[1.739s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:297:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::name[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[1.739s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:297:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[1.739s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:297:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::pdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[1.739s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:297:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::other[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[1.740s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:305:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::name[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[1.740s]   305 |       {mjITEM_END}[01;35m[K}[m[K;
+[1.740s]       |                   [01;35m[K^[m[K
+[1.740s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:305:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[1.740s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:305:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::pdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[1.740s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:305:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::other[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[1.780s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/src/main.cc:[m[K In lambda function:
+[1.780s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/src/main.cc:75:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::size_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.780s]    75 |       } else if ([01;35m[Kwritten == -1[m[K) {
+[1.780s]       |                  [01;35m[K~~~~~~~~^~~~~[m[K
+[1.784s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/src/main.cc:[m[K In function ‘[01m[Kvoid MyController(const mjModel*, mjData*)[m[K’:
+[1.784s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/src/main.cc:379:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Km[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.784s]   379 | void MyController([01;35m[Kconst mjModel* m[m[K, mjData* d) {
+[1.784s]       |                   [01;35m[K~~~~~~~~~~~~~~~^[m[K
+[1.784s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/src/main.cc:379:45:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kd[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.785s]   379 | void MyController(const mjModel* m, [01;35m[KmjData* d[m[K) {
+[1.785s]       |                                     [01;35m[K~~~~~~~~^[m[K
+[3.023s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/src/main.cc:[m[K At global scope:
+[3.024s] [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/src/main.cc:47:8:[m[K [01;35m[Kwarning: [m[K‘[01m[K{anonymous}::default_qpos[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.024s]    47 | double [01;35m[Kdefault_qpos[m[K[12];
+[3.024s]       |        [01;35m[K^~~~~~~~~~~~[m[K
+[6.218s] [ 42%] [32m[1mLinking CXX executable simulate_node[0m
+[6.309s] [100%] Built target simulate_node
+[6.315s] Invoked command in '/home/xie/Desktop/learn/carpole/cartplole/build/simulate' returned '0': CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/usr/local:/usr/local:/opt/ros/humble /usr/bin/cmake --build /home/xie/Desktop/learn/carpole/cartplole/build/simulate -- -j20 -l20
+[6.334s] Invoking command in '/home/xie/Desktop/learn/carpole/cartplole/build/simulate': CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/usr/local:/usr/local:/opt/ros/humble /usr/bin/cmake --install /home/xie/Desktop/learn/carpole/cartplole/build/simulate
+[6.338s] -- Install configuration: "Release"
+[6.338s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/lib/simulate/simulate_node
+[6.339s] -- Set runtime path of "/home/xie/Desktop/learn/carpole/cartplole/install/simulate/lib/simulate/simulate_node" to "/home/xie/Desktop/learn/carpole/cartplole/src/simulate/lib"
+[6.340s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/ament_index/resource_index/package_run_dependencies/simulate
+[6.340s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/ament_index/resource_index/parent_prefix_path/simulate
+[6.340s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/environment/ament_prefix_path.sh
+[6.340s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/environment/ament_prefix_path.dsv
+[6.340s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/environment/path.sh
+[6.340s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/environment/path.dsv
+[6.340s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/local_setup.bash
+[6.340s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/local_setup.sh
+[6.340s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/local_setup.zsh
+[6.340s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/local_setup.dsv
+[6.340s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/package.dsv
+[6.340s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/ament_index/resource_index/packages/simulate
+[6.340s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/cmake/simulateConfig.cmake
+[6.340s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/cmake/simulateConfig-version.cmake
+[6.340s] -- Up-to-date: /home/xie/Desktop/learn/carpole/cartplole/install/simulate/share/simulate/package.xml
+[6.341s] Invoked command in '/home/xie/Desktop/learn/carpole/cartplole/build/simulate' returned '0': CMAKE_PREFIX_PATH=/home/xie/Desktop/learn/carpole/cartplole/install/interface:/home/xie/Desktop/learn/carpole/cartplole/install/simulate:/home/xie/Desktop/learn/carpole/cartplole/install/manage:/usr/local:/usr/local:/opt/ros/humble /usr/bin/cmake --install /home/xie/Desktop/learn/carpole/cartplole/build/simulate

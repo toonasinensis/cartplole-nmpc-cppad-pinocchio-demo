@@ -25,10 +25,24 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: u
+  // member: tau_x_w
   {
-    out << "u: ";
-    rosidl_generator_traits::value_to_yaml(msg.u, out);
+    out << "tau_x_w: ";
+    rosidl_generator_traits::value_to_yaml(msg.tau_x_w, out);
+    out << ", ";
+  }
+
+  // member: tau_y_w
+  {
+    out << "tau_y_w: ";
+    rosidl_generator_traits::value_to_yaml(msg.tau_y_w, out);
+    out << ", ";
+  }
+
+  // member: tau_z_w
+  {
+    out << "tau_z_w: ";
+    rosidl_generator_traits::value_to_yaml(msg.tau_z_w, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -37,13 +51,33 @@ inline void to_block_style_yaml(
   const Torque & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: u
+  // member: tau_x_w
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "u: ";
-    rosidl_generator_traits::value_to_yaml(msg.u, out);
+    out << "tau_x_w: ";
+    rosidl_generator_traits::value_to_yaml(msg.tau_x_w, out);
+    out << "\n";
+  }
+
+  // member: tau_y_w
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "tau_y_w: ";
+    rosidl_generator_traits::value_to_yaml(msg.tau_y_w, out);
+    out << "\n";
+  }
+
+  // member: tau_z_w
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "tau_z_w: ";
+    rosidl_generator_traits::value_to_yaml(msg.tau_z_w, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)

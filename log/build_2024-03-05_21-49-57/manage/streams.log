@@ -1,0 +1,49 @@
+[0.021s] Invoking command in '/home/xie/Desktop/learn/carpole/cartplole/build/manage': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/xie/Desktop/learn/carpole/cartplole/src/manage -DCMAKE_INSTALL_PREFIX=/home/xie/Desktop/learn/carpole/cartplole/install/manage
+[0.048s] -- The C compiler identification is GNU 11.4.0
+[0.075s] -- The CXX compiler identification is GNU 11.4.0
+[0.079s] -- Detecting C compiler ABI info
+[0.114s] -- Detecting C compiler ABI info - done
+[0.118s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.119s] -- Detecting C compile features
+[0.119s] -- Detecting C compile features - done
+[0.120s] -- Detecting CXX compiler ABI info
+[0.160s] -- Detecting CXX compiler ABI info - done
+[0.164s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.164s] -- Detecting CXX compile features
+[0.165s] -- Detecting CXX compile features - done
+[0.169s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.261s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.323s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.368s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.369s] -- Added test 'lint_cmake' to check CMake code style
+[0.369s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.370s] -- Added test 'xmllint' to check XML markup files
+[0.371s] -- Configuring done
+[0.372s] -- Generating done
+[0.372s] -- Build files have been written to: /home/xie/Desktop/learn/carpole/cartplole/build/manage
+[0.374s] Invoked command in '/home/xie/Desktop/learn/carpole/cartplole/build/manage' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/xie/Desktop/learn/carpole/cartplole/src/manage -DCMAKE_INSTALL_PREFIX=/home/xie/Desktop/learn/carpole/cartplole/install/manage
+[0.376s] Invoking command in '/home/xie/Desktop/learn/carpole/cartplole/build/manage': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/xie/Desktop/learn/carpole/cartplole/build/manage -- -j20 -l20
+[0.395s] Invoked command in '/home/xie/Desktop/learn/carpole/cartplole/build/manage' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/xie/Desktop/learn/carpole/cartplole/build/manage -- -j20 -l20
+[0.410s] Invoking command in '/home/xie/Desktop/learn/carpole/cartplole/build/manage': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/xie/Desktop/learn/carpole/cartplole/build/manage
+[0.414s] -- Install configuration: ""
+[0.414s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/launch
+[0.414s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/launch/simulate.launch.py
+[0.414s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/config
+[0.414s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/config/simulate_cfg.yaml
+[0.414s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/config/config.yaml
+[0.414s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/ament_index/resource_index/package_run_dependencies/manage
+[0.414s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/ament_index/resource_index/parent_prefix_path/manage
+[0.414s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/environment/ament_prefix_path.sh
+[0.414s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/environment/ament_prefix_path.dsv
+[0.414s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/environment/path.sh
+[0.414s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/environment/path.dsv
+[0.414s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/local_setup.bash
+[0.414s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/local_setup.sh
+[0.414s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/local_setup.zsh
+[0.414s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/local_setup.dsv
+[0.414s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/package.dsv
+[0.414s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/ament_index/resource_index/packages/manage
+[0.414s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/cmake/manageConfig.cmake
+[0.414s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/cmake/manageConfig-version.cmake
+[0.414s] -- Installing: /home/xie/Desktop/learn/carpole/cartplole/install/manage/share/manage/package.xml
+[0.415s] Invoked command in '/home/xie/Desktop/learn/carpole/cartplole/build/manage' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/xie/Desktop/learn/carpole/cartplole/build/manage

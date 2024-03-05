@@ -6,7 +6,11 @@
 module interface {
   module msg {
     struct Torque {
-      double u;
+      double tau_x_w;
+
+      double tau_y_w;
+
+      double tau_z_w;
     };
   };
 };

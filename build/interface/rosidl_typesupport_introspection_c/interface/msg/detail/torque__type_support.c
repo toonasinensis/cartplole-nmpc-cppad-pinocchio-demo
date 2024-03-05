@@ -31,16 +31,50 @@ void interface__msg__Torque__rosidl_typesupport_introspection_c__Torque_fini_fun
   interface__msg__Torque__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember interface__msg__Torque__rosidl_typesupport_introspection_c__Torque_message_member_array[1] = {
+static rosidl_typesupport_introspection_c__MessageMember interface__msg__Torque__rosidl_typesupport_introspection_c__Torque_message_member_array[3] = {
   {
-    "u",  // name
+    "tau_x_w",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(interface__msg__Torque, u),  // bytes offset in struct
+    offsetof(interface__msg__Torque, tau_x_w),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "tau_y_w",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(interface__msg__Torque, tau_y_w),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "tau_z_w",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(interface__msg__Torque, tau_z_w),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -54,7 +88,7 @@ static rosidl_typesupport_introspection_c__MessageMember interface__msg__Torque_
 static const rosidl_typesupport_introspection_c__MessageMembers interface__msg__Torque__rosidl_typesupport_introspection_c__Torque_message_members = {
   "interface__msg",  // message namespace
   "Torque",  // message name
-  1,  // number of fields
+  3,  // number of fields
   sizeof(interface__msg__Torque),
   interface__msg__Torque__rosidl_typesupport_introspection_c__Torque_message_member_array,  // message members
   interface__msg__Torque__rosidl_typesupport_introspection_c__Torque_init_function,  // function to initialize message memory (memory has to be allocated)

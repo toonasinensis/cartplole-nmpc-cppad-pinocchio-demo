@@ -17,7 +17,9 @@ interface__msg__Torque__init(interface__msg__Torque * msg)
   if (!msg) {
     return false;
   }
-  // u
+  // tau_x_w
+  // tau_y_w
+  // tau_z_w
   return true;
 }
 
@@ -27,7 +29,9 @@ interface__msg__Torque__fini(interface__msg__Torque * msg)
   if (!msg) {
     return;
   }
-  // u
+  // tau_x_w
+  // tau_y_w
+  // tau_z_w
 }
 
 bool
@@ -36,8 +40,16 @@ interface__msg__Torque__are_equal(const interface__msg__Torque * lhs, const inte
   if (!lhs || !rhs) {
     return false;
   }
-  // u
-  if (lhs->u != rhs->u) {
+  // tau_x_w
+  if (lhs->tau_x_w != rhs->tau_x_w) {
+    return false;
+  }
+  // tau_y_w
+  if (lhs->tau_y_w != rhs->tau_y_w) {
+    return false;
+  }
+  // tau_z_w
+  if (lhs->tau_z_w != rhs->tau_z_w) {
     return false;
   }
   return true;
@@ -51,8 +63,12 @@ interface__msg__Torque__copy(
   if (!input || !output) {
     return false;
   }
-  // u
-  output->u = input->u;
+  // tau_x_w
+  output->tau_x_w = input->tau_x_w;
+  // tau_y_w
+  output->tau_y_w = input->tau_y_w;
+  // tau_z_w
+  output->tau_z_w = input->tau_z_w;
   return true;
 }
 

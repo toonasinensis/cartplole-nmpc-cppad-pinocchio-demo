@@ -21,16 +21,48 @@ namespace msg
 namespace builder
 {
 
-class Init_Torque_u
+class Init_Torque_tau_z_w
 {
 public:
-  Init_Torque_u()
+  explicit Init_Torque_tau_z_w(::interface::msg::Torque & msg)
+  : msg_(msg)
+  {}
+  ::interface::msg::Torque tau_z_w(::interface::msg::Torque::_tau_z_w_type arg)
+  {
+    msg_.tau_z_w = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::interface::msg::Torque msg_;
+};
+
+class Init_Torque_tau_y_w
+{
+public:
+  explicit Init_Torque_tau_y_w(::interface::msg::Torque & msg)
+  : msg_(msg)
+  {}
+  Init_Torque_tau_z_w tau_y_w(::interface::msg::Torque::_tau_y_w_type arg)
+  {
+    msg_.tau_y_w = std::move(arg);
+    return Init_Torque_tau_z_w(msg_);
+  }
+
+private:
+  ::interface::msg::Torque msg_;
+};
+
+class Init_Torque_tau_x_w
+{
+public:
+  Init_Torque_tau_x_w()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::interface::msg::Torque u(::interface::msg::Torque::_u_type arg)
+  Init_Torque_tau_y_w tau_x_w(::interface::msg::Torque::_tau_x_w_type arg)
   {
-    msg_.u = std::move(arg);
-    return std::move(msg_);
+    msg_.tau_x_w = std::move(arg);
+    return Init_Torque_tau_y_w(msg_);
   }
 
 private:
@@ -48,7 +80,7 @@ template<>
 inline
 auto build<::interface::msg::Torque>()
 {
-  return interface::msg::builder::Init_Torque_u();
+  return interface::msg::builder::Init_Torque_tau_x_w();
 }
 
 }  // namespace interface

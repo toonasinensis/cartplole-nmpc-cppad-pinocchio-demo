@@ -49,9 +49,19 @@ static bool _Torque__cdr_serialize(
     return false;
   }
   const _Torque__ros_msg_type * ros_message = static_cast<const _Torque__ros_msg_type *>(untyped_ros_message);
-  // Field name: u
+  // Field name: tau_x_w
   {
-    cdr << ros_message->u;
+    cdr << ros_message->tau_x_w;
+  }
+
+  // Field name: tau_y_w
+  {
+    cdr << ros_message->tau_y_w;
+  }
+
+  // Field name: tau_z_w
+  {
+    cdr << ros_message->tau_z_w;
   }
 
   return true;
@@ -66,9 +76,19 @@ static bool _Torque__cdr_deserialize(
     return false;
   }
   _Torque__ros_msg_type * ros_message = static_cast<_Torque__ros_msg_type *>(untyped_ros_message);
-  // Field name: u
+  // Field name: tau_x_w
   {
-    cdr >> ros_message->u;
+    cdr >> ros_message->tau_x_w;
+  }
+
+  // Field name: tau_y_w
+  {
+    cdr >> ros_message->tau_y_w;
+  }
+
+  // Field name: tau_z_w
+  {
+    cdr >> ros_message->tau_z_w;
   }
 
   return true;
@@ -88,9 +108,21 @@ size_t get_serialized_size_interface__msg__Torque(
   (void)padding;
   (void)wchar_size;
 
-  // field.name u
+  // field.name tau_x_w
   {
-    size_t item_size = sizeof(ros_message->u);
+    size_t item_size = sizeof(ros_message->tau_x_w);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name tau_y_w
+  {
+    size_t item_size = sizeof(ros_message->tau_y_w);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name tau_z_w
+  {
+    size_t item_size = sizeof(ros_message->tau_z_w);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -123,7 +155,23 @@ size_t max_serialized_size_interface__msg__Torque(
   full_bounded = true;
   is_plain = true;
 
-  // member: u
+  // member: tau_x_w
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+  // member: tau_y_w
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+  // member: tau_z_w
   {
     size_t array_size = 1;
 
@@ -140,7 +188,7 @@ size_t max_serialized_size_interface__msg__Torque(
     using DataType = interface__msg__Torque;
     is_plain =
       (
-      offsetof(DataType, u) +
+      offsetof(DataType, tau_z_w) +
       last_member_size
       ) == ret_val;
   }

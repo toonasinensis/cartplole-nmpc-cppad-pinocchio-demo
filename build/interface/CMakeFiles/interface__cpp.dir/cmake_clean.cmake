@@ -1,11 +1,15 @@
 file(REMOVE_RECURSE
   "CMakeFiles/interface__cpp"
+  "rosidl_generator_cpp/interface/msg/detail/quat__builder.hpp"
+  "rosidl_generator_cpp/interface/msg/detail/quat__struct.hpp"
+  "rosidl_generator_cpp/interface/msg/detail/quat__traits.hpp"
   "rosidl_generator_cpp/interface/msg/detail/state__builder.hpp"
   "rosidl_generator_cpp/interface/msg/detail/state__struct.hpp"
   "rosidl_generator_cpp/interface/msg/detail/state__traits.hpp"
   "rosidl_generator_cpp/interface/msg/detail/torque__builder.hpp"
   "rosidl_generator_cpp/interface/msg/detail/torque__struct.hpp"
   "rosidl_generator_cpp/interface/msg/detail/torque__traits.hpp"
+  "rosidl_generator_cpp/interface/msg/quat.hpp"
   "rosidl_generator_cpp/interface/msg/state.hpp"
   "rosidl_generator_cpp/interface/msg/torque.hpp"
 )

@@ -79,6 +79,7 @@ rosidl_typesupport_fastrtps_c/interface/msg/detail/state__rosidl_typesupport_fas
 rosidl_typesupport_fastrtps_c/interface/msg/detail/state__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__type_support_c.cpp.em
 rosidl_typesupport_fastrtps_c/interface/msg/detail/state__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/interface/msg/State.idl
 rosidl_typesupport_fastrtps_c/interface/msg/detail/state__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/interface/msg/Torque.idl
+rosidl_typesupport_fastrtps_c/interface/msg/detail/state__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/interface/msg/Quat.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/xie/Desktop/learn/carpole/cartplole/build/interface/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C type support for eProsima Fast-RTPS"
 	/usr/bin/python3.10 /opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c --generator-arguments-file /home/xie/Desktop/learn/carpole/cartplole/build/interface/rosidl_typesupport_fastrtps_c__arguments.json
 
@@ -90,6 +91,12 @@ rosidl_typesupport_fastrtps_c/interface/msg/detail/torque__rosidl_typesupport_fa
 
 rosidl_typesupport_fastrtps_c/interface/msg/detail/torque__type_support_c.cpp: rosidl_typesupport_fastrtps_c/interface/msg/detail/state__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/interface/msg/detail/torque__type_support_c.cpp
+
+rosidl_typesupport_fastrtps_c/interface/msg/detail/quat__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/interface/msg/detail/state__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/interface/msg/detail/quat__rosidl_typesupport_fastrtps_c.h
+
+rosidl_typesupport_fastrtps_c/interface/msg/detail/quat__type_support_c.cpp: rosidl_typesupport_fastrtps_c/interface/msg/detail/state__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/interface/msg/detail/quat__type_support_c.cpp
 
 CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/msg/detail/state__type_support_c.cpp.o: CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/msg/detail/state__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/interface/msg/detail/state__type_support_c.cpp
@@ -119,16 +126,32 @@ CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastr
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/msg/detail/torque__type_support_c.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xie/Desktop/learn/carpole/cartplole/build/interface/rosidl_typesupport_fastrtps_c/interface/msg/detail/torque__type_support_c.cpp -o CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/msg/detail/torque__type_support_c.cpp.s
 
+CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/msg/detail/quat__type_support_c.cpp.o: CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/flags.make
+CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/msg/detail/quat__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/interface/msg/detail/quat__type_support_c.cpp
+CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/msg/detail/quat__type_support_c.cpp.o: CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xie/Desktop/learn/carpole/cartplole/build/interface/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/msg/detail/quat__type_support_c.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/msg/detail/quat__type_support_c.cpp.o -MF CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/msg/detail/quat__type_support_c.cpp.o.d -o CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/msg/detail/quat__type_support_c.cpp.o -c /home/xie/Desktop/learn/carpole/cartplole/build/interface/rosidl_typesupport_fastrtps_c/interface/msg/detail/quat__type_support_c.cpp
+
+CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/msg/detail/quat__type_support_c.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/msg/detail/quat__type_support_c.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xie/Desktop/learn/carpole/cartplole/build/interface/rosidl_typesupport_fastrtps_c/interface/msg/detail/quat__type_support_c.cpp > CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/msg/detail/quat__type_support_c.cpp.i
+
+CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/msg/detail/quat__type_support_c.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/msg/detail/quat__type_support_c.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xie/Desktop/learn/carpole/cartplole/build/interface/rosidl_typesupport_fastrtps_c/interface/msg/detail/quat__type_support_c.cpp -o CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/msg/detail/quat__type_support_c.cpp.s
+
 # Object files for target interface__rosidl_typesupport_fastrtps_c
 interface__rosidl_typesupport_fastrtps_c_OBJECTS = \
 "CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/msg/detail/state__type_support_c.cpp.o" \
-"CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/msg/detail/torque__type_support_c.cpp.o"
+"CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/msg/detail/torque__type_support_c.cpp.o" \
+"CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/msg/detail/quat__type_support_c.cpp.o"
 
 # External object files for target interface__rosidl_typesupport_fastrtps_c
 interface__rosidl_typesupport_fastrtps_c_EXTERNAL_OBJECTS =
 
 libinterface__rosidl_typesupport_fastrtps_c.so: CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/msg/detail/state__type_support_c.cpp.o
 libinterface__rosidl_typesupport_fastrtps_c.so: CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/msg/detail/torque__type_support_c.cpp.o
+libinterface__rosidl_typesupport_fastrtps_c.so: CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/msg/detail/quat__type_support_c.cpp.o
 libinterface__rosidl_typesupport_fastrtps_c.so: CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/build.make
 libinterface__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
 libinterface__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
@@ -138,7 +161,7 @@ libinterface__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librmw.so
 libinterface__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libinterface__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librcutils.so
 libinterface__rosidl_typesupport_fastrtps_c.so: CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xie/Desktop/learn/carpole/cartplole/build/interface/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library libinterface__rosidl_typesupport_fastrtps_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xie/Desktop/learn/carpole/cartplole/build/interface/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library libinterface__rosidl_typesupport_fastrtps_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -149,6 +172,8 @@ CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/clean
 
+CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/interface/msg/detail/quat__rosidl_typesupport_fastrtps_c.h
+CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/interface/msg/detail/quat__type_support_c.cpp
 CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/interface/msg/detail/state__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/interface/msg/detail/state__type_support_c.cpp
 CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/interface/msg/detail/torque__rosidl_typesupport_fastrtps_c.h

@@ -1,0 +1,77 @@
+[35m[1mConsolidate compiler generated dependencies of target simulate_node[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/simulate_node.dir/src/main.cc.o[0m
+In file included from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/src/main.cc:18[m[K:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:280:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::name[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+  280 |       {mjITEM_END}[01;35m[K}[m[K;
+      |                   [01;35m[K^[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:280:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:280:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::pdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:280:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::other[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:297:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::pdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+  297 |       {mjITEM_END}[01;35m[K}[m[K;
+      |                   [01;35m[K^[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:297:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::other[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:297:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::pdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:297:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::other[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:297:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::pdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:297:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::other[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:297:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::name[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:297:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:297:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::pdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:297:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::other[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:305:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::name[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+  305 |       {mjITEM_END}[01;35m[K}[m[K;
+      |                   [01;35m[K^[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:305:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:305:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::pdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/include/simulate/simulate.h:305:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KmjuiDef_::other[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/src/main.cc:[m[K In lambda function:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/src/main.cc:75:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::size_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   75 |       } else if ([01;35m[Kwritten == -1[m[K) {
+      |                  [01;35m[K~~~~~~~~^~~~~[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/src/main.cc:[m[K In function ‘[01m[Kvoid MyController(const mjModel*, mjData*)[m[K’:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/src/main.cc:379:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Km[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  379 | void MyController([01;35m[Kconst mjModel* m[m[K, mjData* d) {
+      |                   [01;35m[K~~~~~~~~~~~~~~~^[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/src/main.cc:379:45:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kd[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  379 | void MyController(const mjModel* m, [01;35m[KmjData* d[m[K) {
+      |                                     [01;35m[K~~~~~~~~^[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/src/main.cc:17[m[K:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/src/main.cc:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/src/main.cc:425:94:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst string[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kconst char*[m[K’
+  425 |   RCLCPP_INFO(sim_node_ptr->get_logger(), [01;31m[Ksim_node_ptr->get_parameter("model_name").as_string()[m[K);
+      |                                           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+      |                                                                                              [01;31m[K|[m[K
+      |                                                                                              [01;31m[Kconst string {aka const std::__cxx11::basic_string<char>}[m[K
+In file included from [01m[K/opt/ros/humble/include/rmw/rmw/types.h:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rcl/rcl/types.h:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rcl/rcl/log_level.h:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rcl/rcl/arguments.h:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rcl/rcl/context.h:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rcl/rcl/guard_condition.h:26[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:30[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/src/main.cc:17[m[K:
+[01m[K/opt/ros/humble/include/rcutils/rcutils/logging.h:479:16:[m[K [01;36m[Knote: [m[K  initializing argument 4 of ‘[01m[Kvoid rcutils_log(const rcutils_log_location_t*, int, const char*, const char*, ...)[m[K’
+  479 |   [01;36m[Kconst char * format[m[K,
+      |   [01;36m[K~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/src/main.cc:[m[K At global scope:
+[01m[K/home/xie/Desktop/learn/carpole/cartplole/src/simulate/src/main.cc:47:8:[m[K [01;35m[Kwarning: [m[K‘[01m[K{anonymous}::default_qpos[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   47 | double [01;35m[Kdefault_qpos[m[K[12];
+      |        [01;35m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/simulate_node.dir/build.make:104: CMakeFiles/simulate_node.dir/src/main.cc.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simulate_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

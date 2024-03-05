@@ -1,4 +1,0 @@
-gmake[2]: *** [CMakeFiles/control_node.dir/build.make:90: CMakeFiles/control_node.dir/src/cppadpino.cpp.o] Interrupt
-gmake[2]: *** [CMakeFiles/control_node.dir/build.make:118: CMakeFiles/control_node.dir/src/main.cpp.o] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/control_node.dir/all] Interrupt
-gmake: *** [Makefile:146: all] Interrupt

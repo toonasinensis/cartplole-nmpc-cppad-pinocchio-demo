@@ -74,6 +74,10 @@ CMakeFiles/interface__cpp: rosidl_generator_cpp/interface/msg/torque.hpp
 CMakeFiles/interface__cpp: rosidl_generator_cpp/interface/msg/detail/torque__builder.hpp
 CMakeFiles/interface__cpp: rosidl_generator_cpp/interface/msg/detail/torque__struct.hpp
 CMakeFiles/interface__cpp: rosidl_generator_cpp/interface/msg/detail/torque__traits.hpp
+CMakeFiles/interface__cpp: rosidl_generator_cpp/interface/msg/quat.hpp
+CMakeFiles/interface__cpp: rosidl_generator_cpp/interface/msg/detail/quat__builder.hpp
+CMakeFiles/interface__cpp: rosidl_generator_cpp/interface/msg/detail/quat__struct.hpp
+CMakeFiles/interface__cpp: rosidl_generator_cpp/interface/msg/detail/quat__traits.hpp
 
 rosidl_generator_cpp/interface/msg/state.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/interface/msg/state.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -92,6 +96,7 @@ rosidl_generator_cpp/interface/msg/state.hpp: /opt/ros/humble/share/rosidl_gener
 rosidl_generator_cpp/interface/msg/state.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/interface/msg/state.hpp: rosidl_adapter/interface/msg/State.idl
 rosidl_generator_cpp/interface/msg/state.hpp: rosidl_adapter/interface/msg/Torque.idl
+rosidl_generator_cpp/interface/msg/state.hpp: rosidl_adapter/interface/msg/Quat.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/xie/Desktop/learn/carpole/cartplole/build/interface/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3.10 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/xie/Desktop/learn/carpole/cartplole/build/interface/rosidl_generator_cpp__arguments.json
 
@@ -116,13 +121,29 @@ rosidl_generator_cpp/interface/msg/detail/torque__struct.hpp: rosidl_generator_c
 rosidl_generator_cpp/interface/msg/detail/torque__traits.hpp: rosidl_generator_cpp/interface/msg/state.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/interface/msg/detail/torque__traits.hpp
 
+rosidl_generator_cpp/interface/msg/quat.hpp: rosidl_generator_cpp/interface/msg/state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/interface/msg/quat.hpp
+
+rosidl_generator_cpp/interface/msg/detail/quat__builder.hpp: rosidl_generator_cpp/interface/msg/state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/interface/msg/detail/quat__builder.hpp
+
+rosidl_generator_cpp/interface/msg/detail/quat__struct.hpp: rosidl_generator_cpp/interface/msg/state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/interface/msg/detail/quat__struct.hpp
+
+rosidl_generator_cpp/interface/msg/detail/quat__traits.hpp: rosidl_generator_cpp/interface/msg/state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/interface/msg/detail/quat__traits.hpp
+
 interface__cpp: CMakeFiles/interface__cpp
+interface__cpp: rosidl_generator_cpp/interface/msg/detail/quat__builder.hpp
+interface__cpp: rosidl_generator_cpp/interface/msg/detail/quat__struct.hpp
+interface__cpp: rosidl_generator_cpp/interface/msg/detail/quat__traits.hpp
 interface__cpp: rosidl_generator_cpp/interface/msg/detail/state__builder.hpp
 interface__cpp: rosidl_generator_cpp/interface/msg/detail/state__struct.hpp
 interface__cpp: rosidl_generator_cpp/interface/msg/detail/state__traits.hpp
 interface__cpp: rosidl_generator_cpp/interface/msg/detail/torque__builder.hpp
 interface__cpp: rosidl_generator_cpp/interface/msg/detail/torque__struct.hpp
 interface__cpp: rosidl_generator_cpp/interface/msg/detail/torque__traits.hpp
+interface__cpp: rosidl_generator_cpp/interface/msg/quat.hpp
 interface__cpp: rosidl_generator_cpp/interface/msg/state.hpp
 interface__cpp: rosidl_generator_cpp/interface/msg/torque.hpp
 interface__cpp: CMakeFiles/interface__cpp.dir/build.make

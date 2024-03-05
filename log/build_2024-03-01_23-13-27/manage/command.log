@@ -1,4 +1,0 @@
-Invoking command in '/home/xie/Desktop/learn/carpole/cartplole/build/manage': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/xie/Desktop/learn/carpole/cartplole/build/manage -- -j20 -l20
-Invoked command in '/home/xie/Desktop/learn/carpole/cartplole/build/manage' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/xie/Desktop/learn/carpole/cartplole/build/manage -- -j20 -l20
-Invoking command in '/home/xie/Desktop/learn/carpole/cartplole/build/manage': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/xie/Desktop/learn/carpole/cartplole/build/manage
-Invoked command in '/home/xie/Desktop/learn/carpole/cartplole/build/manage' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/xie/Desktop/learn/carpole/cartplole/build/manage

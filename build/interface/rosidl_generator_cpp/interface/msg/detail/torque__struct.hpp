@@ -38,7 +38,9 @@ struct Torque_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->u = 0.0;
+      this->tau_x_w = 0.0;
+      this->tau_y_w = 0.0;
+      this->tau_z_w = 0.0;
     }
   }
 
@@ -48,20 +50,40 @@ struct Torque_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->u = 0.0;
+      this->tau_x_w = 0.0;
+      this->tau_y_w = 0.0;
+      this->tau_z_w = 0.0;
     }
   }
 
   // field types and members
-  using _u_type =
+  using _tau_x_w_type =
     double;
-  _u_type u;
+  _tau_x_w_type tau_x_w;
+  using _tau_y_w_type =
+    double;
+  _tau_y_w_type tau_y_w;
+  using _tau_z_w_type =
+    double;
+  _tau_z_w_type tau_z_w;
 
   // setters for named parameter idiom
-  Type & set__u(
+  Type & set__tau_x_w(
     const double & _arg)
   {
-    this->u = _arg;
+    this->tau_x_w = _arg;
+    return *this;
+  }
+  Type & set__tau_y_w(
+    const double & _arg)
+  {
+    this->tau_y_w = _arg;
+    return *this;
+  }
+  Type & set__tau_z_w(
+    const double & _arg)
+  {
+    this->tau_z_w = _arg;
     return *this;
   }
 
@@ -107,7 +129,13 @@ struct Torque_
   // comparison operators
   bool operator==(const Torque_ & other) const
   {
-    if (this->u != other.u) {
+    if (this->tau_x_w != other.tau_x_w) {
+      return false;
+    }
+    if (this->tau_y_w != other.tau_y_w) {
+      return false;
+    }
+    if (this->tau_z_w != other.tau_z_w) {
       return false;
     }
     return true;

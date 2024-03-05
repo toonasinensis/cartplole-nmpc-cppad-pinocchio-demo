@@ -50,13 +50,31 @@ bool interface__msg__torque__convert_from_py(PyObject * _pymsg, void * _ros_mess
     assert(strncmp("interface.msg._torque.Torque", full_classname_dest, 28) == 0);
   }
   interface__msg__Torque * ros_message = _ros_message;
-  {  // u
-    PyObject * field = PyObject_GetAttrString(_pymsg, "u");
+  {  // tau_x_w
+    PyObject * field = PyObject_GetAttrString(_pymsg, "tau_x_w");
     if (!field) {
       return false;
     }
     assert(PyFloat_Check(field));
-    ros_message->u = PyFloat_AS_DOUBLE(field);
+    ros_message->tau_x_w = PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // tau_y_w
+    PyObject * field = PyObject_GetAttrString(_pymsg, "tau_y_w");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->tau_y_w = PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // tau_z_w
+    PyObject * field = PyObject_GetAttrString(_pymsg, "tau_z_w");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->tau_z_w = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
 
@@ -81,11 +99,33 @@ PyObject * interface__msg__torque__convert_to_py(void * raw_ros_message)
     }
   }
   interface__msg__Torque * ros_message = (interface__msg__Torque *)raw_ros_message;
-  {  // u
+  {  // tau_x_w
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->u);
+    field = PyFloat_FromDouble(ros_message->tau_x_w);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "u", field);
+      int rc = PyObject_SetAttrString(_pymessage, "tau_x_w", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // tau_y_w
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->tau_y_w);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "tau_y_w", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // tau_z_w
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->tau_z_w);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "tau_z_w", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
